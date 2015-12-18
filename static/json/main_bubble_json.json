@@ -1,0 +1,38 @@
+{"name":"bubble", "children": [
+
+{"name":"Languages", "description":"#",
+"children":[
+    {"name":"Python","address":"#"},
+    {"name":"Javascript / jQuery","address":"#"},
+    {"name":"HTML5","address":"#"},
+    {"name":"CSS","address":"#"},
+    {"name":"SQL","address":"#"}
+]},
+
+{"name":"Frameworks","description":"#",
+"children":[
+    {"name":"Flask","address":"#","note":"#"},
+    {"name":"Bootstrap","address":"#", "note":"#"},
+    {"name":"960 Grid System","address":"#"}
+
+]},
+{"name": "Data", "description": "#",
+"children":[
+    {"name":"SQLite3","address":"http://d3js.org","note":"#"},
+    {"name":"SQLAlchemy","address":"#", "note":"#"},
+    {"name":"PostgreSQL","address":"#"}
+]},
+{"name":"Libraries", "description":"3",
+"children":[
+    {"name":"Bootstrap","address":"#"},
+    {"name":"jQuery","address":"#"},
+    {"name":"D3.js","address":"#"},
+    {"name":"Chart.js","address":"#"}
+]},
+{"name":"Design", "description":"#",
+"children":[
+    {"name":"Sketch3","address":"#"},
+    {"name":"Basecamp","address":"#"},
+    {"name":"HTML emails","address":"#"}
+]}
+]}

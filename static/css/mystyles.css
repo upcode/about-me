@@ -1,0 +1,426 @@
+/*-----------------NAV BAR--------------------------*/
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+.navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+.navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+.navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+.navbar {
+    font-weight: 700;
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+/*-----------------NAV BAR--------------------------*/
+
+
+/*-----------------HEADER--------------------------*/
+	/*--header image--*/
+#img-header {
+    height: 350px;
+    width: 347px;
+
+
+}
+#circle-img{
+height: 350px !important;
+width: 347px !important;
+
+}
+
+#circle-effect{
+height: 350px !important;
+width: 347px !important;
+
+}
+.info{
+    padding-top: 100px;
+    color: white;
+    font-size: 15px;
+
+}
+
+#header-title{
+	font-size: 80px;
+	font-weight: 300px;
+	font-family: 'Playfair Display', serif;
+
+}
+
+.info {
+	padding-top: 40px;
+	font-size: 20px;
+}
+
+.quote {
+	padding-top: 10px;
+}
+
+h3, span{
+    font-weight:bold;
+}
+h3, span {
+    font-weight:500;
+    font-size:40px;
+    height: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#img-header {
+   -webkit-transition: -webkit-filter 1s;
+     }
+#img-header:hover {
+  -webkit-filter: grayscale(100%); 
+     }
+/*-----------------END HEADER--------------------------*/
+
+/*--------------------ABOUT ME TABS-----------------------*/
+
+.about-links li{
+	
+	
+	padding-right:10px;
+	display:inline-block;
+	
+}
+/*-----------------ABOUT IMG AND CONTENT--------------------------*/
+#left
+{
+   float: left;
+   padding-top: 37px;
+
+
+}
+
+#right
+{ float: right;
+
+}
+
+#left-about
+{
+   float: left;
+   padding-top: 37px;
+  
+
+}
+
+#right-about{
+	float: right;
+
+} 
+
+
+#left-designer {
+   float: left;
+   padding-top: 37px;
+  
+
+}
+
+#right-designer
+{ float: right;
+
+}
+#image1{
+
+    border: 2px dashed #ddd;
+     border: 8px solid white;
+  
+
+}
+#image2{
+
+    border: 2px dashed #ddd;
+  border: 8px solid white;
+
+}
+#image3{
+
+    border: 2px dashed #ddd;
+   border: 8px solid white;
+
+}
+
+
+
+
+
+
+
+/*-----------------END ABOUT IMG AND CONTENT--------------------------*/
+
+
+
+
+/*-----------------FONTS--------------------------*/
+body, .headings > h2  { font-family: 'Playfair Display', serif; } /* main body font */
+h1, h2, h3, h4, h5, h6, th { font-family:'Oranienbaum', serif;
+}
+
+/*-----------------FOOTER--------------------------*/
+#copyright {
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+
+.footer-icons{
+	padding-left: 10px;
+}
+footer{
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+#contact-icons{
+	padding-top: 50px;
+}
+
+.btn:hover{
+ color: #18bc9c;
+}
+/*-----------------END FOOTER--------------------------*/
+
+
+/*-----------------------CSS-------------------------*/
+body{
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+}
+
+a {font-size: 20px;}
+hr {width: 200px;
+height: 1px;
+color: #000000;}
+
+/*ul {
+	list-style: none outside none;
+}*/
+
+h1{
+font-size: 50px;
+font-weight: 500px;
+}
+
+
+h2{
+    font-size: 50px;
+}
+section{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+ul, p{
+	font-size: 20px;
+}
+
+a:hover{
+
+   color: #18bc9c; /*teal color */
+
+}
+
+a {/*Unvisited link.*/
+	color: #a09f9d;  /*blue */
+  font-weight: bold;
+	
+}
+a,
+a:hover,/*The user mouses over a link.*/
+a:focus, /*The user clicks on a link.*/
+a:active, /*The user has clicked a link*/
+a.active 
+a:visited{ /*Visited links.*/
+   font-weight: bold;
+}
+
+
+
+
+  .jo{
+    margin-top: 5px;
+    position: relative;
+    padding-left: 10px;
+
+   }
+   .jo1{
+    margin-top: 640px;
+    position: static;
+    padding-left: 10px;
+
+   }
+   .jo2{
+    margin-top: 640px;
+    position: static;
+     padding-left: 10px;
+
+   }
+/*--------------------CSS-----------------------*/
+
+#mainBubble {
+      background: url(../static/img/diamond.png);
+      
+      box-shadow: 0 0 4px rgba(0,0,0,0);
+      font: 10px sans-serif;
+      height: 800px;
+      position: relative;
+      width: 80%;
+    }
+    #mainBubble svg {
+      left: 0;
+      position: absolute;
+      top: 0;
+      padding-left: 20px;
+    }
+    #mainBubble circle.topBubble {
+      fill: #aaa;
+      stroke: #666;
+      stroke-width: 1.5px;
+     }
+
+
+
+
+
+/*--------------------CONTACT HOVER EFFECT-----------------------*/
+
+
+
+
+
+#box {
+background: url(/static/img/diamond.png);
+  border-radius: 6px;
+  cursor: pointer;
+  height: 100px;
+  line-height: 95px;
+  text-align: center;
+  transition-property: background, border-radius;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear;
+  width: 95px;
+  padding-top: 5px;
+}
+
+
+
+#box:hover {
+  background: #2c3e50;
+  border-radius: 100%;
+}
+#box1 {
+background: url(/static/img/diamond.png);
+  border-radius: 6px;
+  cursor: pointer;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  transition-property: background, border-radius;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear;
+  width: 95px;
+}
+#box1:hover {
+  background: #2c3e50;
+  border-radius: 50%;
+}
+#box2 {
+background: url(/static/img/diamond.png);
+  border-radius: 6px;
+  cursor: pointer;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  transition-property: background, border-radius;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear;
+  width: 95px;
+}
+#box2:hover {
+  background: #2c3e50;
+  border-radius: 50%;
+}
+#box3 {
+background: url(/static/img/diamond.png);
+  border-radius: 6px;
+  cursor: pointer;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  transition-property: background, border-radius;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear;
+  width: 95px;
+}
+#box3:hover {
+  background: #2c3e50;
+  border-radius: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
