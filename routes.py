@@ -16,6 +16,10 @@ def index():
     """ my about me page"""
     return render_template("index.html")
 
+@app.route("/test")
+def test():
+    """ my about me page"""
+    return render_template("test.html")
 
 @app.route("/error")
 def error():

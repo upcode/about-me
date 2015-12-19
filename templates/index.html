@@ -15,6 +15,15 @@
     ================================================== --> 
     <!-- JQUERY -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+
+    
+
+    <script type="text/javascript" src="../static/js/barchart.js"></script>
+        <script type="text/javascript" src="../static/js/piechart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.js"></script>
+
+
+
                                 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -36,6 +45,9 @@
     ================================================== -->  
     <link href="../static/css/mystyles.css" rel="stylesheet">
     <link href="../static/css/ihover.css" rel="stylesheet">
+        <link href="../static/css/barchart.css" rel="stylesheet">
+        <link href="../static/css/piechart.css" rel="stylesheet">
+
     <!-- your favicon //16x16px icon file -->
     <link rel="shortcut icon" href="../static/img/favicon.io" />
 
@@ -55,11 +67,17 @@
     background: url(../static/img/diamond.png);
 
     }
+
     footer {
-        background: url(../static/img/grey.png);
+    background: url(../static/img/grey.png);
     }
 
    </style>
+
+
+
+
+
 </head>
 
 
@@ -247,7 +265,99 @@
               
 
             </div><!-- end row-->
-                </div>
+
+            <div class="row background-diamond">
+
+                    <div class="col-lg-12">
+
+                            <div id="doughnuts">
+                                    <div class="doughnuts-out">
+        <div class="ounch-logo-pieces piece-1 blue"></div>
+        <div class="ounch-logo-pieces piece-2 blue"></div>
+        <div class="ounch-logo-pieces piece-3 blue"></div>
+        <div class="ounch-logo-pieces piece-4 blue"></div>
+        <div class="ounch-logo-pieces piece-5 green"></div>
+        <div class="ounch-logo-pieces piece-6 green"></div>
+        <div class="ounch-logo-pieces piece-7 green"></div>
+        <div class="ounch-logo-pieces piece-8 green"></div>
+        <div class="ounch-logo-pieces piece-9 green"></div>
+        <div class="ounch-logo-pieces piece-10 red"></div>
+        <div class="ounch-logo-pieces piece-11 red"></div>
+        <div class="ounch-logo-pieces piece-12 red"></div>
+        <div class="ounch-logo-pieces piece-13 red"></div>
+        <div class="ounch-logo-pieces piece-14 red"></div>
+        <div class="ounch-logo-pieces piece-15 blue"></div>
+        <div class="ounch-logo-top-piece"></div>
+    </div>
+    <div class="doughnuts-mid">
+        <div class="ounch-logo-pieces piece-1 blue"></div>
+        <div class="ounch-logo-pieces piece-2 blue"></div>
+        <div class="ounch-logo-pieces piece-3 blue"></div>
+        <div class="ounch-logo-pieces piece-4 blue"></div>
+        <div class="ounch-logo-pieces piece-5 green"></div>
+        <div class="ounch-logo-pieces piece-6 green"></div>
+        <div class="ounch-logo-pieces piece-7 green"></div>
+        <div class="ounch-logo-pieces piece-8 green"></div>
+        <div class="ounch-logo-pieces piece-9 green"></div>
+        <div class="ounch-logo-pieces piece-10 red"></div>
+        <div class="ounch-logo-pieces piece-11 red"></div>
+        <div class="ounch-logo-pieces piece-12 red"></div>
+        <div class="ounch-logo-pieces piece-13 red"></div>
+        <div class="ounch-logo-pieces piece-14 red"></div>
+        <div class="ounch-logo-pieces piece-15 blue"></div>
+    </div>
+    <div class="doughnuts-in">
+        <div class="ounch-logo-pieces piece-1  blue"></div>
+        <div class="ounch-logo-pieces piece-2  blue"></div>
+        <div class="ounch-logo-pieces piece-3 blue"></div>
+        <div class="ounch-logo-pieces piece-4 blue"></div>
+        <div class="ounch-logo-pieces piece-5 green"></div>
+        <div class="ounch-logo-pieces piece-6 green"></div>
+        <div class="ounch-logo-pieces piece-7 green"></div>
+        <div class="ounch-logo-pieces piece-8 green"></div>
+        <div class="ounch-logo-pieces piece-9 green"></div>
+        <div class="ounch-logo-pieces piece-10 red"></div>
+        <div class="ounch-logo-pieces piece-11 red"></div>
+        <div class="ounch-logo-pieces piece-12 red"></div>
+        <div class="ounch-logo-pieces piece-13 red"></div>
+        <div class="ounch-logo-pieces piece-14 red"></div>
+        <div class="ounch-logo-pieces piece-15 blue"></div>
+    </div>
+</div>
+<div id="labels">
+    <div class="label blue" id="piece-1">Reflection</div>
+    <div class="label blue" id="piece-2">Big-picture thinking</div>
+    <div class="label blue" id="piece-3">Learning orientation</div>
+    <div class="label blue" id="piece-4">Developing ideas</div>
+    <div class="label green" id="piece-5">Competency-oriented</div>
+    <div class="label green" id="piece-6">Consensus</div>
+    <div class="label green" id="piece-7">Conflict resolution</div>
+    <div class="label green" id="piece-8">Emotional intelligence</div>
+    <div class="label green" id="piece-9">And another
+        <br />fifth variable</div>
+    <div class="label red" id="piece-10">Goal setting</div>
+    <div class="label red" id="piece-11">Coordination</div>
+    <div class="label red" id="piece-12">Pragmatic
+        <br />approach</div>
+    <div class="label red" id="piece-13">Pro-activity</div>
+    <div class="label red" id="piece-14">Planning</div>
+    <div class="label blue" id="piece-15">Critical and analytic thinking</div>
+</div>
+
+                        </div>
+
+
+
+            </div><!-- end row-->
+
+
+
+
+
+
+</div><!-- // end ORGANGE-->
+
+
                 <div class="tab-pane" id="yellow">
                     <div class="row">
                     <div class="col-md-6" id="left-about">
@@ -266,16 +376,42 @@
                     I am not someone who fits into a box.  I am creative, outgoing, and social.
                     If I used one word to describe myself, I would say I am an innovator I am an adapter, a survivor, and a problem solver.  My experiences, education, and my passion for learning drive me to seek new adventures in all aspects of my life.
                     </p>
-                    <h3>Concepts</h3>
+                    <h3>Hobbies</h3>
                     <ul>
-                        <li><i class='icon-ok'></i>Responsive Designs</li>
-                        <li><em></em><i class='icon-ok'></i>Visual Designs with Data</li>
-                        <li><em></em><i class='icon-ok'></i>User Interactions</li>
+                        <li><i class='icon-ok'></i>Sports</li>
+                        <li><em></em><i class='icon-ok'></i>Fittness</li>
+                        <li><em></em><i class='icon-ok'></i>Unique foods</li>
                     </ul>
                 </div><!-- col-md-6 col-lg-offset-3-->
-               
+  
                 </div><!-- // end row-->
-                
+
+               <ul class="chart">
+                <li class="axis">
+                    <div class="label">MVP</div>
+                    <div class="label">All Star</div>
+                    <div class="label">Slugger</div>
+                    <div class="label">Rookie</div>
+                    <div class="label">Triple A</div>
+                </li>
+                    <li class="bar teal" style="height: 95%;" title="95">
+                    <div class="percent">95<span>%</span></div>
+                    <div class="skill"> generate a great quantity of ideas
+                    </div>
+                </li>
+                    <li class="bar salmon" style="height: 90%;" title="90">
+                    <div class="percent">90<span>%</span></div>
+                    <div class="skill">Ping Pong</div></li>
+                    <li class="bar peach" style="height: 80%;" title="80">
+                <div class="percent">80<span>%</span></div>
+                <div class="skill">Blah </div></li>
+                    <li class="bar lime" style="height: 75%;" title="75">
+                <div class="percent">75<span>%</span></div>
+                <div class="skill">Ping Pong</div></li>
+                    <li class="bar grape" style="height: 40%;" title="40">
+                <div class="percent">40<span>%</span></div>
+                <div class="skill">Blah</div></li>
+                </ul> 
             </div>
         </div>
 

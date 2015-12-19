@@ -11,7 +11,8 @@ Python
 Flask
 Javascript
 jQuery
-HTML
-CSS
+HTML5
+CSS3
+D3.js
 Bootstrap
 Heroku
