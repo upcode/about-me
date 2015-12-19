@@ -267,7 +267,8 @@ a:focus, /*The user clicks on a link.*/
 a:active, /*The user has clicked a link*/
 a.active 
 a:visited{ /*Visited links.*/
-   font-weight: bold;
+font-weight: bold;
+ font-family: 'Playfair Display', serif;
 }
 
 
