@@ -16,3 +16,5 @@ CSS3
 D3.js
 Bootstrap
 Heroku
+Chart.js
+Amcharts.js

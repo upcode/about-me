@@ -125,6 +125,13 @@ $grape:         #ab64f4;
   }
 }
 
+ .pink { 
+    background: $pink;
+    border: 1px solid $pink;
+    @include background-image(linear-gradient(lighten($pink, 10%), $pink 70%));
+  }
+}
+
 
 
 body {
