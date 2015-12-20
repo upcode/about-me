@@ -415,14 +415,31 @@ background: url(/static/img/diamond.png);
 
 
 
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
+
+/*--------------------HIDE CONTENT-----------------------*/
 
 
 
 
-
-
-
-
+/*
+//medium+ screen sizes*/
+@media (min-width:992px) {
+    .desktop-only {
+        display:block !important;
+    }
+}
+ 
+/*//small screen sizes*/
+@media (max-width: 991px) {
+    .mobile-only {
+        display:block !important;
+    }
+ 
+    .desktop-only {
+        display:none !important;
+    }
+}
 
 
 
