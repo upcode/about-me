@@ -1,38 +1,42 @@
 {"name":"bubble", "children": [
 
-{"name":"Languages", "description":"#",
+{"name":"Languages","description":"Languages I worked with",
 "children":[
-    {"name":"Python","address":"#"},
-    {"name":"Javascript / jQuery","address":"#"},
-    {"name":"HTML5","address":"#"},
-    {"name":"CSS","address":"#"},
-    {"name":"SQL","address":"#"}
+    {"name":"Python"},
+    {"name":"Javascript / jQuery"},
+    {"name":"HTML5"},
+    {"name":"CSS3"},
+    {"name":"SQL"}
 ]},
 
-{"name":"Frameworks","description":"#",
+{"name":"Frameworks","description":"Framesworks I have used",
 "children":[
-    {"name":"Flask","address":"#","note":"#"},
-    {"name":"Bootstrap","address":"#", "note":"#"},
-    {"name":"960 Grid System","address":"#"}
+    {"name":"Flask"},
+    {"name":"Ruby on Rails"},
+    {"name":"Bootstrap"},
+    {"name":"960 Grid System"}
 
 ]},
-{"name": "Data", "description": "#",
+{"name": "Data", "description": "Databases I used",
 "children":[
-    {"name":"SQLite3","address":"http://d3js.org","note":"#"},
-    {"name":"SQLAlchemy","address":"#", "note":"#"},
-    {"name":"PostgreSQL","address":"#"}
+    {"name":"SQLite3"},
+    {"name":"SQLAlchemy"},
+    {"name":"PostgreSQL"}
 ]},
-{"name":"Libraries", "description":"3",
+{"name":"Libraries", "description":"Programming libaries I have used",
 "children":[
-    {"name":"Bootstrap","address":"#"},
-    {"name":"jQuery","address":"#"},
-    {"name":"D3.js","address":"#"},
-    {"name":"Chart.js","address":"#"}
+    {"name":"Bootstrap"},
+    {"name":"jQuery"},
+    {"name":"D3.js"},
+    {"name":"Chart.js"}
 ]},
-{"name":"Design", "description":"#",
+{"name":"Apps & Tools", "description":"Desgin programs I have used",
 "children":[
-    {"name":"Sketch3","address":"#"},
-    {"name":"Basecamp","address":"#"},
-    {"name":"HTML emails","address":"#"}
+    {"name":"Sketch3"},
+    {"name":"Basecamp"},
+    {"name":"Jira"},
+    {"name":"GitHub & Git"},
+    {"name":"Sublime"},
+    {"name":"HTML emails"}
 ]}
 ]}

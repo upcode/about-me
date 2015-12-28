@@ -39,6 +39,10 @@
 .navbar-inverse {
     border: 0;
 }
+
+#pie-chart-col{
+ float: left;
+}
 /*-----------------NAV BAR--------------------------*/
 
 
@@ -146,6 +150,8 @@ h3, span {
   
 
 }
+
+
 
 #right-designer
 { float: right;
@@ -414,9 +420,6 @@ background: url(/static/img/diamond.png);
         display:none !important;
     }
 }
-
-
-
 
 
 
