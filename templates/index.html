@@ -12,10 +12,13 @@
 <!--     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
  -->
     <title>Uma Petersen</title>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
     <script src="../static/js/d3pie.min.js"></script>
-        <script src="../static/js/d3pie.js"></script>
-                <script src="../static/js/colorbrewer.js"></script>
+    <script src="../static/js/d3pie.js"></script>
+    <script src="../static/js/colorbrewer.js"></script>
+    <script type="text/javascript" src="static/js/tipped.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/tipped.css"/>
+
 
 
      <!-- BOOTSTRAP  CSS
@@ -77,18 +80,7 @@
     .chartContainer{
      background: url(../static/img/diamond.png);
     }
-    .slice text {
-            font-size: 16pt;
-            font-family: Arial;
-        }   
-        #tooltip {
-          display: none;
-          position: fixed;
-          background-color: #fff;
-          border: 1px solid #555;
-          width: 200px;
-          height: 100px;
-        }
+
 
    </style>
 
@@ -249,7 +241,7 @@
 
 
             </div><!-- end row-->
-            </div><!-- // END RED-->
+            </div><!-- // END Engineer-->
 
                     
                 <div class="tab-pane" id="designer">
@@ -277,62 +269,39 @@
                         <li><em></em><i class='icon-ok'></i>User Interactions</li>
                         <li><em></em><i class='icon-ok'></i>Phythography</li>
                         <li><em></em><i class='icon-ok'></i>Wireframes / Layout</li>
-
-
-
-
-
                     </ul>
                      <h3>My Design Process</h3>
                 </div><!-- col-md-6 col-lg-offset-3-->
-                <div class="col-md-8" id="right-designer">
+                <div class="col-md-12" id="right-designer">
                 <br><br>
-                <div id="pieChart"></div>
-
-
-
-
-
+                    <!-- PIE CHART -->
+                    <center><div class="pieChart" id="pieChart"></div></center>
                 </div><!-- // end col-md-6-->
-                   <script>
+    <script>
     var color =  d3.scale.category20c()
-    var tooltip = d3.select('#piechart')                               // NEW
-          .append('div')                                                // NEW
-          .attr('class', 'tooltip');                                    // NEW
-                      
-        tooltip.append('div')                                           // NEW
-          .attr('class', 'label');                                      // NEW
-             
-        tooltip.append('div')                                           // NEW
-          .attr('class', 'count');                                      // NEW
-        tooltip.append('div')                                           // NEW
-          .attr('class', 'percent');    
+      
     var pie = new d3pie("pieChart", {
     "header": {
         "title": {
             "text": "Design Process",
-            "fontSize": 21,
-            "font": "open sans"
+            "fontSize": 25,
+            "font": "Playfair Display"
         },
+
         "subtitle": {
             "text": "Engineering Design Process ",
             "color": "#18bc9c",
-            "fontSize": 12,
-            "font": "open sans"
+            "fontSize": 15,
+            "font": "Playfair Display"
         },
         "location": "pie-center",
-        "titleSubtitlePadding": 10
+        "titleSubtitlePadding": 55
     },
-    "footer": {
-        "color": "#31a354",
-        "fontSize": 12,
-        "font": "open sans",
-        "location": "bottom-left"
-    },
+  
     "size": {
-        "canvasWidth": 590,
-        "pieInnerRadius": "57%",
-        "pieOuterRadius": "90%"
+        "canvasWidth": 600,
+        "pieInnerRadius": "60%",
+        "pieOuterRadius": "110%"
     },
     "data": {
         "smallSegmentGrouping": {
@@ -345,7 +314,7 @@
             {
                 "label": "Define the problem",
                 "value": 25,
-                "color": "#3182bd"
+                "color": "#3182bd",
                 // define the problem 
             },
             {
@@ -406,8 +375,8 @@
             "hideWhenLessThanPercentage": 10
         },
         "mainLabel": {
-            "font": "helvetica",
-            "fontSize": 15
+            "font": "Playfair Display",
+            "fontSize": 17
         },
         "percentage": {
             "color": "#ffffff",
@@ -415,15 +384,15 @@
         },
         "value": {
             "color": "#adadad",
-            "fontSize": 15
+            "fontSize": 1
         },
         "lines": {
             "enabled": true,
-            "style": "straight"
+            "style": "curved"
         },
         "truncation": {
             "enabled": true,
-            "truncateLength": 24
+            "truncateLength": 50
         }
     },
    
@@ -445,17 +414,159 @@
         }
     },
     "callbacks": {
+
         "onMouseoverSegment": null,
         "onMouseoutSegment": null
     }
 });
 
-
-
 </script>
 
+  
+
         </div><!-- end row-->
-</div><!-- // end ORGANGE-->
+        <div class="content">
+  <h1>My Design Process</h1>
+  
+  <svg id="donut-chart"></svg>
+</div>
+<script>
+// Seed data to populate the donut pie chart
+var seedData = [{
+  "label": "React",
+  "value": 25,
+  "link": "https://facebook.github.io/react/"
+}, {
+  "label": "D3",
+  "value": 25,
+  "link": "http://d3js.org"
+}, {
+  "label": "jQuery with text",
+  "value": 25,
+  "link": "https://jquery.com/"
+}, {
+  "label": "AngularJS",
+  "value": 25,
+  "link": "https://angularjs.org/"
+}, {
+  "label": "Meteor",
+  "value": 25,
+  "link": "https://meteorhacks.com/meteor-js-web-framework-for-everyone"
+}, {
+  "label": "Node.js",
+  "value": 25,
+  "link": "https://nodejs.org/"
+}];
+
+// Define size & radius of donut pie chart
+var width = 450,
+  height = 450,
+  radius = Math.min(width, height) / 2;
+
+// Define arc colours
+var colour = d3.scale.category20();
+
+// Define arc ranges
+var arcText = d3.scale.ordinal()
+        .rangeRoundBands([0, width], .1, .3);
+
+// Determine size of arcs
+var arc = d3.svg.arc()
+  .innerRadius(radius - 130)
+  .outerRadius(radius - 10);
+
+// Create the donut pie chart layout
+var pie = d3.layout.pie()
+    .value(function (d) { return d["value"]; })
+  .sort(null);
+
+// Append SVG attributes and append g to the SVG
+var svg = d3.select("#donut-chart")
+  .attr("width", width)
+  .attr("height", height)
+    .append("g")
+    .attr("transform", "translate(" + radius + "," + radius + ")");
+
+// Define inner circle
+svg.append("circle")
+  .attr("cx", 0)
+  .attr("cy", 0)
+  .attr("r", 100)
+  .attr("fill", "#fff") ;
+
+// Calculate SVG paths and fill in the colours
+var g = svg.selectAll(".arc")
+        .data(pie(seedData))
+  .enter().append("g")
+        .attr("class", "arc")
+        
+        // Make each arc clickable 
+        .on("click", function(d, i) {
+      window.location = seedData[i].link;
+    });
+
+    // Append the path to each g
+    g.append("path")
+    .attr("d", arc)
+    .attr("fill", function(d, i) {
+        return colour(i);
+    });
+
+    // Append text labels to each arc
+    g.append("text")
+    .attr("transform", function(d) {
+        return "translate(" + arc.centroid(d) + ")";
+    })
+    .attr("dy", ".35em")
+    .style("text-anchor", "middle")
+    .attr("fill", "#fff")
+        .text(function(d,i) { return seedData[i].label; })
+  
+  g.selectAll(".arc text")
+        .call(wrap, arcText.rangeBand());
+
+    // Append text to the inner circle
+    svg.append("text")
+      .attr("dy", "-0.5em")
+      .style("text-anchor", "middle")
+      .attr("class", "inner-circle")
+        .attr("fill", "#36454f")
+      .text(function(d) { return 'JavaScript'; });
+
+    svg.append("text")
+      .attr("dy", "1.0em")
+      .style("text-anchor", "middle")
+      .attr("class", "inner-circle")
+        .attr("fill", "#36454f")
+      .text(function(d) { return 'is lots of fun!'; });
+
+    // Wrap function to handle labels with longer text
+  function wrap(text, width) {
+    text.each(function() {
+      var text = d3.select(this),
+          words = text.text().split(/\s+/).reverse(),
+          word,
+          line = [],
+          lineNumber = 0,
+          lineHeight = 1.1, // ems
+          y = text.attr("y"),
+          dy = parseFloat(text.attr("dy")),
+          tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
+        console.log("tspan: " + tspan);
+      while (word = words.pop()) {
+        line.push(word);
+        tspan.text(line.join(" "));
+        if (tspan.node().getComputedTextLength() > 90) {
+          line.pop();
+          tspan.text(line.join(" "));
+          line = [word];
+          tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+        }
+      }
+    });
+  }
+  </script>
+</div><!-- // end Designer-->
 
 
                 <div class="tab-pane" id="about-me">
@@ -592,11 +703,13 @@
                             </a>
                         </div>
                     </div><!-- portfolio-item-->
+
+
                     <div class="col-sm-4 portfolio-item" id="upcode">
                         <div class="ih-item square effect6 from_top_and_bottom">
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                                 <div class="img-p">
-                                    <img src="static/img/magic.png" alt="img" class="pimage">
+                                    <img src="/static/img/blog.png" alt="img" class="pimage">
                                 </div>
                                     <div class="info" id="project-title">
                                         <h3>[UP]CODE...Blog</h3>
@@ -605,32 +718,72 @@
                             </a>
                         </div>
                     </div><!-- portfolio-item-->
+
+
                     <div class="col-sm-4 portfolio-item" id="decisions">
                         <div class="ih-item square effect6 from_top_and_bottom">
                             <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                                <div class="img-p">
+                                    <img src="static/img/about-me.png" alt="img" class="pimage">
+                                </div>
+                                    <div class="info" id="project-title">
+                                        <h3>About Me</h3>
+                                            <p>My Personal Website</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div><!-- portfolio-item-->
+
+                </div><!-- // END ROW-->
+                <br>
+                                <div class="row">
+
+
+                    <div class="col-sm-4 portfolio-item" id="decisions">
+                        <div class="ih-item square effect6 from_top_and_bottom">
+                            <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                                 <div class="img-p">
                                     <img src="static/img/magic.png" alt="img" class="pimage">
                                 </div>
                                     <div class="info" id="project-title">
                                         <h3>Decisions</h3>
-                                            <p>Magic Eight Ball</p>
+                                            <p>Magic 8 Ball</p>
                                 </div>
                             </a>
                         </div>
                     </div><!-- portfolio-item-->
-                    <br>
 
+
+                    <div class="col-sm-4 portfolio-item" id="ryan">
+                        <div class="ih-item square effect6 from_top_and_bottom">
+                            <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                                <div class="img-p">
+                                    <img src="static/img/#" alt="Comming Soon" class="pimage">
+                                </div>
+                                    <div class="info" id="project-title">
+                                        <h3>Ryan Fanelli </h3>
+                                            <p>Business Website</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div><!-- portfolio-item-->
+
+
+                    <div class="col-sm-4 portfolio-item" id="sf">
+                        <div class="ih-item square effect6 from_top_and_bottom">
+                            <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                                <div class="img-p">
+                                    <img src="static/img/#" alt="Comming Soon" class="pimage">
+                                </div>
+                                    <div class="info" id="project-title">
+                                        <h3>San Francisco Love Story</h3>
+                                            <p>All Things San Franisco Blog</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div><!-- portfolio-item-->
+                </div><!-- // END ROW-->
                     
-
-
-
-
-
-
-
-                
-
-
                
             </div><!-- // end row-->
         </div><!-- // END CONTAINER-->
@@ -782,75 +935,33 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <center><h2>Wanderlust</h2></center>
-                            <hr class="star-primary">
                             <br>
                             <img src="../static/img/wanderlust.png" class="img-responsive img-centered" alt="">
                             <br><br>
                             <p>Wanderlust allows world travelers to track their country or state visits using a D3 interactive map. This map enables users to click on a country or state. Once the country or state color has been changed, the visits are stored for future use. A user has the ability to upload a photo, which then becomes a postcard. The front displays a picture, while the back displays the address and description. Wanderlust also provides users with a timeline in which they can add their photos and journal their travels. This app allows users to track all their travels in one convenient place. Discover new and exciting places and track all your world travels with Wanderlust.</p>
+                            <p>Stack: Pyton, JavaScript / jQuery, Bootstrap, HTML5, CSS3, D3.js</p>
+
 
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://hackbright.com">Hackbright Project</a>
                                     </strong>
                                 </li>
-                                <li>Date:<!-- remove underline -->
-                                    <strong><a href="#">December 2015</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="#">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <center><h2>About Me Page</h2></center>
-                            <hr class="star-primary">
-                            <img src="/static/img/wanderlust.png" class="img-responsive img-centered" alt="">
-                            <p>Created a about me page about software engineer</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="#">Uma Petersen</a>
-                                    </strong>
-                                </li>
                                 <li>Date:
-                                    <strong><a href="#">December 2015</a>
-                                    </strong>
+                                    <strong>December 2015</strong>
                                 </li>
                                 <li>Service:
-                                    <strong><a href="#">Web Development</a>
-                                    </strong>
+                                    <strong>Web Development</strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <center><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></center>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
+    <br>
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -863,36 +974,82 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <center><h2>[CODE]UP...Blog</h2><center>
+                            <center><h2>[CODE]...BLOG</h2></center>
                             <hr class="star-primary">
-                            <br>
-                            <center>
-                            <img src="../static/img/#" class="img-responsive img-centered" alt="">
-                            </center>
-                            <br><br>
-                            <p>Programing blog, my programming journal and tech articles I find intersiting</p>
+                            <img src="/static/img/blog.png" class="img-responsive img-centered" alt="">
+                            <p>Created Programming blog, and resources and links that I found intersiting while learning to program.</p>
+                            <p>Stack: Pyton, javaScript/jQuery, Bootstrap, CS3S, HTML5, Heroku</p>
+
+
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong><a href="#">Uma Petersen</a>
+                                    <strong><a href="http://www.umapetersen.com">Uma Petersen</a>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="#">December 2015</a>
+                                    <strong>December 2015
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong><a href="#">Web Development</a>
+                                    <strong>Web Development
                                     </strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <center><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></center>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+<br>
+
+
+
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <center><h2>ABOUT ME</h2><center>
+                            <br>
+                            <center>
+                            <img src="/static/img/about-me.png" class="img-responsive img-centered" alt="">
+                            </center>
+                            <br><br>
+                            <p>Created Personal website about myself and my experince in software development</p>
+                            <p>Stack:Python, JavaScript, HTML5, CSS3, D3.js, Chart.js, Bootstrap, Heroku</p>
+
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://www.umapetersen.com">Uma Petersen</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>December 2015
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong>Web Development</strong>
+                                </li>
+                            </ul>
+                            <center><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -912,9 +1069,51 @@
                             </center>
                             <br><br>
                             <p>Created magic 8 ball game called decisions. User can log in and ask a question and returns an answer to their question.</p>
+                            <p>Stack:Python, JavaScript, HTML5, CSS3, D3.js, Chart.js, Bootstrap, Heroku</p>
+
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="#">For Fun</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>December 2015
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong>Web Development
+                                    </strong>
+                                </li>
+                            </ul>
+                            <center><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <center><h2>Ryan Fanlllie Paining Business</h2></center>
+                            <hr class="star-primary">
+                            <br>
+                            <img src="static/img/#" class="img-responsive img-centered" alt="">
+                            <br><br>
+                            <p>created a business webpage for Ryan Fanenallie</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="#">Ryan</a>
                                     </strong>
                                 </li>
                                 <li>Date:
@@ -931,10 +1130,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <br>
+             <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -946,19 +1143,19 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <center><h2>San Francisco Love Story</h2></center>
+                            <center><h2>Ryan Fanelli Painting Business</h2></center>
                             <hr class="star-primary">
                             <br>
-                            <img src="static/img/class-photo.jpg" class="img-responsive img-centered" alt="">
+                            <img src="static/img/#" class="img-responsive img-centered" alt="">
                             <br><br>
-                            <p>San Franisco blog talks about fun places to eat and what to see cutlrual things about san francisco</p>
+                            <p>created a business webpage for Ryan Fanelli </p>
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong><a href="#">Start Bootstrap</a>
+                                    <strong><a href="#">Ryan Fanelli</a>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="#">April 2014</a>
+                                    <strong><a href="#">December 2015</a>
                                     </strong>
                                 </li>
                                 <li>Service:
@@ -970,7 +1167,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div><!--// end container-->
         </div>
     </div>
 
