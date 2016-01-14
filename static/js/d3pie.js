@@ -48,7 +48,7 @@ var defaultSettings = {
 		subtitle: {
 			text:     "",
 			color:    "#666666",
-			fontSize: 14,
+			fontSize: 18,
 			font:     "Playfair Display"
 		},
 		location: "top-center",
@@ -62,8 +62,8 @@ var defaultSettings = {
 		location: "left"
 	},
 	size: {
-		canvasHeight: 500,
-		canvasWidth: 500,
+		canvasHeight: 459,
+		canvasWidth: 700,
 		pieInnerRadius: "0%",
 		pieOuterRadius: null
 	},
@@ -87,7 +87,7 @@ var defaultSettings = {
 		outer: {
 			format: "label",
 			hideWhenLessThanPercentage: null,
-			pieDistance: 30
+			pieDistance: 10
 		},
 		inner: {
 			format: "percentage",
@@ -107,7 +107,7 @@ var defaultSettings = {
 		value: {
 			color: "#cccc44",
 			font: "Playfair Display",
-			fontSize: 10
+			fontSize: 20
 		},
 		lines: {
 			enabled: true,
@@ -128,7 +128,7 @@ var defaultSettings = {
 		pullOutSegmentOnClick: {
 			effect: "bounce",
 			speed: 300,
-			size: 10
+			size: 20
 		},
 		highlightSegmentOnMouseover: true,
 		highlightLuminosity: -0.2
@@ -145,8 +145,8 @@ var defaultSettings = {
 			color: "#efefef",
       borderRadius: 2,
       font: "Playfair Display",
-      fontSize: 10,
-      padding: 4
+      fontSize: 20,
+      padding: 20
 		}
 	},
 	misc: {

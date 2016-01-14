@@ -268,7 +268,7 @@
     {"name":"SQLAlchemy","address":"#", "note":"#"},
     {"name":"PostgreSQL","address":"#"}
 ]},
-{"name":"Libraries", "description":"3",
+{"name":"Libraries", "description":"#",
 "children":[
     {"name":"Bootstrap","address":"#"},
     {"name":"jQuery","address":"#"},
