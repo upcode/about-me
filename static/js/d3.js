@@ -14,7 +14,7 @@
 
    var mainNote = svg.append("text")
     .attr("id", "bubbleItemNote")
-    .attr("x", 10)
+    .attr("x", 12)
     .attr("y", w/2-15)
     .attr("font-size", 12)
     .attr("dominant-baseline", "middle")
@@ -248,7 +248,8 @@
 {"name":"Languages", "description":"#",
 "children":[
     {"name":"Python","address":"#"},
-    {"name":"Javascript / jQuery","address":"#"},
+    {"name":"Javascript","address":"#"},
+    {"name":"jQuery","address":"#"},
     {"name":"HTML5","address":"#"},
     {"name":"CSS","address":"#"},
     {"name":"SQL","address":"#"}

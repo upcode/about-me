@@ -3,10 +3,12 @@
 {"name":"Languages","description":"Languages I worked with",
 "children":[
     {"name":"Python"},
-    {"name":"Javascript / jQuery"},
+    {"name":"JavaScript / jQuery"},
     {"name":"HTML5"},
     {"name":"CSS3"},
-    {"name":"SQL"}
+    {"name":"SQL"},
+    {"name":"Jinja"},
+    {"name":"Ruby"}
 ]},
 
 {"name":"Frameworks","description":"Framesworks I have used",
@@ -14,7 +16,8 @@
     {"name":"Flask"},
     {"name":"Ruby on Rails"},
     {"name":"Bootstrap"},
-    {"name":"960 Grid System"}
+    {"name":"960 Grid System"},
+    {"name":"HTML e-mails"}
 
 ]},
 {"name": "Data", "description": "Databases I used",
@@ -26,17 +29,19 @@
 {"name":"Libraries", "description":"Programming libaries I have used",
 "children":[
     {"name":"Bootstrap"},
-    {"name":"jQuery"},
+    {"name":"Canvas.js"},
     {"name":"D3.js"},
     {"name":"Chart.js"}
 ]},
-{"name":"Apps & Tools", "description":"Desgin programs I have used",
+{"name":"Platforms", "description":"Other Applications and Tools I have used",
 "children":[
     {"name":"Sketch3"},
     {"name":"Basecamp"},
     {"name":"Jira"},
     {"name":"GitHub & Git"},
     {"name":"Sublime"},
-    {"name":"HTML emails"}
+    {"name":"Zendesk"},
+    {"name":"Salesforce"}
+  
 ]}
 ]}
