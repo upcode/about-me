@@ -23,7 +23,7 @@
     // .text(function(d) {return "D3.js.";});
 
 
-    d3.json("/static/json/main_bubble_json.json", function(error, root) {
+    d3.json("../static/json/main_bubble_json.json", function(error, root) {
         console.log(error);
 
         var bubbleObj = svg.selectAll(".topBubble")
