@@ -310,6 +310,7 @@ font-weight: bold;
       height: 800px;
       position: relative;
       width: 80%;
+      padding:;
     }
     #mainBubble svg {
       left: 0;

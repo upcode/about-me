@@ -275,7 +275,7 @@
     {"name":"D3.js","address":"#"},
     {"name":"Chart.js","address":"#"}
 ]},
-{"name":"Design", "description":"#",
+{"name":"Platforms", "description":"#",
 "children":[
     {"name":"Sketch3","address":"#"},
     {"name":"Basecamp","address":"#"},
