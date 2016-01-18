@@ -16,10 +16,7 @@ def index():
     """ my about me page"""
     return render_template("index.html")
 
-@app.route("/index")
-def index2():
-    """ my about me page"""
-    return render_template("index2.html")
+
 @app.route("/error")
 def error():
     raise Exception("Error!")
