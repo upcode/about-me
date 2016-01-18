@@ -245,7 +245,7 @@ footer {
     background: url(/static/img/backgrounds/grey.png);
 }
 
-/*.portfolio-modal .modal-content h2 {
+.portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
 
@@ -300,7 +300,7 @@ footer {
     opacity: 0;
 
 }
-*/
+
 
 
 
