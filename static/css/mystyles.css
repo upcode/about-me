@@ -1,496 +1,327 @@
-/*-----------------NAV BAR--------------------------*/
-@media(min-width:768px) {
-    .navbar-fixed-top {
-        padding: 5px 0;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-    }
-.navbar-fixed-top .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
 
-.navbar-fixed-top.navbar-shrink {
-        padding: 5px 0;
-    }
-.navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-    }
-.navbar {
-    font-weight: 700;
+
+.curly-brackets1{
+    font-family: "Playfair Display", sans-serif, italic;
+    font-size: 100px;
+    font-weight: 500px;
 }
 
-.navbar a:focus {
-    outline: 0;
-}
-
-.navbar .navbar-nav {
-    letter-spacing: 1px;
-}
-
-.navbar .navbar-nav li a:focus {
-    outline: 0;
-}
-
-.navbar-default,
-.navbar-inverse {
-    border: 0;
-}
-
-#pie-chart-col{
- float: left;
-}
-/*-----------------NAV BAR--------------------------*/
-
-
-/*-----------------HEADER--------------------------*/
-	/*--header image--*/
-#img-header {
-    height: 350px;
-    width: 347px;
-
-
-}
-#circle-img{
-height: 350px !important;
-width: 347px !important;
-
-}
-
-#circle-effect{
-height: 350px !important;
-width: 347px !important;
-
-}
-.info{
-    padding-top: 10px;
-    color: white;
-    font-size: 15px;
-
-}
-
-#header-title{
-	font-size: 1500%;
-	font-weight: 300px;
-	font-family: 'Playfair Display', serif;
-  padding-top: 50px;
-
-}
-
-.info {
-	padding-top: 50px;
-	font-size: 20px;
-  padding-bottom: 100px;
-}
-
-.quote {
-	padding-top: 10px;
-}
-
-h3, span{
-    font-weight:bold;
-}
-h3, span {
-    font-weight:500;
-    font-size:40px;
-    height: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-#img-header {
-   -webkit-transition: -webkit-filter 1s;
-     }
-#img-header:hover {
-  -webkit-filter: grayscale(100%); 
-     }
-/*-----------------END HEADER--------------------------*/
-
-/*--------------------ABOUT ME TABS-----------------------*/
-
-.about-links li{
-	
-	
-	padding-right:10px;
-	display:inline-block;
-	
-}
-/*-----------------ABOUT IMG AND CONTENT--------------------------*/
-#left
-{
-   float: left;
-   padding-top: 37px;
-
-
-}
-
-#right
-{ float: right;
-
-}
-
-#left-about
-{
-   float: left;
-   padding-top: 37px;
-  
-
-}
-
-#right-about{
-	float: right;
-
-} 
-
-
-#left-designer {
-   float: left;
-   padding-top: 37px;
-  
-
+.curly-brackets{
+    font-family: "Playfair Display", sans-serif, italic;
+    font-size: 60px;
+    font-weight: 600px;
 }
 
 
-
-#right-designer
-{ float: right;
-
-}
-#image1{
-
-    border: 2px dashed #ddd;
-     border: 8px solid white;
-  
-
-}
-#image2{
-
-    border: 2px dashed #ddd;
-  border: 8px solid white;
-
-}
-#image3{
-
-    border: 2px dashed #ddd;
-   border: 8px solid white;
-
+section {
+    padding: 100px 0;
 }
 
-
-
-
-
-
-
-/*-----------------END ABOUT IMG AND CONTENT--------------------------*/
-
-.container {
-  width: 100%;
+    
+p {
+    font-size: 20px;
 }
-
-
-/*-----------------FONTS--------------------------*/
-body, .headings > h2  { font-family: 'Playfair Display', serif; } /* main body font */
-h1, h2, h3, h4, h5, h6, th { font-family:'Oranienbaum', serif;
-}
-
-/*-----------------FOOTER--------------------------*/
-#copyright {
-  padding-left: 380px;
-  padding-top: 20px;
-}
-
-.footer-icons{
-  padding-top: 20px;
-
-}
- #footer{
-  padding-top: 20px;
-  padding-bottom: 0px;
 
  }
 
-#contact-icons{
-	padding-top: 50px;
+
+ .curly-bracketsul, li, a {
+        font-family: "Playfair Display", sans-serif;
+        font-size: 16px;
+        display: none;
+
+
+
+ }
+
+ .up:hover {
+color: #a09f9d; ;
+
+ }
+
+ul
+{
+    list-style-type: none;
 }
 
-.btn:hover{
- color: #18bc9c;
+small a {
+    font-color: ;
 }
-/*-----------------END FOOTER--------------------------*/
+/*--------------- NAV BAR-------------------------*/
+
+.navbar a:focus {
+    outline: 0;
+     
+}
+
+.navbar .navbar-default .navbar-fixed-top {
+border-bottom: 10px dashed #ccc;
+
+}
+/*--------------- HEADER-------------------------*/
+#name {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 150px;
+    font-weight: 700px;
+    padding-top: 50px;
+    margin-top: 20px;
+
+}
+.tag-line {
+    font-family: "Playfair Display", sans-serif;
+
+    font-size: 30px;
+    font-weight: 70px;
+}
+/*--------------- TAB SECTION-------------------*/
+#tabs {
+    font-family: "Playfair Display", sans-serif;
+}
+#about-tabs{
+    font-size: 20px;
 
 
-/*-----------------------CSS-------------------------*/
+}
+.tab-titles{
+    font-weight: bold;
+}
+ li.active a { text-decoration:underline; 
+ /*   color: #a09f9d;*/
+ color: black;
 
 
-a {font-size: 20px;}
-hr {width: 200px;
-height: 1px;
-color: #000000;}
+ }
+li a {
+    color: #a09f9d;
+}
+.words {
+    font-size: 20px;
+}
 
-/*ul {
-	list-style: none outside none;
+.tab-list{
+    font-size: 20px;
+}
+/*a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    color: #18bc9c;
+}*/
+    /*------= IMAGE-------------------*/
+
+img {
+    box-shadow:
+        0 0 0 10px #f8f8f8, /* white border */
+        0 5px 0 -3px #f8f8f8, /* The first layer */
+        0 5px 0 -2px #ccc /* The first layer shadow */  } 
+        
+}
+img {padding:8px;
+    border:1px dashed #ccc; }
+
+
+
+
+/*--------------- PROJECT----------------------*/
+
+.project-title {
+         font-family: "Playfair Display", sans-serif;
+
+}
+/*--------------- PROJECT---------------------*/
+/*#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(24,188,156,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+   
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+    margin-top: -12px;
+
 }*/
 
-h1{
-font-size: 50px;
-font-weight: 500px;
+/*#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+}*/
+
+/*#portfolio * {
+    z-index: 2;
+}*/
+
+/*--------------- MODAL----------------------*/
+
+
+
+ 
+
+
+
+
+
+
+/*---------FOOTER---------*/
+
+footer {
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
+.social-icons{
+    text-align: right;
+    width: 50px;
+    line-height: 45px;
+}
+/*------SCROLL BUTTON-------------*/
 
-h2{
-    font-size: 50px;
-}
-section{
-	padding-top: 100px;
-	padding-bottom: 100px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-ul, p{
-	font-size: 20px;
-}
-
-a:hover{
-
-   color: #18bc9c; /*teal color */
-
-}
-#bar-graph {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-a {/*Unvisited link.*/
-	color: #a09f9d;  /*blue */
-  font-weight: bold;
-	
-}
-a,
-a:hover,/*The user mouses over a link.*/
-a:focus, /*The user clicks on a link.*/
-a:active, /*The user has clicked a link*/
-a.active,
-a:visited{ /*Visited links.*/
-font-weight: bold;
- font-family: 'Playfair Display', serif;
+.scroll-top {
+    z-index: 1049;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
 }
 
+.scroll-top .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 28px;
+}
 
-  .jo{
-    margin-top: 5px;
-    position: relative;
-    padding-left: 10px;
+.scroll-top .btn:focus {
+    outline: 0;
+}
+/*------MODAL WINDOWS-------------*/
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: url(/static/img/backgrounds/grey.png);
+}
 
-   }
-   .jo1{
-    margin-top: 640px;
-    position: static;
-    padding-left: 10px;
+/*.portfolio-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
 
-   }
-   .jo2{
-    margin-top: 640px;
-    position: static;
-     padding-left: 10px;
+}
 
-   }
-/*--------------------CSS-----------------------*/
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
 
-#mainBubble {
-      background: url(../static/img/diamond.png);
-      
-      box-shadow: 0 0 4px rgba(0,0,0,0);
-      font: 10px sans-serif;
-      height: 800px;
-      position: relative;
-      width: 80%;
-      padding:;
-    }
-    #mainBubble svg {
-      left: 0;
-      position: absolute;
-      top: 0;
-      padding-left: 30px;
-    }
-    #mainBubble circle.topBubble {
-      fill: #aaa;
-      stroke: #666;
-      stroke-width: 1.5px;
-     }
+.portfolio-modal .modal-content .item-details {
+    margin: 30px 0;
+    padding-bottom: 20px;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+
+}
+*/
 
 
 
 
-
-/*--------------------CONTACT HOVER EFFECT-----------------------*/
-
-
-
-
-
-#box {
-background: url(/static/img/diamond.png);
-  border-radius:6px;
-  cursor: pointer;
-  height: 125px;
-  line-height: 100px;
-  text-align: center;
-  transition-property: background, border-radius;
-  transition-duration: .2s, 1s;
-  transition-timing-function: linear;
-  width: 125px;
-  padding-top: 15px;
-   padding-bottom: 5px;
-   padding-right: 5px;
-   padding-left: 5px;
+/*-------=filter list-------------------*/
+/*
+ul { 
+    text-align:center;
+    position:relative; 
+    clear:both; }  */ 
     
-  }
+/* li, ul.curly-brackets .projects li { 
+    display:inline;
+    margin:0 .5em; }*/
 
 
+/*contact*/
 
-#box:hover {
-  background: #2c3e50;
-  border-radius: 100%;
-}
-#box1 {
-background: url(/static/img/diamond.png);
-  border-radius: 6px;
-  cursor: pointer;
-  height: 125px;
-  line-height: 100px;
-  text-align: center;
-  transition-property: background, border-radius;
-  transition-duration: .2s, 1s;
-  transition-timing-function: linear;
-  width: 125px;
-  padding-top: 15px;
-    padding-bottom: 5px;
-}
-#box1:hover {
-  background: #2c3e50;
-  border-radius: 100%;
+.contact-title{
+         font-family: "Playfair Display", sans-serif;
+
 }
 
 
 
-
-
-/*--------------------PIE CHART-----------------------*/
-
-
-#chartdiv {
-  width   : 100%;
-  height    : 600px;
-  font-size : 11px;
-}
-
-
-
-
-
-
-
-@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
-
-/*--------------------MEDIA QUERIES CONTENT-----------------------*/
-
-@media screen and (min-width: 1024px) {
-  body {
-    font-size: 100%;
-  }
-}
-
-@media screen and (min-device-width: 480px) and (orientation: landscape) {
-  body {
-    font-size: 100%;
-  }
-}
-
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-  body {
-    font-size: 90%;
-  }
-}
-
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-  body {
-    font-size: 90%;
-  }
-}
-Here are sample snippets of CSS that you can use to target specific mobile devices:
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-/* Styles */
-}
  
-/* Smartphones (landscape) ----------- */
-@media only screen
-and (min-width : 321px) {
-/* Styles */
-}
- 
-/* Smartphones (portrait) ----------- */
-@media only screen
-and (max-width : 320px) {
-/* Styles */
-}
- 
-/* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-/* Styles */
-}
- 
-/* iPads (landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
-/* Styles */
-}
- 
-/* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-/* Styles */
-}
- 
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 1224px) {
-/* Styles */
-}
- 
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {
-/* Styles */
-}
- 
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
-}
-
-
-
-
-
-
-

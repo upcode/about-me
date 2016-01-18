@@ -40,6 +40,8 @@
   top: emCalc(-45px);
   width: 8%;
   margin-top: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
  
 
 }
@@ -51,12 +53,16 @@
 }
 .chart .label {
   background: #cccccc;
-  margin: -9px 0 71px 0;
+  margin: -9px 0px 71px 0px;
+  margin-top: 30px;
+
 
 }
+
+
 .chart .percent {
   letter-spacing: -3px;
-  opacity: .4;
+  opacity: .3;
   width: 100%;
   font-size: 30px;
   font-size: 1.875rem;

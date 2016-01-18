@@ -11,20 +11,15 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "freedom")
                              ## ROUTES ##
 ################################################################################
 
-@app.route("/pie")
-def pie():
-    """ my about me page"""
-    return render_template("barchart.html")
 @app.route("/")
 def index():
     """ my about me page"""
     return render_template("index.html")
 
-@app.route("/test")
-def test():
+@app.route("/index")
+def index2():
     """ my about me page"""
-    return render_template("test.html")
-
+    return render_template("index2.html")
 @app.route("/error")
 def error():
     raise Exception("Error!")
