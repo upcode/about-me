@@ -1,7 +1,5 @@
 #mainBubble {
-      background: url(/static/img/backgrounds/diamond.png);
-      
-      box-shadow: 0 0 4px rgba(0,0,0,0);
+    
       font: 10px sans-serif;
       height: 800px;
       position: relative;
@@ -19,3 +17,5 @@
       stroke: #666;
       stroke-width: 1.5px;
      }
+
+

@@ -22,6 +22,7 @@ section {
     
 p {
     font-size: 20px;
+    margin-bottom:1em; 
 }
 
  }
@@ -189,7 +190,9 @@ img {padding:8px;
 /*--------------- MODAL----------------------*/
 
 
-
+.container { 
+    position:relative;
+    clear:both; }
  
 
 
@@ -324,6 +327,15 @@ ul {
 
 }
 
+
+/*-------=curly brackets style (removed on mobile devices) --------*/
+        
+    .curly_brackets span:before, .curly_brackets li:first-child:before  { content:""; }
+    .curly_brackets span:after, .curly_brackets li:last-child:after { content:""; }
+    .curly_brackets span { padding-left:0; padding-right:0; }
+    ul.curly_brackets li:first-child { padding-left:0;  }
+    ul.curly_brackets li:last-child { padding-right:0;  } 
+    
 
 
  

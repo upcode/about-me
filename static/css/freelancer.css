@@ -4,7 +4,17 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+body {
+    overflow-x: hidden;
+}
 
+p {
+    font-size: 20px;
+}
+
+p.small {
+    font-size: 16px;
+}
 
 a,
 a:hover,
@@ -17,52 +27,43 @@ a.active {
 
 
 
-
-
-.img-centered {
-    margin: 0 auto;
-}
-
-section #header {
+header {
     text-align: center;
-   
-   
+    color: #fff;
+    background: #18bc9c;
 }
 
-section .container .header {
+header .container {
     padding-top: 100px;
     padding-bottom: 50px;
 }
 
-section img {
-    display: block;
-    margin: 0 auto 20px;
-}
 
-section .intro-text .name {
-    display: block;
 
-    font-family: "Playfair Display",sans-serif italic;
-    font-size: 150px;
+header .intro-text .name {
+    display: block;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
     font-weight: 700;
 }
 
-section .intro-text .tag-line {
+header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
 }
 
 @media(min-width:768px) {
-    section .container {
+    header .container {
         padding-top: 200px;
         padding-bottom: 100px;
     }
 
-    section .intro-text .name {
+    header .intro-text .name {
         font-size: 4.75em;
     }
 
-    section .intro-text .tag-line {
+    header .intro-text .skills {
         font-size: 1.75em;
     }
 }
@@ -92,7 +93,8 @@ section .intro-text .tag-line {
 }
 
 .navbar {
-    font-family: "Playfair Display",sans-serif italic;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -186,7 +188,6 @@ section.success a.active {
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
     margin-top: -12px;
-
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
@@ -229,9 +230,54 @@ section.success a.active {
     border-bottom: 1px solid #eee;
 }
 
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: 0 0;
+    box-shadow: none!important;
+    resize: none;
+}
 
+.floating-label-form-group label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: .85em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top .3s ease,opacity .3s ease;
+    -moz-transition: top .3s ease,opacity .3s ease;
+    -ms-transition: top .3s ease,opacity .3s ease;
+    transition: top .3s ease,opacity .3s ease;
+}
 
+.floating-label-form-group::not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #eee;
+}
 
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #18bc9c;
+}
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #eee;
+}
 
 footer {
     color: #fff;
@@ -280,7 +326,6 @@ footer .footer-below {
     width: 50px;
     height: 50px;
 }
-/*------SCROLL BUTTON-------------*/
 
 .scroll-top .btn {
     width: 50px;
@@ -293,7 +338,7 @@ footer .footer-below {
 .scroll-top .btn:focus {
     outline: 0;
 }
-/*------MODAL WINDOWS-------------*/
+
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
@@ -303,13 +348,11 @@ footer .footer-below {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: url(/static/img/backgrounds/grey.png);
 }
 
 .portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
-
 }
 
 .portfolio-modal .modal-content img {
@@ -318,7 +361,6 @@ footer .footer-below {
 
 .portfolio-modal .modal-content .item-details {
     margin: 30px 0;
-    padding-bottom: 20px;
 }
 
 .portfolio-modal .close-modal {
@@ -359,54 +401,4 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
-
 }
-
-
-/*UMA 'S CSS */
-
-/*-------=thumbs list-------------------*/
-
-ul.img-p li { 
-    margin-bottom:30px;
-    display:block; }
-    
-ul.img-p li a { 
-    margin:0; 
-    display:block; 
-    text-align:center; }
-    
-ul.img-p li a img {
-     margin:0 auto;
-    display:block;
-    }
-        
-ul.img-p li a img:hover { opacity:.8;  }
-
-ul.img-p li .caption { display:none; }
-/*-------=filter list-------------------*/
-
-ul { 
-    text-align:center;
-    position:relative; 
-    clear:both; }   
-    
- li, ul.curly-brackets .projects li { 
-    display:inline;
-    margin:0 .5em; }
-    
- li.active a { text-decoration:underline; }
-
- 
-
- span.curly-brackets {
-    font-family: "Playfair Display", sans-serif italic;
-    font-size: 50px;
-    font-weight: 100px;
- }
-
- h1, h2, h3, h4, h5, h6, span, label, a, i {
-        font-family: "Playfair Display", sans-serif italic;
-
-
- }
