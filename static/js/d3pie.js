@@ -183,8 +183,10 @@ var defaultSettings = {
 		onMouseoverSegment: null,
 		onMouseoutSegment: null,
 		onClickSegment: null
+
 	}
 };
+
 
 	//// --------- validate.js -----------
 var validate = {

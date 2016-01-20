@@ -1,0 +1,320 @@
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", sans-serif;    
+    font-weight: 700;
+}
+
+.topnav {
+    font-size: 16px; 
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(/static/img/backgrounds/grey.png) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+     /*   font-size: 3em;*/
+        font-size: 30px;
+        font-weight: 70px;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+   /* float: left;*/
+    width: 200px;
+   /* border-top: 3px solid #e7e7e7;*/
+    border-top: 2px solid black;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+   /* float: right;*/
+    margin-top: 0;
+    
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        /*float: left;*/
+        margin-top: 15px;
+        
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 10px 0;
+   /* background-color: #f8f8f8;*/
+   font-size: 16px;
+}
+ footer .col-md-4 {
+ padding-left: 40px;
+}
+p.copyright {
+    margin: 15px 0 0;
+    color: #a09f9d;
+}
+
+/*UMA'S CSS*/
+
+
+section {
+    padding: 100px 0;
+}
+
+.piechart {
+    padding-right: 30px;
+}
+
+#page-title{
+    font-family: "Playfair Display", sans-serif;
+    font-size: 150px;
+    font-weight: 700px;
+    padding-top: 50px;
+    margin-top: 20px;
+
+}
+/*------= TABS-------------------*/
+.tab-list{
+    font-size: 20px;
+}
+.tab-titles{
+    font-weight: bold;
+}
+
+.words {
+    font-size: 20px;
+}
+
+#about-tabs{
+    font-size: 20px;
+
+}
+ li.active a { text-decoration:underline; 
+ /*   color: #a09f9d;*/
+ color: #222222;
+
+
+ }
+li a {
+    color: #666;
+    /*color: rgb(24, 188, 156);*/
+}
+a{
+    color: #666;
+}
+
+a:hover {
+    color: rgb(24, 188, 156);
+}
+ .up:hover {
+color: rgb(24, 188, 156); 
+
+ }
+
+ ul{list-style-type: none; }
+    
+.container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.contact {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.social-icons {
+    float: right;
+}
+
+.row {
+    padding-top: 40px;
+}
+/*------= IMAGE-------------------*/
+
+img {
+    box-shadow:
+        0 0 0 10px #f8f8f8, /* white border */
+        0 5px 0 -3px #f8f8f8, /* The first layer */
+        0 5px 0 -2px #ccc /* The first layer shadow */  } 
+        
+}
+img {padding:8px;
+    border:1px dashed #ccc; }
+#hackbright {
+    height: 300px;
+    width: 600px;
+}
+
+
+/*-------=curly brackets style (removed on mobile devices) --------*/
+        
+    .curly_brackets span:before, .curly_brackets li:first-child:before  { content:""; }
+    .curly_brackets span:after, .curly_brackets li:last-child:after { content:""; }
+    .curly_brackets span { padding-left:0; padding-right:0; }
+    ul.curly_brackets li:first-child { padding-left:0;  }
+    ul.curly_brackets li:last-child { padding-right:0;  } 
+    
+    /*------=curly brackets style-------*/
+
+.curly_brackets span:before, .curly_brackets span:after,
+.curly_brackets li:first-child:before, .curly_brackets li:last-child:after {
+    font-size:40px;
+    font-style:normal;
+    margin-top:-20px;
+    height:40px;
+    top:50%;
+    position:absolute;
+    font-style:normal !important; }
+            
+.curly_brackets span:before, .curly_brackets li:first-child:before  { content:"{"; left:0px; }  /* add "{" before text */
+.curly_brackets span:after, .curly_brackets li:last-child:after { content:"}"; right:0px; }     /* add "}" after text */
+    
+.curly_brackets span { 
+    padding:5px 50px 5px 50px;
+    line-height:35px; 
+    text-align:center;
+    position:relative;
+    display:inline-block; }
+        
+ul.curly_brackets { 
+    padding:5px 0 10px 0;
+    line-height:35px;
+    text-align:center;  }   
+ul.curly_brackets li { position:relative; }
+ul.curly_brackets li:first-child { 
+    padding-left:50px; 
+    margin-left:0; }
+ul.curly_brackets li:last-child { 
+    padding-right:50px; 
+    margin-right:0; }
+
+
+
+
+
+
