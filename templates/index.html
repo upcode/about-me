@@ -58,9 +58,39 @@
         .background-diamond {
         background: url(/static/img/backgrounds/diamond.png);
         }
-        
+      #p, #u, .flash{
+    -webkit-animation: color_change 3s  alternate;
+    -moz-animation: color_change 3s  alternate;
+    -ms-animation: color_change 3s  alternate;
+    -o-animation: color_change 3s  alternate;
+    animation: color_change 3s  alternate;
+}
+@-webkit-keyframes color_change {
+    from { color: rgb(24, 188, 156); }
+    to { color: #ddd; }
+}
+@-moz-keyframes color_change {
+    from { color: rgb(24, 188, 156); }
+    to { color: #ddd; }
+}
+@-ms-keyframes color_change {
+    from { color: rgb(24, 188, 156); }
+    to { color: #ddd; }
+}
+@-o-keyframes color_change {
+    from { color: rgb(24, 188, 156); }
+    to { color: #ddd; }
+}
+@keyframes color_change {
+    from { color: rgb(24, 188, 156); }
+    to { color: #ddd; }
+}
         </style>
- 
+ <script>
+// $("#u").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+
+
+ </script>
 
 </head>
 
@@ -119,9 +149,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message text-center">
-                        <span class="name"><h1 id="page-title"><span class="up">U</span>ma <span class="up">P</span>etersen</h1>
+                        <span class="name"><h1 id="page-title"><span id="u"class="flash">U</span>ma <span class="flash" id="p">P</span>etersen</h1>
                        
-                       <h3 class="curly_brackets"><span>Imagination . Creativity . Design + Logic = <strong class="up">UP&#x21e1;</strong>[code]</h3></span>
+                       <h3 class="curly_brackets"><span>Imagination . Creativity . Design + Logic = <strong class="flash">UP&#x21e1;</strong>[code]</h3></span>
                        
                         
                         <hr class="intro-divider">
