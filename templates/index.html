@@ -22,13 +22,13 @@
 
 
     <!-- Bootstrap Core CSS -->
-    <link href="/static/bootstrap2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/static/bootstrap2/css/landing-page.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/landing-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="static/bootstrap2/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="static/bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
@@ -40,6 +40,7 @@
     <link href="/static/css/d3-bubble.css" rel="stylesheet"/>
     <link href="/static/css/barchart.css" rel="stylesheet"/>
     <link href="/static/css/modal-windows.css" rel="stylesheet"/>
+    <link href="/static/css/mypage.css" rel="stylesheet"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,9 +48,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- Stellar.js -->
-    <link href="https://cdn.jsdelivr.net/jquery.stellar/0.6.2/jquery.stellar.min.js"/>
-    <link href="https://cdn.jsdelivr.net/jquery.stellar/0.6.2/jquery.stellar.js"/>
+    
 
         <style>
         .background-grey {
@@ -85,12 +84,47 @@
     from { color: rgb(24, 188, 156); }
     to { color: #ddd; }
 }
+
+@media screen and (max-width: 1024px) {
+    .pieChart {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .bubble-chart {
+        display: none !important;
+    }
+}
+
         </style>
- <script>
-// $("#u").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+        <script>
+        $(document).ready(function () {
 
+        if (screen.width < 1024) {
+        $("#mainbubble").hide();
+        $(".pieChart").hide();
+        $("#desing-process").hide();
+        $("#video-title").hide();
+        $("iframe").hide();
+        $(".video").hide();
+        $(".curly_brackets").hide();
+        }
+    else {
 
- </script>
+        $(".yourClass").show();
+        $("#mainbubble").show();
+        $(".pieChart").show();
+        $("#desing-process").show();
+        $("#video-title").show();
+        $("iframe").show();
+        $(".video").show();
+        $(".curly_brackets").show();
+    }
+
+});
+        </script>
+
 
 </head>
 
@@ -241,7 +275,7 @@
                     </div><!-- end row-->
                     <div class="row">
                         <div class="col-lg-12">
-                            <div id="mainBubble" style="height: 763px;">
+                            <div id="mainBubble" style="height: 763px;" class="bubble-chart">
                                 <svg class="mainBubbleSVG" width="1089.8020000000001" height="763">
                                     <text id="bubbleItemNote" x="10" y="529.9010000000001" font-size="12" dominant-baseline="middle" alignment-baseline="middle" style="fill: rgb(136, 136, 136);"></text>
                                 </svg>
@@ -594,8 +628,8 @@
                         <li><a><link src="https://blog.bloc.io/new-relic-scholarship-recipient/">Blog post</a></li>      
                 </div><!--// end col-->
                 <div class="col-md-6">
-                    <h3 class="tab-titles">Women in Engineering</h3>
-                    <div style="position:relative; padding-bottom:63%; padding-bottom:-webkit-calc(56.25% + 50px); padding-bottom:calc(56.25% + 50px); height: 0;"><iframe style="position:absolute; width: 100%; height: 100%;" src="http://www.today.com/offsite/meeting-the-women-of-silicon-valley-software-engineer-tracy-chou-582041667634" scrolling="no" frameborder="0"></iframe></div>
+                    <h3 id="video-title" class="tab-titles">Women in Engineering</h3>
+                    <div class="video" style="position:relative; padding-bottom:63%; padding-bottom:-webkit-calc(56.25% + 50px); padding-bottom:calc(56.25% + 50px); height: 0;"><iframe style="position:absolute; width: 100%; height: 100%;" src="http://www.today.com/offsite/meeting-the-women-of-silicon-valley-software-engineer-tracy-chou-582041667634" scrolling="no" frameborder="0"></iframe></div>
                   
                         
                    
@@ -1326,10 +1360,10 @@
 <!-- parallax loading end -->  
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- jQuery -->
-    <script src="/static/bootstrap2/js/jquery.js"></script>
+    <script src="/static/bootstrap/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/static/bootstrap2/js/bootstrap.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
