@@ -7,19 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="person-about-me-page">
+    <meta name="author" content="personal-web-page">
 
     <title>Uma Petersen</title>
-    <!-- d3.js  -->
+    <!--============= D3.JS =================-->
     <script type="text/javascript" src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-
     <script src="/static/js/d3-bubble.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.10/d3.js" />
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <!-- chart.js  -->
+    <!--============= D3.JS CHART =================-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
     <script src="/static/js/charts/d3-donut-chart.js"></script>
-
+    <!--=============jQuery=================-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!--============= BOOTSTRAP =================-->
 
     <!-- Bootstrap Core CSS -->
     <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -32,10 +31,11 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
     <!-- your favicon //16x16px icon file -->
     <link rel="shortcut icon" href="/static/img/logo.ico" />
 
-    <!-- My CSS -->
+    <!--============= My CSS FILES =================-->
     <link href="/static/css/ihover.css" rel="stylesheet"/>
     <link href="/static/css/d3-bubble.css" rel="stylesheet"/>
     <link href="/static/css/barchart.css" rel="stylesheet"/>
@@ -49,81 +49,118 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.10/d3.js" />
 
-        <style>
-        .background-grey {
-        background: url(/static/img/backgrounds/grey.png);
-        }
-        .background-diamond {
-        background: url(/static/img/backgrounds/diamond.png);
-        }
-      #p, #u, .flash{
+    <style>
+    .background-grey {
+    background: url(/static/img/backgrounds/grey.png);
+    }
+    .background-diamond {
+    background: url(/static/img/backgrounds/diamond.png);
+    }
+    /*=== title flash anmination===*/
+  #p, #u {
     -webkit-animation: color_change 3s  alternate;
     -moz-animation: color_change 3s  alternate;
     -ms-animation: color_change 3s  alternate;
     -o-animation: color_change 3s  alternate;
     animation: color_change 3s  alternate;
-}
-@-webkit-keyframes color_change {
-    from { color: rgb(24, 188, 156); }
-    to { color: #ddd; }
-}
-@-moz-keyframes color_change {
-    from { color: rgb(24, 188, 156); }
-    to { color: #ddd; }
-}
-@-ms-keyframes color_change {
-    from { color: rgb(24, 188, 156); }
-    to { color: #ddd; }
-}
-@-o-keyframes color_change {
-    from { color: rgb(24, 188, 156); }
-    to { color: #ddd; }
-}
-@keyframes color_change {
-    from { color: rgb(24, 188, 156); }
-    to { color: #ddd; }
-}
+    }
+    @-webkit-keyframes color_change {
+        from { color: rgb(24, 188, 156); }
+        to { color: #ddd; }
+    }
+    @-moz-keyframes color_change {
+        from { color: rgb(24, 188, 156); }
+        to { color: #ddd; }
+    }
+    @-ms-keyframes color_change {
+        from { color: rgb(24, 188, 156); }
+        to { color: #ddd; }
+    }
+    @-o-keyframes color_change {
+        from { color: rgb(24, 188, 156); }
+        to { color: #ddd; }
+    }
+    @keyframes color_change {
+        from { color: rgb(24, 188, 156); }
+        to { color: #ddd; }
+    }
 
-@media screen and (max-width: 1024px) {
-    .pieChart {
-        display: none !important;
+    .flash {
+        color: rgb(24, 188, 156);
+        font-size: 28px;
     }
-}
+    /*
+    .flash{
+        -webkit-animation: color_change  15s alternate;
+        -moz-animation: color_change  15s  alternate;
+        -ms-animation: color_change  15s  alternate;
+        -o-animation: color_change  15s  alternate;
+        animation: color_change  15s  alternate;
+    }
+    @-webkit-keyframes color_change {
+        from { color: #ddd; }
+        to { color: rgb(24, 188, 156); }
+    }
+    @-moz-keyframes color_change {
+        from { color: #ddd; }
+        to { color: rgb(24, 188, 156); }
+    }*/
+    /*@-ms-keyframes color_change {
+        from { color: #ddd; }
+        to { color: rgb(24, 188, 156); }
+    }
+    @-o-keyframes color_change {
+        from { color: #ddd; }
+        to { color: rgb(24, 188, 156); }
+    }
+    @keyframes color_change {
+        from { color: #ddd; }
+        to { color: rgb(24, 188, 156); }
+    }
+    */
+    /*=== Hidden Movile Elements ===*/
 
-@media screen and (max-width: 1024px) {
-    .bubble-chart {
-        display: none !important;
+    @media screen and (max-width: 1024px) {
+        .pieChart {
+            display: none !important;
+        }
     }
-}
-@media screen and (max-width: 1024px) {
-    #design-process {
-        display: none !important;
-    }
-}
-@media screen and (max-width: 1024px) {
-    #video-title {
-        display: none !important;
-    }
-}
-@media screen and (max-width: 1024px) {
-    iframe {
-        display: none !important;
-    }
-}
-@media screen and (max-width: 1024px) {
-    .video {
-        display: none !important;
-    }
-}
-@media screen and (max-width: 1024px) {
-    .curly_brackets{
-        display: none !important;
-    }
-}
 
+    @media screen and (max-width: 1024px) {
+        .bubble-chart {
+            display: none !important;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        #design-process {
+            display: none !important;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        #video-title {
+            display: none !important;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        iframe {
+            display: none !important;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .video {
+            display: none !important;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .curly_brackets{
+            display: none !important;
+        }
+    }
 
         </style>
+        <!-- JavaScript / jQuery hide/show elements -->
         <script>
         $(document).ready(function () {
 
@@ -159,7 +196,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
+            <!-- toggle for mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -169,14 +206,14 @@
                 </button>
                 <a class="navbar-brand topnav" href="#page-top">UP&#x21e1;[CODE]</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#home">About</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#designer">Design</a>
@@ -204,32 +241,42 @@
     
     <section class="background-grey" id="home" data-stellar-background-ratio="0.0">
 
-        <div class="container">
+        <div class="container" id="header-title">
 
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message text-center">
-                        <span class="name"><h1 id="page-title"><span id="u"class="flash">U</span>ma <span class="flash" id="p">P</span>etersen</h1>
-                       
-                       <h3 class="curly_brackets"><span>Imagination . Creativity . Design + Logic = <strong class="flash">UP&#x21e1;</strong>[code]</h3></span>
-                       
+                        <span class="name">
+                            <h1 id="page-title"><span id="u">U</span>ma <span id="p">P</span>etersen</h1>
+                        </span>
+                       <h3 class="curly_brackets">
+                        <span>Imagination . Creativity . Design + Logic = <strong class="flash">U.P.&#x21e1;</strong>[code]</h3></span>
                         
                         <hr class="intro-divider">
+                        <!-- header network buttons -->
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                                <a href="https://twitter.com/Octothorpe12" class="btn btn-default btn-lg">
+                                    <i class="fa fa-twitter fa-fw"></i> 
+                                    <span class="network-name">Twitter</span>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                                <a href="https://github.com/upcode" class="btn btn-default btn-lg">
+                                    <i class="fa fa-github fa-fw"></i> 
+                                    <span class="network-name">Github</span>
+                                </a>
                             </li>
                             <li>
-                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                                <a href="https://www.linkedin.com/in/umapetersen" class="btn btn-default btn-lg">
+                                    <i class="fa fa-linkedin fa-fw"></i> 
+                                    <span class="network-name">Linkedin</span>
+                                </a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </div><!-- // end row-->
-        </div>
+                    </div><!-- // end intro-message -->
+                </div><!-- // end col-lg-12-->
+            </div>
         <!-- /.container -->
 
     <!-- /.intro-header -->
@@ -240,7 +287,7 @@
         
             <div class="container">
                 <h1 class="tab-titles text-center">Software Engineer</h1>
-                <ul class="tabs curly_brackets list-inline " data-tabs="tabs" id="about-tabs"></span>
+                    <ul class="tabs curly_brackets list-inline " data-tabs="tabs" id="about-tabs"></span>
                 
                     <li class="active"><a href="#engineer" data-toggle="tab">The Engineer</a></li>
                     <li><a href="#about-me" data-toggle="tab">All About Me</a></li>
@@ -264,7 +311,7 @@
                         <div class="col-md-6">
                             <h3 class="tab-titles">Art of the Software Engineer</h3>
                                 <p class="words">
-                                I'm a Full Stack Software Engineer from San Fransico with an interest in User Interface Design.I enjoy turning complex problems into simple, intuitive, minimalist interface designs.
+                                I'm a Full Stack Software Engineer from San Fransico with an interest in User Interface Design. I enjoy turning complex problems into simple, intuitive, minimalist interface designs.
                                 I attended San Jose State with a degree in Business Marketing, and a Software Engineering certificate from <a href="https://hackbrightacademy.com/"></a>Hackbright Acadamy. I worked at Groupon as a product operational specialist, launching multiple core products and taking those products from pilot stage to full mainstream launch. I developed standard operating procedures and testing protocols to ensure high product quality for end users. In 2013, I attended the Grace Hopper conference, where my interest in programming took root. Now I am a full time software engineer with a passion for programming and design.
                                 </p>
                                 <h3 class="tab-titles">Technologies</h3>
@@ -390,10 +437,10 @@
                 .attr("cursor","pointer")
                 .style("opacity",0.5)
                 .style("fill", "#eee")
-                .on("click", function(d,i) {
+                .on("mouseover", function(d,i) {
                 window.open(d.address);                 
               })
-            .on("mouseover", function(d,i) {
+            .on("mouseover", function(d,i) { // changed on click to mouseover
               //window.alert("say something");
               var noteText = "";
               if (d.note == null || d.note == "") {
@@ -418,7 +465,7 @@
                 .attr("dominant-baseline", "middle")
             .attr("alignment-baseline", "middle")
                 .text(function(d) {return d.name})      
-                .on("click", function(d,i) {
+                .on("mouseover", function(d,i) { // changed on click child nodes to mousover prevent redirection 
                 window.open(d.address);
                 }); 
  
@@ -439,7 +486,7 @@
       svg.attr("width", w);
       svg.attr("height",h);       
        
-      d3.select("#bubbleItemNote").text("Languages, Frameworks, Libraries, and other web tools I have used");
+      // d3.select("#bubbleItemNote").text("Languages, Frameworks, Libraries, and other web tools I have used");
        
       var t = svg.transition()
           .duration(650);
@@ -558,7 +605,7 @@
 
                         </div><!-- // end col-lg-12-->
                     </div><!-- end row-->
-                </div><!-- // END Engineer TAB-->            
+                </div><!-- // END Engineer TAB-->
 
             <!-- ===========BEGAIN ABOUT ME TAB ==================== -->
   
@@ -575,11 +622,9 @@
                         <div class="col-md-6" id="about">
                             <h3 class="tab-titles">All About Me</h3>
                             <p class="words">
-                            When I'm not coding or pushing pixels, you'll find me enjoying the challenge of learning a new language, traveling, listening to music, hanging out with friends, and watching my favorite TV show, “Friends.”
-                            I am not someone who fits into a box.  I am creative, outgoing, and social.
-                            If I used one word to describe myself, I would say I am an innovator. I am also an adapter, a survivor, and a problem solver.  My experiences, education, and my passion for learning drive me to seek new adventures in all aspects of my life.
+                            When I'm not coding or pushing pixels, you'll find me enjoying the challenge of learning a new language, traveling, listening to music, and enjoying city life. I am creative, I am innovator and problem slover. My experiences, education, and my passion for learning drive me to seek new adventures in all aspects of my life.
                             </p>
-                            <h3 class="tab-titles">Techincal Skills</h3>
+                            <h3 class="tab-titles">My Techincal Skills</h3>
                             <ul class="tab-list">
                                 <li><em></em><i class='icon-ok'>
                                     </i>Generating a great quantity of ideas
@@ -642,16 +687,17 @@
                     </div><!--// end row-->
                
             </div><!-- // tab-content-->
-            <!-- ===========BEGAIN MEDIA TAB ==================== -->
+            <!-- ===========MEDIA ABOUT ME TAB ==================== -->
             <div class="tab-pane" id="media">
             <div class="row">
                 <div class="col-md-6">
                     <img src="../static/img/class-photo.jpg" class="img-responsive"  alt="hackbright" id="hackbright"/>
                         <h3 class="tab-titles">Articles</h3>
                         <ul class="list-inline">
-                        <li><a><link src="http://www.today.com/video/meeting-the-women-of-silicon-valley-software-engineer-tracy-chou-582041667634">Today Show</a></li>
-                        <li><a><link src="https://hackbrightacademy.com/blog/">Hackbright Blog</a></li>
-                        <li><a><link src="https://blog.bloc.io/new-relic-scholarship-recipient/">Blog post</a></li>      
+                            <li><a href="http://www.today.com/video/meeting-the-women-of-silicon-valley-software-engineer-tracy-chou-582041667634" >The Today Show</a></li>
+                            <li><a href="https://hackbrightacademy.com/blog/">Hackbright Blog</a></li>
+                            <li><a href="https://blog.bloc.io/new-relic-scholarship-recipient/">Blog post</a></li>
+                             
                 </div><!--// end col-->
                 <div class="col-md-6">
                     <h3 id="video-title" class="tab-titles">Women in Engineering</h3>
@@ -665,6 +711,7 @@
 
     </section>
 
+            <!-- ===========DESIGNER SECTION ==================== -->
 
    <section class="background-grey" id="designer" class="slide" data-stellar-background-ratio="0.5">
         <div class="container">
@@ -672,7 +719,7 @@
             <ul class="tabs curly_brackets list-inline " data-tabs="tabs" id="about-tabs"></span>
                 
                     <li class="active"><a href="#design-code" data-toggle="tab">Design &amp; Code</a></li>
-                    <li><a href="#design-process" data-toggle="tab">My Design Process</a></li>
+                    <li><a href="#pieChart" data-toggle="tab">My Design Process</a></li>
                        
                 </ul>
             <hr class="section-heading-spacer text-center">
@@ -705,17 +752,17 @@
     "header": {
         "title": {
             "text": "Design Process",
-            "fontSize": 25,
+            "fontSize": 28,
             "font": "Playfair Display"
         },
         "subtitle": {
             "text": "Engineering Design Process ",
             "color": "#18bc9c",
-            "fontSize": 15,
+            "fontSize": 16,
             "font": "Playfair Display"
         },
         "location": "pie-center",
-        "titleSubtitlePadding": 55
+        "titleSubtitlePadding": 10
     },
 
     "size": {
@@ -735,6 +782,7 @@
                 "label": "Define the problem",
                 "value": 25,
                 "color": "#3182bd",
+
                 // define the problem 
             },
             {
@@ -745,7 +793,7 @@
                 // researc the need or problem 
             },
             {
-                "label": "Brainstrom",
+                "label": "Brainstorm",
                 "value": 25,
                 "color": "#2ca02c"
                 // brainstrom and analyze the ideas
@@ -771,7 +819,7 @@
                 // test and evaluate the solutions
             },
             {
-                "label": "Communication",
+                "label": "Results",
                 "value": 25,
                 "color": "#17becf"
                 //communcaite the solutions
@@ -787,15 +835,15 @@
     "labels": {
         "outer": {
             "hideWhenLessThanPercentage": 10,
-            "pieDistance": 50
+            "pieDistance": 15
         },
         "inner": {
             "format": "none",
-            "hideWhenLessThanPercentage": 10
+            "hideWhenLessThanPercentage": 12
         },
         "mainLabel": {
             "font": "Playfair Display",
-            "fontSize": 17
+            "fontSize": 15
         },
         "percentage": {
             "color": "#ffffff",
@@ -803,11 +851,11 @@
         },
         "value": {
             "color": "#adadad",
-            "fontSize": 1
+            "fontSize": 2
         },
         "lines": {
             "enabled": true,
-            "style": "curved"
+            "style": "straight"
         },
         "truncation": {
             "enabled": true,
@@ -829,7 +877,7 @@
         "gradient": {
             "enabled": true,
             "percentage": 50,
-            "opacity": 40
+            "opacity": 50
         }
     },
     "callbacks": {
@@ -839,12 +887,12 @@
     });
 </script> 
 <!--  JS D3 Donut Design Chart-->                         
-            
-                           
-                    
+                              
 </section>
     <!-- /.content-section-Desinger -->        
-                            
+
+        <!-- =========== PORTFOLIO SECTION ==================== -->
+         
             
    <section class="background-diamond" id="portfolio" class="slide" data-stellar-background-ratio="0.5" >
 
@@ -859,10 +907,17 @@
                    <div class="project-list">
                    <ul class="tabs curly_brackets list-inline text-center" data-tabs="tabs" id="about-tabs">
                       
-                        <li><a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">Wanderlust</a></li>
-                        <li><a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">UP[CODE]...Blog</a></li>
-                        <li><a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">About Me</a></li>
-                        <li><a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">Decisions</a></li>
+                        <li>
+                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">Wanderlust</a>
+                        </li>
+                        <li>
+                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">UP[CODE]...Blog</a>
+                        </li>
+                        <li>
+                            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">Decisions</a></li>
                        
                        <!--  <span>&#125;</span> -->
                     
@@ -979,7 +1034,7 @@
                       
                             <li><a href="mailto:uma.petersen@gmail.com">Email</a></li>
                             <li><a href="https://www.linkedin.com/in/umapetersen">Linkedin</a></li>
-                            <li><a href="https://twitter.com/">Twitter</a></li>
+                            <li><a href="https://twitter.com/Octothorpe12">Twitter</a></li>
                             <li><a href="https://github.com/upcode">Github</a></li>      
 
                  </ul>
@@ -995,16 +1050,16 @@
                     <ul class="list-inline banner-social-buttons text-center">
                         
                         <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            <a href="https://twitter.com/Octothorpe12" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                         </li>
                         <li>
-                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            <a href="https://github.com/upcode" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                         </li>
                         <li>
-                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            <a href="https://www.linkedin.com/in/umapetersen" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                         </li>
                         <li>
-                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-envelope-o fa-fw"></i> <span class="network-name">Email</span></a>
+                            <a href="mailto:uma.petersen@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope-o fa-fw"></i> <span class="network-name">Email</span></a>
                         
                         </li>
                     </ul>
@@ -1035,10 +1090,10 @@
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#contact">Contact</a>
+                            <a href="mailto:uma.petersen@gmail.com">Contact</a>
                         </li>
                         <li>
-                            <a href="#blog">Blog</a>
+                            <a href="http://upcodeblog.herokuapp.com/">Blog</a>
                         </li>
                     </ul>
                 </div>
@@ -1049,7 +1104,7 @@
                  <div class="footer-col col-md-2 social-icons">
                         <ul class="list-inline">
                             <li class="social-icons">
-                                <a href="http://twitter.com">
+                                <a href="https://twitter.com/Octothorpe12">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -1060,7 +1115,7 @@
                   
                  
                             <li class="social-icons">
-                                <a href="http://linkdin.com">
+                                <a href="https://www.linkedin.com/in/umapetersen">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -1070,7 +1125,7 @@
                      
                  
                             <li class="social-icons">
-                                <a href="http://github.com">
+                                <a href="https://github.com/upcode">
                                     <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
