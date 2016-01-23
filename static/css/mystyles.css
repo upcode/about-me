@@ -1,0 +1,298 @@
+	/*---------------------------------------------- HTML / BODY ---------------------------------------------- */
+	/* background */
+.intro-section, .designer-section, .contact-section{
+	background-image: url(/static/img/backgrounds/grey.png)!important;
+
+ 
+	background-attachment: scroll;
+
+}
+.about-section, .portfolio-section {
+	background-image: url(/static/img/backgrounds/diamond.png)!important;
+
+
+	background-attachment: scroll;
+	
+}
+
+
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.words {
+    font-size: 20px;
+}
+
+   /*=== Hidden Movile Elements ===*/   	
+  
+
+  /*---------------------------------------------- fonts ---------------------------------------------- */
+	
+	/* import google fonts */
+	@import url(//fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic);		 		 		 
+	@import url(//fonts.googleapis.com/css?family=Oranienbaum);		 		 		 
+	@import url(//fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic);	
+	
+	/* font families */
+    h1, h2, h3, h4, h5, h6, th, table caption, h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a  { 
+		font-family: "Oranienbaum";
+		font-style:normal; 
+		font-weight:normal; 
+		text-transform:none;		 }
+    body, hgroup > h2, .curly_brackets span:before, .curly_brackets span:after, .navigation li a  { font-family: "Playfair Display"; }		
+	a, i button, .button, blockquote,  p,  hgroup > h2, .curly_brackets span { 
+		font-family: "Playfair Display";
+	/*	font-style:italic;*/ 
+		font-weight:normal;
+	    text-transform:none; }	 		 		 
+
+	/*---------------------------------------------- colors ---------------------------------------------- */
+	
+	/* headings */
+	h1, h2, h3, h4, h5, h6, th, label, .curly_brackets:before, .curly_brackets:after,
+	ul.curly_brackets li:first-child:before, .curly_brackets li:last-child:after, 
+	nav.pages span.current, #social_icons li a, p,
+	 strong { color: #222222; }
+	
+	/* body */
+	body, a { color: #666666; }
+	
+	/* links */
+	/*a, code, nav, li  { color: #a09f9d; }*/
+	
+	/* active/hover */
+	li.active>a, a.active, a.current, a:hover, li.current_page_item a, .current-menu-item a, .menu-item-has-children.current-menu-item li a:hover,
+	a:hover, ul.tabs li.active, ul.tabs li a:hover { color: rgb(#f8f8f8);  }
+	
+	/* other stuff */
+	/*body { background-color:#f3f3f3; }*/
+	.separator, .page-title:after, h3:after { background:#222222;  }
+	#social_icons li a {color:#3d3d3d; }
+
+	.section-heading-spacer {
+	width: 200px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+	}
+	/*---------------------------------------------- nav bar ---------------------------------------------- */
+
+	.navbar-nav {
+		  font-size: 20px; 
+		  
+
+	}
+
+
+
+	.navbar-nav {
+    width: 100%;
+    text-align: right;
+   
+  }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block;
+  }
+  .navbar-nav > li.navbar-right {
+    float: right !important;
+  }
+
+.navbar-brand {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    width: 100%;
+    text-align: right;
+  }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block;
+  }
+  .navbar-nav > li.navbar-right {
+    float: right !important;
+  }
+}
+
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        /*-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;*/
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+	/*---------------------------------------------- contact ---------------------------------------------- */
+	
+
+.intro-message {
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+	.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+@media(max-width:767px) {
+    .intro-message {
+      	font-size: 3em;
+        
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+     
+       
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+	/*---------------------------------------------- sections ---------------------------------------------- */
+
+.intro-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+  	
+}
+
+
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    /*text-align: center;*/
+    
+}
+
+.portfolio-section {
+    height: 100%;
+    padding-top: 150px;
+   /* text-align: center;*/
+    
+    
+}
+
+.designer-section {
+    height: 100%;
+    padding-top: 150px;
+   /* text-align: center;*/
+    
+}
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    /*text-align: center;*/
+    
+}
+
+
+
+	/*---------------------------------------------- hover and a links ---------------------------------------------- */
+
+li.active a { text-decoration:underline; 
+ /*   color: #a09f9d;*/
+ 
+
+
+ }
+
+
+
+a:hover {
+    color: rgb(24, 188, 156);
+}
+ .up:hover {
+color: rgb(24, 188, 156); 
+
+ }
+
+ ul{list-style-type: none; }
+	/*---------------------------------------------- contact ---------------------------------------------- */
+	/*---------------------------------------------- tabs ---------------------------------------------- */
+	/*---------------------------------------------- engineer ---------------------------------------------- */
+	/*---------------------------------------------- about me ---------------------------------------------- */
+	/*---------------------------------------------- featured ---------------------------------------------- */
+	/*---------------------------------------------- desginer ---------------------------------------------- */
+	#pieChart {
+		float: left;
+	}
+	/*---------------------------------------------- portfolio ---------------------------------------------- */
+	/*---------------------------------------------- modal ---------------------------------------------- */
+
+	/*---------------------------------------------- contact ---------------------------------------------- */
+
+	/*---------------------------------------------- footer ---------------------------------------------- */
+footer, .container {
+    /*padding: 10px 0;*/
+    background-color: #e7e7e7;
+   
+}
+ .footer-menu {
+ 	 font-size: 20px;
+ 	 font-weight: bold;
+ }
+
+	/*---------------------------------------------- image ---------------------------------------------- */
+
+
+
+img {
+	padding:8px;
+/*	border:1px dashed #ccc; */
+	border: 10px white;
+	
+
+
+
+

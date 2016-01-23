@@ -25,116 +25,16 @@ section {
     font-weight: bold;
 }
 
-.words {
-    font-size: 20px;
-}
-
 #about-tabs{
     font-size: 20px;
 
 }
- li.active a { text-decoration:underline; 
- /*   color: #a09f9d;*/
- color: #222222;
+ 
 
-
- }
-li a {
-    color: #666;
-    /*color: rgb(24, 188, 156);*/
-}
-a{
-    color: #666;
-}
-
-a:hover {
-    color: rgb(24, 188, 156);
-}
- .up:hover {
-color: rgb(24, 188, 156); 
-
- }
-
- ul{list-style-type: none; }
-    
-.container{
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-}
 
 .contact {
     padding-top: 80px;
     padding-bottom: 50px;
 }
-.social-icons {
-    float: right;
-}
-
-.row {
-    padding-top: 40px;
-}
-/*------= IMAGE-------------------*/
-
-img {
-    box-shadow:
-        0 0 0 10px #f8f8f8, /* white border */
-        0 5px 0 -3px #f8f8f8, /* The first layer */
-        0 5px 0 -2px #ccc /* The first layer shadow */  } 
-        
-}
-img {padding:8px;
-    border:1px dashed #ccc; }
-#hackbright {
-    height: 300px;
-    width: 600px;
-}
-
-
-/*-------=curly brackets style (removed on mobile devices) --------*/
-        
-    .curly_brackets span:before, .curly_brackets li:first-child:before  { content:""; }
-    .curly_brackets span:after, .curly_brackets li:last-child:after { content:""; }
-    .curly_brackets span { padding-left:0; padding-right:0; }
-    ul.curly_brackets li:first-child { padding-left:0;  }
-    ul.curly_brackets li:last-child { padding-right:0;  } 
-    
-    /*------=curly brackets style-------*/
-
-.curly_brackets span:before, .curly_brackets span:after,
-.curly_brackets li:first-child:before, .curly_brackets li:last-child:after {
-    font-size:40px;
-    font-style:normal;
-    margin-top:-20px;
-    height:40px;
-    top:50%;
-    position:absolute;
-    font-style:normal !important; }
-            
-.curly_brackets span:before, .curly_brackets li:first-child:before  { content:"{"; left:0px; }  /* add "{" before text */
-.curly_brackets span:after, .curly_brackets li:last-child:after { content:"}"; right:0px; }     /* add "}" after text */
-    
-.curly_brackets span { 
-    padding:5px 50px 5px 50px;
-    line-height:35px; 
-    text-align:center;
-    position:relative;
-    display:inline-block; }
-        
-ul.curly_brackets { 
-    padding:5px 0 10px 0;
-    line-height:35px;
-    text-align:center;  }   
-ul.curly_brackets li { position:relative; }
-ul.curly_brackets li:first-child { 
-    padding-left:50px; 
-    margin-left:0; }
-ul.curly_brackets li:last-child { 
-    padding-right:50px; 
-    margin-right:0; }
-
-
-
-
 
 
