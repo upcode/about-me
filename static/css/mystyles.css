@@ -2,22 +2,12 @@
 	/* background */
 .intro-section, .designer-section, .contact-section{
 	background-image: url(/static/img/backgrounds/grey.png)!important;
-
- 
 	background-attachment: scroll;
 
 }
 .about-section, .portfolio-section {
 	background-image: url(/static/img/backgrounds/diamond.png)!important;
-
-
 	background-attachment: scroll;
-	
-}
-
-section {
-	padding: 100px 0
-}
 
 body {
     width: 100%;
@@ -29,7 +19,84 @@ html {
     height: 100%;
 }
 
+}
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+a, img, ol, ul, li, 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	font-size:100%;
+	outline:none;
+	vertical-align:baseline;
+	text-decoration:none; }
+	
+ol, ul { list-style: none; }
 
+
+
+section {
+	padding: 100px 0
+}
+/*---------------------------------------------- Footer ---------------------------------------------- */
+
+body > footer { 
+	 height: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	height:70px;
+	position:relative;
+	border-top:1px dashed #ccc;
+	background-color: white; }
+/*---------------------------------------------- Nav Bar ---------------------------------------------- */
+
+body > nav { 
+	 height: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	height:100px;
+	position:relative;
+	border-bottom:3px dashed #ddd;
+	background-color: white; }
+
+body>.navbar  { 
+		box-shadow:
+	 	0 0 0 1px #f8f8f8, /* white border */
+        0 5px 0 -3px #f8f8f8, /* The first layer */
+        0 5px 0 -2px #ddd /* The first layer shadow */	} 
+
+body>.navbar {
+	padding:8px;
+	border-bottom:1px dashed #ccc; }
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  
+    background-color: transparent;
+}
+/*------=a-------------------*/
+
+a { cursor:pointer; }		
+a:hover { text-decoration:underline; }
+
+a.button { 
+	display:inline-block;  
+	text-shadow:none;
+	padding-top:0.6em;
+	padding-bottom:0.6em; }
+a.button:hover { color:white; }	
+
+li.active>a, a.active, a.current, a:hover  { color:#000; }
+a.current { text-decoration:underline; }	
+	
+h1>a, h2>a, h3>a, h4>a, h5>a, h6>a { 
+	font-size:inherit;
+	text-decoration:none;
+	color:inherit; }
+	
 .words {
     font-size: 20px;
 }
@@ -95,7 +162,7 @@ text-align: center;
 	 strong { color: #222222; }
 	
 	/* body */
-	body, a { color: #666666; }
+	body a { color: #666666; }
 	
 	/* links */
 	/*a, code, nav, li  { color: #a09f9d; }*/
@@ -150,26 +217,40 @@ ul, ol, li  {
 }
 	/*---------------------------------------------- nav bar ---------------------------------------------- */
 
-	.navbar-nav {
-		  font-size: 20px; 
-		  
+		
 
+
+.navbar { 
+	width:auto;
+	float:right;
+	display:block;
+	/*margin-top:17px;*/ }
+	 
+.navigation li { 
+	display:inline-block;	
+	float:right;
+	position:relative; }
+
+
+
+.navbar ul li a {
+	padding-bottom: 50px;
+	padding-top: 0px;
+}
+.navbar li a { 
+	display:inline-block;
+	text-decoration:none;
+	padding-bottom:30px;
+	font-size:1.05em; 
+	margin-left:35px;
+	font-style:normal;
+	text-align:center; }
+	.navbar {
+		padding:8px;
+	border-bottom:1px dashed #ccc; }
 	}
+.
 
-
-
-	.navbar-nav {
-    width: 100%;
-    text-align: right;
-   
-  }
-  .navbar-nav > li {
-    float: none;
-    display: inline-block;
-  }
-  .navbar-nav > li.navbar-right {
-    float: right !important;
-  }
 
 .navbar-brand {
 	font-size: 25px;
@@ -194,9 +275,9 @@ ul, ol, li  {
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
-        /*-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;*/
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
     .top-nav-collapse {
@@ -309,18 +390,32 @@ ul, ol, li  {
      text-align: center;
     
 }
-.footer-section {
-	 height: 100%;
-    padding-top: 150px;
-    margin-top: 50px;
-    padding-bottom: 150px;
-	 background-color: #e7e7e7;
-}
 
-.footer {
-	padding-top: 100px;
-}
 
+
+	
+#copyright_info { margin-top:.7em; }
+
+
+/*------=social icons---------*/
+
+#social_icons { 
+	float:right;
+	padding:0; }
+	
+#social_icons li { 
+	display:inline-block;
+	margin:8px 0 0 12px; }
+	
+#social_icons li a { 
+	display:inline-block;
+	text-align:center;
+	color:#3d3d3d;
+	font-size:1.25em; }
+	
+#social_icons li a:hover { text-decoration:none; }
+
+body>footer .container { padding:0; }
 	/*---------------------------------------------- contact ---------------------------------------------- */
 	.contact-social-buttons {
 		position: center;
