@@ -110,7 +110,7 @@
     <section id="intro" class="intro-section">
         <div class="container" id="header-title">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xs-12 col-md-8 col-lg-12">
                     <div class="intro-message text-center">
                         <span class="name">
                             <h1 id="page-title"><span id="u">U</span>ma <span id="p">P</span>etersen</h1>
@@ -150,7 +150,8 @@
     <section id="about" class="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-xs-12 col-md-8 col-lg-12 text-center">
+
                     <h1 class="engineer-titles text-center tab-titles">Software Engineering</h1>
                         <ul class="tabs curly_brackets list-inline " data-tabs="tabs" id="about-tabs"></span>
                             <li class="active">
@@ -170,14 +171,16 @@
             <div id="my-tab-content" class="tab-content">
                 <div class="tab-pane active" id="engineer">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <img src="../static/img/engineer.jpg" width="432" height="427" class="img-responsive styled" id="engineer-image" alt="bubble-image" />
+                        <div class="col-xs-6 col-md-4 col-lg-6">
+                            <div class="styled">
+                            <img src="/static/img/engineer.jpg" width="432" height="427" class="img-responsive styled" id="engineer-image" alt="bubble-image" />
+                            </div>
                                 <div class="jo">
                                     <a href="http://www.bentonstreetphotography.com">
                                         <small>Photo by Joahanna</small></a>
                                 </div>
                         </div><!--// end col-->
-                        <div class="col-lg-6">
+                        <div class="col-xs-6 col-md-4 col-lg-6">
                             <h3 class="tab-titles">Art of the Software Engineer</h3>
                                 <p class="words">
                                 I'm a Full Stack Software Engineer from San Fransico with an interest in User Interface Design. I enjoy turning complex problems into simple, intuitive, minimalist interface designs.
@@ -216,7 +219,7 @@
                         </div><!-- col-md-6 col-lg-offset-3-->
                         </div><!-- end row-->
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-xs-12 col-md-4 col-lg-12">
                                 <div id="mainBubble" style="height: 763px;" class="bubble-chart">
                                     <svg class="mainBubbleSVG" width="1089.8020000000001" height="763">
                                         <text id="bubbleItemNote" x="10" y="529.9010000000001" font-size="12" dominant-baseline="middle" alignment-baseline="middle" style="fill: rgb(136, 136, 136);">
@@ -234,7 +237,7 @@
   
             <div class="tab-pane" id="about-me">
                     <div class="row">
-                        <div class="col-md-6" id="left-about">
+                        <div class="col-xs-12 col-md-4 col-lg-12 tab-titles">
                               <img src="../static/img/designer.jpg" width="432" height="427" class="img-responsive styled"  alt="designer-image" />
                             <!-- <img src="/static/img/about.jpg"  width="432" height="427"  class="img-responsive styled"> -->
                                 <div class="jo">
@@ -243,7 +246,7 @@
                                 </div>
                         </div><!--// end col-->
 
-                        <div class="col-md-6" id="about">
+                        <div class="col-xs-12 col-md-4 col-lg-6" id="about">
                             <h3 class="tab-titles">All About Me</h3>
                             <p class="words">
                             When I'm not coding or pushing pixels, you'll find me enjoying the challenge of learning a new language, traveling, listening to music, and enjoying city life. I am creative, I am innovator and problem slover. My experiences, education, and my passion for learning drive me to seek new adventures in all aspects of my life.
@@ -270,7 +273,7 @@
                         </div><!-- col-md-6 col-lg-offset-3-->
                     </div><!-- // end row-->
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-xs-6 col-md-4 col-lg-6">
                             <ul class="chart">
                                 <li class="axis">
                                     <div class="label">MVP</div>
@@ -314,7 +317,7 @@
             <!-- ===========BEAGIN FEATURED TAB ==================== -->
             <div class="tab-pane" id="featured">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-xs-6 col-md-4 col-lg-6">
                         <img src="/static/img/class-photo.jpg" class="img-responsive styled" alt="hackbright">
                             <h3 class="tab-titles">Articles</h3>
                                 <ul class="list-inline">
@@ -329,7 +332,7 @@
                                     </li>
                                 </ul>          
                     </div><!--// end col-->
-                    <div class="col-lg-6">
+                    <div class="col-xs-6 col-md-4 col-lg-6">
                         <h3 id="video-title" class="tab-titles">Women in Engineering</h3>
                         <div class="video" style="position:relative; padding-bottom:63%; padding-bottom:-webkit-calc(56.25% + 50px); padding-bottom:calc(56.25% + 50px); height: 0;">
                             <iframe style="position:absolute; width: 100%; height: 100%;" src="http://www.today.com/offsite/meeting-the-women-of-silicon-valley-software-engineer-tracy-chou-582041667634" scrolling="no" frameborder="0">
@@ -346,33 +349,29 @@
     <section id="designer" class="designer-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xs-6 col-md-4 col-lg-6">
                     <h1 class="designer-title text-center tab-titles">Design &amp; Code</h1>
                     
                     <hr class="section-heading-spacer text-center">
+                </div>
+            </div><!-- // end row-->
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-xs-6 col-md-4 col-lg-6">
                             <h3 class="tab-titles" id="design-code">The Designer</h3>
                                 <p class="words">
                                     I think of software engineering as an art; I like to combine creativity and logic into my software.  I feel this gives me a unique perspective. I like to find inspiration in everyday things when it comes to programing and designing web applications. My inspiration comes from reading a book, walking the streets of San Francisco, or  incorporating technology to solve my own problems.  I often feel people forget how creative software development can be.  Each artist has her own medium.  Some use canvas, some paper, some paint on walls.  My medium is my computer, where my creativity, inspiration, and imagination come to life.  My paintbrush is my code.
                                 </p>
                                 
-                                
+                              
                         </div>
-                   
-                    
-                   
-                   
-                        <div class="col-lg-6">
+                        <div class="col-xs-12 col-md-4 col-lg-6">
                             
                         <!-- <img src="../static/img/designer.jpg" width="432" height="427" class="img-responsive styled"  alt="designer-image" /> -->
-                            <center><h3 class="tab-titles" id="design-process">My Design Process</h3></center>
+                              <h3 class="tab-titles" id="design-process"><center>My Design Process</center></h3>
                              <div class="pieChart" id="pieChart"></div>
 
                         </div>
-                    </div>
                     </div><!-- end row-->
-                </div><!-- // end col-->
             </div><!-- // end row-->
         </div><!-- // end container-->
          <!--  JS D3 Donut Design Chart-->          
@@ -385,7 +384,7 @@
     <section id="portfolio" class="portfolio-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xs-12 col-md-4 col-lg-12">
                     <h1 class="portfilio-title text-center tab-titles">Portfolio</h1>
                     <div class="portfilio-list">
                         <ul class="tabs curly_brackets list-inline text-center" data-tabs="tabs" id="about-tabs">
@@ -409,7 +408,7 @@
             </div><!-- // end row-->
 
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-xs-6 col-sm-4 portfolio-item">
                     <div class="ih-item square effect6 from_top_and_bottom">
                         <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                             <div class="img-p">
@@ -423,7 +422,7 @@
                     </div>
                 </div><!-- end project 1-->
               
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-xs-6 col-sm-4 portfolio-item">
                     <div class="ih-item square effect6 from_top_and_bottom">
                         <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                             <div class="img-p">
@@ -437,7 +436,7 @@
                     </div>
                 </div><!-- // end project 2-->
               
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-xs-6 col-sm-4 portfolio-item">
                     <div class="ih-item square effect6 from_top_and_bottom">
                         <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                             <div class="img-p">
@@ -453,7 +452,7 @@
             </div><!-- // end row-->
             <br>
                 <div class="row">
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-xs-6 col-sm-4 portfolio-item">
                     <div class="ih-item square effect6 from_top_and_bottom">
                         <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                             <div class="img-p">
@@ -467,7 +466,7 @@
                     </div>
                 </div><!-- // end project 4-->
 
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-xs-6 col-sm-4 portfolio-item">
                     <div class="ih-item square effect6 from_top_and_bottom">
                         <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                             <div class="img-p">
@@ -481,7 +480,7 @@
                     </div>
                 </div><!-- end project 5-->
 
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-xs-6 col-sm-4 portfolio-item">
                     <div class="ih-item square effect6 from_top_and_bottom">
                         <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                             <div class="img-p">
@@ -503,7 +502,7 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xs-12 col-md-8 col-lg-12">
                     <h1 class="contact-title text-center tab-titles">Contact Me</h1>
       
                     <ul class="tabs curly_brackets list-inline " data-tabs="tabs" id="about-tabs">
@@ -518,7 +517,7 @@
                 </div><!-- // col-->
             </div><!-- // row -->
              <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xs-12 col-md-8 col-lg-12">
                     <div class="contact">
                         <ul class="list-inline banner-social-buttons text-center">
                             <li>
@@ -546,7 +545,7 @@
     <footer>
         <div class="container footer-container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-xs-6 col-md-2 col-lg-4">
                     <ul class="list-inline footer-menu">
                         <li>
                             <a href="#">Home</a>
@@ -569,11 +568,11 @@
                         </li>
                     </ul>
                 </div>
-                       <div class="col-md-3">
+                       <div class="col-xs-6 col-md-2 col-lg-4">
               <a id="copyright" href="http://umapetersen.com">
                         Copyright &copy; Uma Petersen 2016</a>
                 </div>
-                 <div class="footer-col col-md-2 social-icons">
+                 <div class="footer-col col-xs-6 col-md-2 col-lg-4 social-icons">
                         <ul class="list-inline">
                             <li class="social-icons">
                                 <a href="https://twitter.com/Octothorpe12">

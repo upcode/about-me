@@ -36,22 +36,22 @@
 
     /*=== Hidden Movile Elements ===*/
 
-    @media screen and (max-width: 1024px) {
+  /*  @media screen and (max-width: 1024px) {
         .pieChart {
             display: none !important;
         }
-    }
+    }*/
 
     @media screen and (max-width: 1024px) {
         .bubble-chart {
             display: none !important;
         }
     }
-    @media screen and (max-width: 1024px) {
+  /*  @media screen and (max-width: 1024px) {
         #design-process {
             display: none !important;
         }
-    }
+    }*/
     @media screen and (max-width: 1024px) {
         #video-title {
             display: none !important;
@@ -72,7 +72,12 @@
             display: none !important;
         }
     }
-
+ @media screen and (max-width: 1024px) {
+        .portfolio-section{
+            display: none !important;
+        }
+    }
+    
     /*-------=curly brackets style (removed on mobile devices) --------*/
         
     .curly_brackets span:before, .curly_brackets li:first-child:before  { content:""; }

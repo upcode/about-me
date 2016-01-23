@@ -267,13 +267,16 @@ color: rgb(24, 188, 156);
 	#pieChart {
 		float: left;
 	}
+	#design-process {
+		padding-left: 50px;
+	}
 	/*---------------------------------------------- portfolio ---------------------------------------------- */
 	/*---------------------------------------------- modal ---------------------------------------------- */
 
 	/*---------------------------------------------- contact ---------------------------------------------- */
 
 	/*---------------------------------------------- footer ---------------------------------------------- */
-footer, .container {
+footer.container {
     /*padding: 10px 0;*/
     background-color: #e7e7e7;
    
@@ -291,8 +294,14 @@ img {
 	padding:8px;
 /*	border:1px dashed #ccc; */
 	border: 10px white;
-	
+	}
+.tab-titles{
+padding-bottom: 50px;
+}
 
+.styled{
+	padding-bottom: 50px;
+}
 
 
 
