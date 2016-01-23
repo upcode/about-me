@@ -1,7 +1,7 @@
 
+    /*---------------------------------------------- CSS Anmination ---------------------------------------------- */
 
-    /*--Flash anmination---*/
-	#p, #u {
+#p, #u {
     -webkit-animation: color_change 3s  alternate;
     -moz-animation: color_change 3s  alternate;
     -ms-animation: color_change 3s  alternate;
@@ -34,13 +34,8 @@
         font-size: 28px;
     }
 
-    /*=== Hidden Movile Elements ===*/
 
-  /*  @media screen and (max-width: 1024px) {
-        .pieChart {
-            display: none !important;
-        }
-    }*/
+    /*---------------------------------------------- Media Queries Hidded ---------------------------------------------- */
 
     @media screen and (max-width: 1024px) {
         .bubble-chart {
@@ -68,19 +63,36 @@
         }
     }
     @media screen and (max-width: 1024px) {
-        .curly_brackets{
+        .curly_brackets span:before, .curly_brackets li:first-child:before {
             display: none !important;
         }
     }
+
+    @media screen and (max-width: 1024px) {
+        .curly_brackets span:after, .curly_brackets li:last-child:after {
+            display: none !important;
+        }
+    }
+
+
+
  @media screen and (max-width: 1024px) {
         .portfolio-section{
             display: none !important;
         }
     }
-    
-    /*-------=curly brackets style (removed on mobile devices) --------*/
-        
-    .curly_brackets span:before, .curly_brackets li:first-child:before  { content:""; }
+
+ @media screen and (max-width: 1024px) {
+        .intro-social-buttons {
+            display: none !important;
+        }
+    }
+  
+/*---------------------------------------------- curly brackets ---------------------------------------------- */
+
+
+
+.curly_brackets span:before, .curly_brackets li:first-child:before  { content:""; }
     .curly_brackets span:after, .curly_brackets li:last-child:after { content:""; }
     .curly_brackets span { padding-left:0; padding-right:0; }
     ul.curly_brackets li:first-child { padding-left:0;  }

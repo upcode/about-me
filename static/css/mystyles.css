@@ -15,9 +15,9 @@
 	
 }
 
-
-
-
+section {
+	padding: 100px 0
+}
 
 body {
     width: 100%;
@@ -29,12 +29,42 @@ html {
     height: 100%;
 }
 
+
 .words {
     font-size: 20px;
 }
 
-   /*=== Hidden Movile Elements ===*/   	
-  
+   .tab-list {
+    font-size: 20px;
+}
+.tab-titles{
+	font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+ul, li, a {
+    font-size: 20px;
+
+}
+ 
+
+.section-titles {
+	font-size: 50px;
+	font-weight: 200;
+	
+text-align: center;
+}
+
+
+.header-title {
+	font-size: 150px;
+	font-weight: 700;
+	letter-spacing: 3px;
+
+	font-family: "Playfair Display";
+
+}
 
   /*---------------------------------------------- fonts ---------------------------------------------- */
 	
@@ -71,12 +101,12 @@ html {
 	/*a, code, nav, li  { color: #a09f9d; }*/
 	
 	/* active/hover */
-	li.active>a, a.active, a.current, a:hover, li.current_page_item a, .current-menu-item a, .menu-item-has-children.current-menu-item li a:hover,
-	a:hover, ul.tabs li.active, ul.tabs li a:hover { color: rgb(#f8f8f8);  }
+	/*li.active>a, a.active, a.current, a:hover, li.page-scroll a, .current-menu-item a, .page-scroll-has-children.current-page-scroll li a:hover,
+	a:hover, ul.tabs li.active, ul.tabs li a:hover { color: #f8f8f8;  }*/
 	
 	/* other stuff */
 	/*body { background-color:#f3f3f3; }*/
-	.separator, .page-title:after, h3:after { background:#222222;  }
+	/*.separator, .page-title:after, h3:after { background:#222222;  }*/
 	#social_icons li a {color:#3d3d3d; }
 
 	.section-heading-spacer {
@@ -84,6 +114,40 @@ html {
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.5);
 	}
+
+a:link
+a:visited {
+	 color: rgb(24, 188, 156);
+}
+a:active {
+	 color: rgb(24, 188, 156);
+}
+a:focus {
+	 color: rgb(24, 188, 156);
+}
+
+li.current>a {
+	text-decoration:underline; 
+
+}
+
+li.active a { text-decoration:underline; 
+ /*   color: #a09f9d;*/
+ 
+ }
+
+
+a:hover {
+    color: rgb(24, 188, 156);
+}
+ .up:hover {
+color: rgb(24, 188, 156); 
+
+ }
+
+ul, ol, li  {
+	list-style-type: none;
+}
 	/*---------------------------------------------- nav bar ---------------------------------------------- */
 
 	.navbar-nav {
@@ -166,6 +230,11 @@ html {
     .intro-message {
         padding-bottom: 15%;
     }
+    @media(max-width:767px) {
+    #page-title {
+    	font-size: 80px;
+        padding-bottom: 15%;
+    }
 @media(max-width:767px) {
     .intro-message {
       	font-size: 3em;
@@ -193,7 +262,7 @@ html {
     }
 }
 .network-name {
-    text-transform: uppercase;
+
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
@@ -203,6 +272,7 @@ html {
 .intro-section {
     height: 100%;
     padding-top: 150px;
+    padding-bottom: auto;
     text-align: center;
   	
 }
@@ -211,6 +281,7 @@ html {
 .about-section {
     height: 100%;
     padding-top: 150px;
+    padding-bottom: auto;
     /*text-align: center;*/
     
 }
@@ -218,6 +289,7 @@ html {
 .portfolio-section {
     height: 100%;
     padding-top: 150px;
+    padding-bottom: auto;
    /* text-align: center;*/
     
     
@@ -226,82 +298,31 @@ html {
 .designer-section {
     height: 100%;
     padding-top: 150px;
+     padding-bottom: auto;
    /* text-align: center;*/
     
 }
 .contact-section {
     height: 100%;
-    padding-top: 150px;
-    /*text-align: center;*/
+    padding-top: 250px;
+    padding-bottom: 250px;
+     text-align: center;
     
 }
-
-
-
-	/*---------------------------------------------- hover and a links ---------------------------------------------- */
-
-li.active a { text-decoration:underline; 
- /*   color: #a09f9d;*/
- 
-
-
- }
-
-
-
-a:hover {
-    color: rgb(24, 188, 156);
+.footer-section {
+	 height: 100%;
+    padding-top: 150px;
+    margin-top: 50px;
+    padding-bottom: 150px;
+	 background-color: #e7e7e7;
 }
- .up:hover {
-color: rgb(24, 188, 156); 
 
- }
-
- ul{list-style-type: none; }
-	/*---------------------------------------------- contact ---------------------------------------------- */
-	/*---------------------------------------------- tabs ---------------------------------------------- */
-	/*---------------------------------------------- engineer ---------------------------------------------- */
-	/*---------------------------------------------- about me ---------------------------------------------- */
-	/*---------------------------------------------- featured ---------------------------------------------- */
-	/*---------------------------------------------- desginer ---------------------------------------------- */
-	#pieChart {
-		float: left;
-	}
-	#design-process {
-		padding-left: 50px;
-	}
-	/*---------------------------------------------- portfolio ---------------------------------------------- */
-	/*---------------------------------------------- modal ---------------------------------------------- */
+.footer {
+	padding-top: 100px;
+}
 
 	/*---------------------------------------------- contact ---------------------------------------------- */
-
-	/*---------------------------------------------- footer ---------------------------------------------- */
-footer.container {
-    /*padding: 10px 0;*/
-    background-color: #e7e7e7;
-   
-}
- .footer-menu {
- 	 font-size: 20px;
- 	 font-weight: bold;
- }
-
-	/*---------------------------------------------- image ---------------------------------------------- */
-
-
-
-img {
-	padding:8px;
-/*	border:1px dashed #ccc; */
-	border: 10px white;
+	.contact-social-buttons {
+		position: center;
 	}
-.tab-titles{
-padding-bottom: 50px;
-}
-
-.styled{
-	padding-bottom: 50px;
-}
-
-
-
+	
