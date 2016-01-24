@@ -29,16 +29,22 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
-<Script>
-    $(window).load(function() {
-        // Animate loader off screen
-        $(".se-pre-con").fadeOut("slow");;
+<script language="javascript">
+    $(function() {
+        $(".designer-click").click(function() {
+            animate(".animated", 'fadeInLeftBig');
+            return false;
+        });
     });
+     
+    function animate(design-code, animated) {
+        $(design-code).addClass(animated);
+        var wait = window.setTimeout( function(){
+            $('#design-code').removeClass(".animated")}, 1300
+        );
+    }
 </script>
-<script>
-$(function(){
-        $('img').imgPreload()
-    })</script>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <!--============= BOOTSTRAP =================-->
@@ -107,7 +113,7 @@ $(function(){
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#designer">Design &amp; Code</a>
+                        <a class="page-scroll designer-click" href="#designer">Design &amp; Code</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>

@@ -37,7 +37,7 @@
 
     /*---------------------------------------------- Media Queries Hidded ---------------------------------------------- */
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 767px) {
         .bubble-chart {
             display: none !important;
         }
@@ -47,28 +47,28 @@
             display: none !important;
         }
     }*/
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 767px) {
         #video-title {
             display: none !important;
         }
     }
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 767px) {
         iframe {
             display: none !important;
         }
     }
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 767px) {
         .video {
             display: none !important;
         }
     }
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 767px) {
         .curly_brackets span:before, .curly_brackets li:first-child:before {
             display: none !important;
         }
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 767px) {
         .curly_brackets span:after, .curly_brackets li:last-child:after {
             display: none !important;
         }
@@ -76,13 +76,13 @@
 
 
 
- @media screen and (max-width: 1024px) {
+ @media screen and (max-width: 767px) {
         .portfolio-section{
             display: none !important;
         }
     }
 
- @media screen and (max-width: 1024px) {
+ @media screen and (max-width: 767px) {
         .intro-social-buttons {
             display: none !important;
         }
