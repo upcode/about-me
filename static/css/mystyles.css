@@ -1,5 +1,5 @@
 	/*---------------------------------------------- HTML / BODY ---------------------------------------------- */
-	/* background */
+	/*---------------------------------------------- Background ---------------------------------------------- */
 .intro-section, .designer-section, .contact-section{
 	background-image: url(/static/img/backgrounds/grey.png)!important;
 	background-attachment: scroll;
@@ -8,6 +8,7 @@
 .about-section, .portfolio-section {
 	background-image: url(/static/img/backgrounds/diamond.png)!important;
 	background-attachment: scroll;
+}
 
 body {
     width: 100%;
@@ -249,8 +250,6 @@ ul, ol, li  {
 		padding:8px;
 	border-bottom:1px dashed #ccc; }
 	}
-.
-
 
 .navbar-brand {
 	font-size: 25px;
@@ -391,62 +390,26 @@ ul, ol, li  {
     
 }
 
-
-
-	/*---------------------------------------------- loader ---------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
-}
-.images ul li img {
-	width: 400px;
-	height: 266px;
-}
-.images ul li {
-	display: inline-block;
-}
-/* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript, 
-if it's not present, don't show loader */
-
 	
-#copyright_info { margin-top:.7em; }
 
 
 /*------=social icons---------*/
 
-#social_icons { 
+#social-icons { 
 	float:right;
 	padding:0; }
 	
-#social_icons li { 
+#social-icons li { 
 	display:inline-block;
 	margin:8px 0 0 12px; }
 	
-#social_icons li a { 
+#social-icons li a { 
 	display:inline-block;
 	text-align:center;
 	color:#3d3d3d;
 	font-size:1.25em; }
 	
-#social_icons li a:hover { text-decoration:none; }
+#social-icons li a:hover { text-decoration:none; }
 
 body>footer .container { padding:0; }
 	/*---------------------------------------------- contact ---------------------------------------------- */
