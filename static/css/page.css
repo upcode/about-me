@@ -32,6 +32,7 @@
     .flash {
         color: rgb(24, 188, 156);
         font-size: 28px;
+        display: inline;
     }
 
 
@@ -92,7 +93,7 @@
 
 
 
-.curly_brackets span:before, .curly_brackets li:first-child:before  { content:""; }
+    .curly_brackets span:before, .curly_brackets li:first-child:before  { content:""; }
     .curly_brackets span:after, .curly_brackets li:last-child:after { content:""; }
     .curly_brackets span { padding-left:0; padding-right:0; }
     ul.curly_brackets li:first-child { padding-left:0;  }

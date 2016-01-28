@@ -138,12 +138,13 @@
             <div class="row">
                 <div class="col-xs-12 col-md-8 col-lg-12">
                     <div class="intro-message text-center">
-                        <span class="name">
-                            <h1 class="header-title" id="page-title"><span id="u">U</span>ma <span id="p">P</span>etersen</h1>
-                        </span>
+                        <!--<span class="name"> -->
+                            <h1 class="header-title" id="page-title"><span id="u">U</span>ma<span id="p">P</span>etersen</h1>
+                       <!-- </span> -->
                        <h3 class="curly_brackets">
-                        <span>Imagination . Creativity . Design + Logic = <strong href="#about" class="flash">U.P.&#x21e1;</strong>[code]</h3></span>
-                        
+                     
+                        <span>Imagination . Creativity . Design + Logic =  <div href="#about" class="flash">U.P.&#x21e1;[code]</div></h3></span>
+                       
                         <hr class="intro-divider">
                         <!-- header network buttons -->
                         <ul class="list-inline intro-social-buttons">
@@ -179,7 +180,7 @@
                 <div class="col-xs-12 col-md-8 col-lg-12 text-center">
 
                     <h1 class="engineer-titles text-center section-titles">Software Engineering</h1>
-                        <ul class="tabs curly_brackets list-inline " data-tabs="tabs" id="about-tabs"></span>
+                        <ul class="tabs curly_brackets list-inline " data-tabs="tabs" id="about-tabs">
                             <li class="active">
                                 <a href="#engineer" data-toggle="tab">The Engineer</a>
                             </li>
@@ -210,7 +211,7 @@
                             <h3 class="tab-titles">Art of the Software Engineer</h3>
                                 <p class="words">
                                 I'm a Full Stack Software Engineer from San Fransico with an interest in User Interface Design. I enjoy turning complex problems into simple, intuitive, minimalist interface designs.
-                                I attended San Jose State with a degree in Business Marketing, and a Software Engineering certificate from <a href="https:www.hackbrightacademy.com/">Hackbright Acadamy</a>. I worked at <a href="https://www.groupon.com/">Groupon</a> as a product operational specialist, launching multiple core products and taking those products from pilot stage to full mainstream launch. I developed standard operating procedures and testing protocols to ensure high product quality for end users. In 2013, I attended the <a href="http://ghc.anitaborg.org/">Grace Hopper</a> conference, where my interest in programming took root. Now I am a full time software engineer with a passion for programming and design.
+                                I attended San Jose State with a degree in Business Marketing, and a Software Engineering certificate from <a href="https://www.hackbrightacademy.com/">Hackbright Acadamy</a>. I worked at <a href="https://www.groupon.com/">Groupon</a> as a product operational specialist, launching multiple core products and taking those products from pilot stage to full mainstream launch. I developed standard operating procedures and testing protocols to ensure high product quality for end users. In 2013, I attended the <a href="http://ghc.anitaborg.org/">Grace Hopper</a> conference, where my interest in programming took root. Now I am a full time software engineer with a passion for programming and design.
                                 </p>
                                 <h3 class="tab-titles">Technologies</h3>
                                     <ul class="tab-list">
@@ -272,7 +273,7 @@
                                 </div>
                         </div><!--// end col-->
 
-                        <div class="col-xs-12 col-md-4 col-lg-6" id="about">
+                        <div class="col-xs-12 col-md-4 col-lg-6" id="all-about">
                             <h3 class="tab-titles">All About Me</h3>
                             <p class="words">
                             When I'm not coding or pushing pixels, you'll find me enjoying the challenge of learning a new language, traveling, listening to music, and enjoying city life. I am creative, I am innovator and problem slover. My experiences, education, and my passion for learning drive me to seek new adventures in all aspects of my life.
@@ -361,7 +362,7 @@
                     <div class="col-xs-6 col-md-4 col-lg-6">
                         <h3 id="video-title" class="tab-titles">Women in Engineering</h3>
                         <div class="video" style="position:relative; padding-bottom:63%; padding-bottom:-webkit-calc(56.25% + 50px); padding-bottom:calc(56.25% + 50px); height: 0;">
-                            <iframe style="position:absolute; width: 100%; height: 100%;" src="http://www.today.com/offsite/meeting-the-women-of-silicon-valley-software-engineer-tracy-chou-582041667634" scrolling="no" frameborder="0">
+                            <iframe style="position:absolute; width: 100%; height: 100%;" src="http://www.today.com/offsite/meeting-the-women-of-silicon-valley-software-engineer-tracy-chou-582041667634" frameborder="0">
                              </iframe>
                         </div><!-- // end video-->   
                     </div><!-- end col-->
@@ -395,7 +396,7 @@
                         <div class="col-xs-12 col-md-4 col-lg-6 animated fadeInLeftBig">
                             
                         <!-- <img src="../static/img/designer.jpg" width="432" height="427" class="img-responsive styled"  alt="designer-image" /> -->
-                              <h3 class="tab-titles animated fadeInLeftBig" id="design-process"><center>My Design Process</center></h3>
+                              <h3 class="tab-titles animated fadeInLeftBig" id="design-process">My Design Process</h3>
                              <div class="pieChart animated fadeInLeftBig" id="pieChart"></div>
 
                         </div>
@@ -403,7 +404,7 @@
             </div><!-- // end row-->
         </div><!-- // end container-->
          <!--  JS D3 Donut Design Chart-->          
-        <script src="static/js/d3-donut.js"/></script> 
+        <script src="static/js/d3-donut.js"></script> 
         <!--  JS D3 Donut Design Chart--> 
     </section>
 
@@ -415,7 +416,7 @@
                 <div class="col-xs-12 col-md-4 col-lg-12">
                     <h1 class="portfilio-title text-center section-titles">Portfolio</h1>
                     <div class="portfilio-list">
-                        <ul class="tabs curly_brackets list-inline text-center" data-tabs="tabs" id="about-tabs">
+                        <ul class="tabs curly_brackets about-tabs list-inline text-center" data-tabs="tabs">
                             <li>
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">Wanderlust</a>
                             </li>
@@ -442,7 +443,7 @@
                             <div class="img-p">
                                 <img src="/static/img/projects/wanderlust.png" class="img-responsive" alt="wanderlust-app">
                             </div>
-                            <div class="info" id="project-title">
+                            <div class="info">
                                 <h3>Wanderlust</h3>
                                     <p>Track your travels</p>
                             </div>
@@ -456,7 +457,7 @@
                             <div class="img-p">
                                 <img src="/static/img/projects/blog.png" class="img-responsive" alt="programming-blog">
                             </div>
-                            <div class="info" id="project-title">
+                            <div class="info project-title" >
                                 <h3>[UP]CODE...Blog</h3>
                                     <p>Programming Blog</p>
                             </div>
@@ -470,7 +471,7 @@
                             <div class="img-p">
                                 <img src="/static/img/projects/about-me.png" class="img-responsive" alt="about-me-page">
                             </div>
-                            <div class="info" id="project-title">
+                            <div class="info">
                                 <h3>About Me</h3>
                                     <p>My Personal Website</p>
                             </div>
@@ -500,7 +501,7 @@
                             <div class="img-p">
                                 <img src="/static/img/projects/sf.png" class="img-responsive" alt="sf-love-story">
                             </div>
-                            <div class="info" id="project-title">
+                            <div class="info">
                                 <h3>My San Francisco Love Story</h3>
                                     <p>San Franisco Blog</p>
                             </div>
@@ -514,7 +515,7 @@
                             <div class="img-p">
                                 <img src="/static/img/projects/ryan.png" class="img-responsive" alt="Ryan-Fanili-Paiting-Inc">
                             </div>
-                            <div class="info" id="project-title">
+                            <div class="info">
                                 <h3>Ryan Fanili Paiting Inc</h3>
                                     <p>Business Website</p>
                             </div>

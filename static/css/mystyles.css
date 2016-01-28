@@ -310,7 +310,7 @@ ul, ol, li  {
     .intro-message {
         padding-bottom: 15%;
     }
-    @media(max-width:767px) {
+ @media(max-width:767px) {
     #page-title {
     	font-size: 80px;
         padding-bottom: 15%;
