@@ -391,8 +391,10 @@ ul, ol, li  {
 }
 
 	
-
-
+/*------=i frame ---------*/
+iframe {
+    overflow:hidden;
+}
 /*------=social icons---------*/
 
 #social-icons { 
