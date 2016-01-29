@@ -7,187 +7,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="personal-web-page">
+    <meta name="author" content="">
 
-    <title>Uma Petersen</title>
+    <title>Uma Petersen Personal Website</title>
     <!--============= D3 JAVASCRIPT =================-->
+      <!-- D3 Bubble Chart -->
     <script type="text/javascript" src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="/static/js/d3-bubble.js"></script>
-    <!--============= D3.JS CHART =================-->
+    <script type="text/javascript" src="/static/js/d3-bubble.js"></script>
+    <script type="text/javascript" src="/static/js/d3pie.js"></script>
+    <script type="text/javascript" src="/static/js/d3pie.min.js"></script>
+    <!-- D3 Donut Chart -->
+    <!-- D3 Donut Chart -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
-    <script src="/static/js/charts/d3-donut-chart.js"></script>
-    <!--=============jQuery=================-->
+    <!--============= MY JAVASCRIPT FILES  ============-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/myjs.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <!-- IE -->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    
     <!--============= BOOTSTRAP =================-->
+
 
     <!-- Bootstrap Core CSS -->
     <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="/static/bootstrap/css/landing-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="static/bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link href="/static/bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'/>
+    <!--============= FAVICON =================-->
 
     <!-- your favicon //16x16px icon file -->
-    <link rel="shortcut icon" href="/static/img/logo.ico" />
+    <link href="/static/img/logo.ico" rel="shortcut icon"/>
 
     <!--============= My CSS FILES =================-->
+      <!-- Custom CSS -->
     <link href="/static/css/ihover.css" rel="stylesheet"/>
     <link href="/static/css/d3-bubble.css" rel="stylesheet"/>
     <link href="/static/css/barchart.css" rel="stylesheet"/>
+    <link href="/static/css/animate.css" rel="stylesheet"/>
     <link href="/static/css/modal-windows.css" rel="stylesheet"/>
-    <link href="/static/css/mypage.css" rel="stylesheet"/>
+    <!-- <link href="/static/css/mobile.css" rel="stylesheet"/> -->
+<!-- <link href="/static/css/global.css" rel="stylesheet"/>
+ -->    
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.10/d3.js" />
-
-    <style>
-    .background-grey {
-    background: url(/static/img/backgrounds/grey.png);
-    }
-    .background-diamond {
-    background: url(/static/img/backgrounds/diamond.png);
-    }
-    /*=== title flash anmination===*/
-  #p, #u {
-    -webkit-animation: color_change 3s  alternate;
-    -moz-animation: color_change 3s  alternate;
-    -ms-animation: color_change 3s  alternate;
-    -o-animation: color_change 3s  alternate;
-    animation: color_change 3s  alternate;
-    }
-    @-webkit-keyframes color_change {
-        from { color: rgb(24, 188, 156); }
-        to { color: #ddd; }
-    }
-    @-moz-keyframes color_change {
-        from { color: rgb(24, 188, 156); }
-        to { color: #ddd; }
-    }
-    @-ms-keyframes color_change {
-        from { color: rgb(24, 188, 156); }
-        to { color: #ddd; }
-    }
-    @-o-keyframes color_change {
-        from { color: rgb(24, 188, 156); }
-        to { color: #ddd; }
-    }
-    @keyframes color_change {
-        from { color: rgb(24, 188, 156); }
-        to { color: #ddd; }
-    }
-
-    .flash {
-        color: rgb(24, 188, 156);
-        font-size: 28px;
-    }
-    /*
-    .flash{
-        -webkit-animation: color_change  15s alternate;
-        -moz-animation: color_change  15s  alternate;
-        -ms-animation: color_change  15s  alternate;
-        -o-animation: color_change  15s  alternate;
-        animation: color_change  15s  alternate;
-    }
-    @-webkit-keyframes color_change {
-        from { color: #ddd; }
-        to { color: rgb(24, 188, 156); }
-    }
-    @-moz-keyframes color_change {
-        from { color: #ddd; }
-        to { color: rgb(24, 188, 156); }
-    }*/
-    /*@-ms-keyframes color_change {
-        from { color: #ddd; }
-        to { color: rgb(24, 188, 156); }
-    }
-    @-o-keyframes color_change {
-        from { color: #ddd; }
-        to { color: rgb(24, 188, 156); }
-    }
-    @keyframes color_change {
-        from { color: #ddd; }
-        to { color: rgb(24, 188, 156); }
-    }
-    */
-    /*=== Hidden Movile Elements ===*/
-
-    @media screen and (max-width: 1024px) {
-        .pieChart {
-            display: none !important;
-        }
-    }
-
-    @media screen and (max-width: 1024px) {
-        .bubble-chart {
-            display: none !important;
-        }
-    }
-    @media screen and (max-width: 1024px) {
-        #design-process {
-            display: none !important;
-        }
-    }
-    @media screen and (max-width: 1024px) {
-        #video-title {
-            display: none !important;
-        }
-    }
-    @media screen and (max-width: 1024px) {
-        iframe {
-            display: none !important;
-        }
-    }
-    @media screen and (max-width: 1024px) {
-        .video {
-            display: none !important;
-        }
-    }
-    @media screen and (max-width: 1024px) {
-        .curly_brackets{
-            display: none !important;
-        }
-    }
-
-        </style>
-        <!-- JavaScript / jQuery hide/show elements -->
-        <script>
-        $(document).ready(function () {
-
-        if (screen.width < 1024) {
-        $("#mainbubble").hide();
-        $(".pieChart").hide();
-        $("#desing-process").hide();
-        $("#video-title").hide();
-        $("iframe").hide();
-        $(".video").hide();
-        $(".curly_brackets").hide();
-        }
-    else {
-
-        $(".yourClass").show();
-        $("#mainbubble").show();
-        $(".pieChart").show();
-        $("#desing-process").show();
-        $("#video-title").show();
-        $("iframe").show();
-        $(".video").show();
-        $(".curly_brackets").show();
-    }
-
-});
-        </script>
-
+    <link href="/static/css/mystyles.css" rel="stylesheet"/>
+   
 
 </head>
 
@@ -196,7 +66,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
-            <!-- toggle for mobile display -->
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -204,31 +74,30 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#page-top">UP&#x21e1;[CODE]</a>
+                <a class="navbar-brand topnav" href="#">UP&#x21e1;[CODE]</a>
             </div>
-            <!-- nav links, forms, and other content for toggling -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
+                     <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#home">About</a>
+                
+                     <li>
+                        <a href="#about">About</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#designer">Design</a>
+                    <li>
+                        <a href="#design">Design &amp; Code</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Projects</a>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
                     </li>
                     <li>
                         <a href="http://upcodeblog.herokuapp.com/">Blog</a>
                     </li>
-
-                    <li class="page-scroll">
+                    <li>
                         <a href="#contact">Contact</a>
                     </li>
-                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -238,81 +107,89 @@
 
 
     <!-- Header -->
-    
-    <section class="background-grey" id="home" data-stellar-background-ratio="0.0">
-
-        <div class="container" id="header-title">
+    <a name="home"></a>
+    <div class="intro-header">
+        <div class="container">
 
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message text-center">
-                        <span class="name">
-                            <h1 id="page-title"><span id="u">U</span>ma <span id="p">P</span>etersen</h1>
-                        </span>
-                       <h3 class="curly_brackets">
-                        <span>Imagination . Creativity . Design + Logic = <strong class="flash">U.P.&#x21e1;</strong>[code]</h3></span>
-                        
+                <div class="col-xs-12 col-md-8 col-lg-12">
+                    <div class="intro-message">
+                        <h1 class="header-title" id="page-title"><span id="u">U</span>ma <span id="p">P</span>etersen</h1>
+                        <h3 class="curly_brackets"><span>Imagination . Creativity . Design + Logic =  <strong href="#about" class="flash">U.P.&#x21e1;</strong>[code]
+                        </span></h3>
+                       
+                   
+
                         <hr class="intro-divider">
-                        <!-- header network buttons -->
+
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="https://twitter.com/Octothorpe12" class="btn btn-default btn-lg">
-                                    <i class="fa fa-twitter fa-fw"></i> 
-                                    <span class="network-name">Twitter</span>
-                                </a>
+                                <a href="https://twitter.com/Octothorpe12" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                             </li>
                             <li>
-                                <a href="https://github.com/upcode" class="btn btn-default btn-lg">
-                                    <i class="fa fa-github fa-fw"></i> 
-                                    <span class="network-name">Github</span>
-                                </a>
+                                <a href="https://github.com/upcode" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/umapetersen" class="btn btn-default btn-lg">
-                                    <i class="fa fa-linkedin fa-fw"></i> 
-                                    <span class="network-name">Linkedin</span>
-                                </a>
+                                <a href="https://www.linkedin.com/in/umapetersen" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                             </li>
                         </ul>
-                    </div><!-- // end intro-message -->
-                </div><!-- // end col-lg-12-->
-            </div>
+                    </div> <!--// intro message-->
+                </div> <!--// end col-->
+            </div> <!--// end row-->
+
+        </div>
         <!-- /.container -->
 
+    </div>
     <!-- /.intro-header -->
-    </section>
 
     <!-- Page Content -->
-    <section class="background-diamond" id="about" class="slide" data-stellar-background-ratio="0.5">
-        
-            <div class="container">
-                <h1 class="tab-titles text-center">Software Engineer</h1>
-                    <ul class="tabs curly_brackets list-inline " data-tabs="tabs" id="about-tabs"></span>
+
+	<a  name="about"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-8 col-lg-12 text-center">
+                    <hr class="section-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Software Engineering<br></h2>
+                    <ul class="tabs list-inline curly_brackets" data-tabs="tabs" id="about-tabs">
+                           
+                            <li class="active">
+                                <a href="#engineer" data-toggle="tab">The Engineer</a>
+                            </li>
+                            <li>
+                                <a href="#about-me" data-toggle="tab">All About Me</a>
+                            </li>
+                            <li>
+                                <a href="#featured" data-toggle="tab">Featured</a>
+                            </li>
+                        </ul>
+                        <hr class="section-heading-spacer text-center">
+                </div> <!-- // end col-->
+            </div> <!-- // end row-->
+            <div class="row animated fadeInLeftBig">
                 
-                    <li class="active"><a href="#engineer" data-toggle="tab">The Engineer</a></li>
-                    <li><a href="#about-me" data-toggle="tab">All About Me</a></li>
-                    <li><a href="#media" data-toggle="tab">Featured</a></li>
-                       
-                </ul>
-            <hr class="section-heading-spacer text-center">
-            
-            <div id="my-tab-content" class="tab-content">
             <!-- ===========BEGAIN ENGINEER TAB ==================== -->
+            <div id="my-tab-content" class="tab-content animated fadeInLeftBig">
                 <div class="tab-pane active" id="engineer">
                     <div class="row">
-                        <div class="col-md-6">
-
-                            <img src="../static/img/engineer.jpg" width="432" height="427" class="img-responsive styled" id="engineer-image" alt="bubble-image" />
+                        <div class="col-xs-6 col-md-4 col-lg-6">
+                            <div class="engineer-image">
+                            <img src="/static/img/engineer.jpg" width="432" height="427" class="img-responsive" id="engineer-image" alt="bubble-image" />
+                            </div>
                                 <div class="jo">
                                     <a href="http://www.bentonstreetphotography.com">
                                         <small>Photo by Joahanna</small></a>
                                 </div>
                         </div><!--// end col-->
-                        <div class="col-md-6">
+                        <div class="col-xs-6 col-md-4 col-lg-6">
                             <h3 class="tab-titles">Art of the Software Engineer</h3>
                                 <p class="words">
-                                I'm a Full Stack Software Engineer from San Fransico with an interest in User Interface Design. I enjoy turning complex problems into simple, intuitive, minimalist interface designs.
-                                I attended San Jose State with a degree in Business Marketing, and a Software Engineering certificate from <a href="https://hackbrightacademy.com/"></a>Hackbright Acadamy. I worked at Groupon as a product operational specialist, launching multiple core products and taking those products from pilot stage to full mainstream launch. I developed standard operating procedures and testing protocols to ensure high product quality for end users. In 2013, I attended the Grace Hopper conference, where my interest in programming took root. Now I am a full time software engineer with a passion for programming and design.
+                                I'm a Full Stack Software Engineer from San Francisco with an interest in User Interface Design. I enjoy turning complex problems into simple, intuitive, minimalist interface designs.
+                                I attended San Jose State with a degree in Business Marketing, and a Software Engineering certificate from <a href="https://www.hackbrightacademy.com/">Hackbright Acadamy</a>.
+                                I worked at <a href="https://www.groupon.com/">Groupon</a> as a product operational specialist, launching multiple core products and taking those products from pilot stage to full mainstream launch. I developed standard operating procedures and testing protocols to ensure high product quality for end users. In 2013, I attended the <a href="http://ghc.anitaborg.org/">Grace Hopper</a> conference, where my interest in programming took root. Now I am a full time software engineer with a passion for programming and design.
                                 </p>
                                 <h3 class="tab-titles">Technologies</h3>
                                     <ul class="tab-list">
@@ -345,39 +222,42 @@
                                         </li>
                                     </ul>
                         </div><!-- col-md-6 col-lg-offset-3-->
-                    </div><!-- end row-->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div id="mainBubble" style="height: 763px;" class="bubble-chart">
-                                <svg class="mainBubbleSVG" width="1089.8020000000001" height="763">
-                                    <text id="bubbleItemNote" x="10" y="529.9010000000001" font-size="12" dominant-baseline="middle" alignment-baseline="middle" style="fill: rgb(136, 136, 136);"></text>
-                                </svg>
-                            </div>   
-                            <!-- D3 JAVASCRIPT -->
-                            <script src="/static/js/d3bubble.js"/></script>
-                            <!-- D3 JAVASCRIPT -->                          
-                        </div><!-- // end col-lg-12-->
-                    </div><!-- end row-->
+                        </div><!-- end row-->
+                        <div class="row">
+                            <div class="col-xs-12 col-md-4 col-lg-12">
+                                <div id="mainBubble" style="height: 763px;" class="bubble-chart ">
+                                    <svg class="mainBubbleSVG" width="1089.8020000000001" height="763">
+                                        <text id="bubbleItemNote" x="10" y="529.9010000000001" font-size="12" dominant-baseline="middle" alignment-baseline="middle" style="fill: rgb(136, 136, 136);">
+                                        </text>
+                                    </svg>
+                                </div>   
+                                    <!-- D3 JAVASCRIPT -->
+                                    <script src="/static/js/d3bubble.js"></script>
+                                    <!-- D3 JAVASCRIPT -->                          
+                            </div><!-- // end col-lg-12-->
+                        </div><!-- end row-->
                 </div><!-- // END Engineer TAB-->
+            
 
             <!-- ===========BEGAIN ABOUT ME TAB ==================== -->
   
-                <div class="tab-pane" id="about-me">
+            <div class="tab-pane" id="about-me">
                     <div class="row">
-                        <div class="col-md-6" id="left-about">
-                            <img src="/static/img/about.jpg" id="image3" width="432" height="427"  class="img-responsive">
+                        <div class="col-xs-12 col-md-4 col-lg-6 tab-titles">
+                              <img src="/static/img/designer.jpg" width="432" height="427" class="img-responsive styled"  alt="designer-image" />
+                            <!-- <img src="/static/img/about.jpg"  width="432" height="427"  class="img-responsive styled"> -->
                                 <div class="jo">
                                     <a href="http://www.bentonstreetphotography.com">
                                     <small class="jo">Photo by Joahanna</small></a>
                                 </div>
                         </div><!--// end col-->
 
-                        <div class="col-md-6" id="about">
+                        <div class="col-xs-12 col-md-4 col-lg-6" id="all-about">
                             <h3 class="tab-titles">All About Me</h3>
                             <p class="words">
                             When I'm not coding or pushing pixels, you'll find me enjoying the challenge of learning a new language, traveling, listening to music, and enjoying city life. I am creative, I am innovator and problem slover. My experiences, education, and my passion for learning drive me to seek new adventures in all aspects of my life.
                             </p>
-                            <h3 class="tab-titles">My Techincal Skills</h3>
+                            <h3 class="tab-titles">My Skills</h3>
                             <ul class="tab-list">
                                 <li><em></em><i class='icon-ok'>
                                     </i>Generating a great quantity of ideas
@@ -399,7 +279,7 @@
                         </div><!-- col-md-6 col-lg-offset-3-->
                     </div><!-- // end row-->
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-xs-12 col-md-8 col-lg-12">
                             <ul class="chart">
                                 <li class="axis">
                                     <div class="label">MVP</div>
@@ -413,144 +293,144 @@
                                 <div class="label">Rookie</div>
                               
                             </li>
-                                <li class="bar teal" style="height: 95%;" title="95">
+                                <li class="bar teal animated fadeInUp" style="height: 95%;" title="95">
                                 <div class="percent">95<span>%</span></div>
                                 <div class="skill"> generate a great quantity of ideas
                                 </div>
                             </li>
-                                <li class="bar salmon" style="height: 90%;" title="90">
+                                <li class="bar salmon animated fadeInUp" style="height: 90%;" title="90">
                                 <div class="percent">90<span>%</span></div>
                                 <div class="skill">Turn around life's obstacles</div>
                             </li>
-                            <li class="bar peach" style="height: 80%;" title="80">
+                            <li class="bar peach animated fadeInUp" style="height: 80%;" title="80">
                                 <div class="percent">80<span>%</span></div>
                                 <div class="skill">Where most people see a difficulty, I see an opportunity</div>
                             </li>
                                
-                            <li class="bar lime" style="height: 75%;" title="75">
+                            <li class="bar lime animated fadeInUp" style="height: 75%;" title="75">
                                 <div class="percent">50<span>%</span></div>
                                 <div class="skill">Ping-Pong</div>
                             </li>
-                            <li class="bar grape" style="height: 40%;" title="40">
+                            <li class="bar grape animated fadeInUp" style="height: 40%;" title="40">
                                 <div class="percent">20<span>%</span></div>
                                 <div class="skill">Cooking</div>
                             </li>
                             </ul> 
                         </div><!-- // end col-lg-12-->
-                    </div><!--// end row-->
-               
-            </div><!-- // tab-content-->
-            <!-- ===========MEDIA ABOUT ME TAB ==================== -->
-            <div class="tab-pane" id="media">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="../static/img/class-photo.jpg" class="img-responsive"  alt="hackbright" id="hackbright"/>
-                        <h3 class="tab-titles">Articles</h3>
-                        <ul class="list-inline">
-                            <li><a href="http://www.today.com/video/meeting-the-women-of-silicon-valley-software-engineer-tracy-chou-582041667634" >The Today Show</a></li>
-                            <li><a href="https://hackbrightacademy.com/blog/">Hackbright Blog</a></li>
-                            <li><a href="https://blog.bloc.io/new-relic-scholarship-recipient/">Blog post</a></li>
-                             
-                </div><!--// end col-->
-                <div class="col-md-6">
-                    <h3 id="video-title" class="tab-titles">Women in Engineering</h3>
-                    <div class="video" style="position:relative; padding-bottom:63%; padding-bottom:-webkit-calc(56.25% + 50px); padding-bottom:calc(56.25% + 50px); height: 0;"><iframe style="position:absolute; width: 100%; height: 100%;" src="http://www.today.com/offsite/meeting-the-women-of-silicon-valley-software-engineer-tracy-chou-582041667634" scrolling="no" frameborder="0"></iframe></div>
-                  
-                        
-                   
-                </div><!-- end row-->
+                    </div><!--// end row-->  
             </div><!-- // END ABOUT ME TAB-->
-        </div><!-- // end media-->
 
-    </section>
+            <!-- ===========BEAGIN FEATURED TAB ==================== -->
+            <div class="tab-pane" id="featured">
+                <div class="row">
+                    <div class="col-xs-6 col-md-4 col-lg-6">
+                        <img src="/static/img/class-photo.jpg" class="img-responsive styled" alt="hackbright">
+                            <h3 class="tab-titles">Articles</h3>
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="http://www.today.com/video/meeting-the-women-of-silicon-valley-software-engineer-tracy-chou-582041667634" >The Today Show</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://hackbrightacademy.com/blog/">Hackbright Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://blog.bloc.io/new-relic-scholarship-recipient/">Blog post</a>
+                                    </li>
+                                </ul>          
+                    </div><!--// end col-->
+                    <div class="col-xs-6 col-md-4 col-lg-6">
+                        <h3 id="video-title" class="tab-titles">Women in Engineering</h3>
+                        <div class="video" style="position:relative; padding-bottom:63%; padding-bottom:-webkit-calc(56.25% + 50px); padding-bottom:calc(56.25% + 50px); height: 0;">
+                            <iframe style="position:absolute; width: 100%; height: 100%;" src="http://www.today.com/offsite/meeting-the-women-of-silicon-valley-software-engineer-tracy-chou-582041667634">
+                             </iframe>
+                        </div><!-- // end video-->   
+                    </div><!-- end col-->
+                </div><!-- // row-->
+            </div><!-- // END FEATURED TAB-->
+            </div><!--// END ALL TABS-->
+            </div><!--// end tab row-->
 
-            <!-- ===========DESIGNER SECTION ==================== -->
+        </div>
+        <!-- /.container -->
 
-   <section class="background-grey" id="designer" class="slide" data-stellar-background-ratio="0.5">
+    </div>
+    <!-- /.content-section-a -->
+
+
+    <a  name="design"></a>
+    <div class="content-section-b">
+
         <div class="container">
-            <h1 class="section-heading text-center">The Designer</h1>
-            <ul class="tabs curly_brackets list-inline " data-tabs="tabs" id="about-tabs"></span>
-                
-                    <li class="active"><a href="#design-code" data-toggle="tab">Design &amp; Code</a></li>
-                    <li><a href="#pieChart" data-toggle="tab">My Design Process</a></li>
-                       
-                </ul>
-            <hr class="section-heading-spacer text-center">
-                    <div class="row">
-                           
-                            
-                        <div class="col-md-7">
-                            <h3 class="tab-titles" id="design-code">Design &amp; Code</h3>
-                                <p class="words">
+
+            <div class="row animated fadeInRightBig">
+                <div class="col-xs-12 col-md-8 col-lg-12">
+                    <hr class="section-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading text-center">Design &amp; Code<br></h2>
+                    <hr class="section-heading-spacer text-center">
+                 </div>
+            </div><!-- // end row-->
+            <div class="row">
+                        <div class="col-xs-6 col-md-4 col-lg-6">
+                            <h3 class="tab-titles" id="design-code">The Designer</h3>
+                                <p class="words animated fadeInLeftBig">
                                     I think of software engineering as an art; I like to combine creativity and logic into my software.  I feel this gives me a unique perspective. I like to find inspiration in everyday things when it comes to programing and designing web applications. My inspiration comes from reading a book, walking the streets of San Francisco, or  incorporating technology to solve my own problems.  I often feel people forget how creative software development can be.  Each artist has her own medium.  Some use canvas, some paper, some paint on walls.  My medium is my computer, where my creativity, inspiration, and imagination come to life.  My paintbrush is my code.
                                 </p>
-                                <h3 id="design-process">My Design Process</h3>
-                                <div class="pieChart" id="pieChart"></div>
-                        </div>
-                    
-                   
-                        <div class="col-md-5">
-                            
-                        <img src="../static/img/designer.jpg" width="432" height="427" class="img-responsive"  alt="designer-image" />
-                        <div class="jo">
-                        <a href="http://www.bentonstreetphotography.com">
-                        <small class="jo">Photo by Joahanna</small></a>
-
-                        </div>
-                    </div>
-                    </div><!-- end row-->
- <!--  JS D3 Donut Design Chart-->          
-<script src="static/js/d3-donut.js"/></script> 
-<!--  JS D3 Donut Design Chart-->                         
+                                
                               
-</section>
-    <!-- /.content-section-Desinger -->        
+                        </div>
+                        <div class="col-xs-12 col-md-4 col-lg-6">
+                            <h3 class="tab-titles animated fadeInLeftBig" id="design-process">My Design Process</h3>
+                             <div class="pieChart animated fadeInLeftBig" id="pieChart"></div>
 
-        <!-- =========== PORTFOLIO SECTION ==================== -->
-         
-            
-   <section class="background-diamond" id="portfolio" class="slide" data-stellar-background-ratio="0.5" >
+                        </div>
 
-    <div class="content-section-c">
+                    <!--  JS D3 Donut Design Chart-->          
+                    <script src="static/js/d3-donut.js"></script> 
+                    <!--  JS D3 Donut Design Chart--> 
+                </div><!-- // end row-->
+               
+
+        </div>
+        <!-- /.container -->
+    </div><!-- // end content-section-b-->
+
+    <a  name="portfolio"></a>
+    <div class="content-section-a">
 
         <div class="container">
-
             <div class="row">
-                <div class="col-lg-12 text-center">
-                   <h1 class="project-title">Projects</h1>
-                       
-                   <div class="project-list">
-                   <ul class="tabs curly_brackets list-inline text-center" data-tabs="tabs" id="about-tabs">
-                      
-                        <li>
+                <div class="col-xs-12 col-md-4 col-lg-12">
+                    <hr class="section-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading text-center">Portfolio<br></h2>
+                    <div class="portfilio-list">
+                        <ul class="tabs curly_brackets about-tabs list-inline text-center" data-tabs="tabs">
+                            <li>
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">Wanderlust</a>
-                        </li>
-                        <li>
+                            </li>
+                            <li>
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">UP[CODE]...Blog</a>
-                        </li>
-                        <li>
+                            </li>
+                            <li>
                             <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">About Me</a>
-                        </li>
-                        <li>
-                            <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">Decisions</a></li>
-                       
-                       <!--  <span>&#125;</span> -->
-                    
-                    </ul>
-                          <hr class="section-heading-spacer text-center">
-                    <div>
+                            </li>
+                            <li>
+                            <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">Decisions</a>
+                            </li>
+                        </ul>
+                        <hr class="section-heading-spacer text-center">
+                    </div><!--// end portfolio title-->
                 </div><!--col-lg-12-->
             </div><!-- // end row-->
-
-                
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
+             <div class="row">
+                <div class="col-xs-6 col-sm-4 portfolio-item">
                     <div class="ih-item square effect6 from_top_and_bottom">
                         <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                             <div class="img-p">
                                 <img src="/static/img/projects/wanderlust.png" class="img-responsive" alt="wanderlust-app">
                             </div>
-                            <div class="info" id="project-title">
+                            <div class="info">
                                 <h3>Wanderlust</h3>
                                     <p>Track your travels</p>
                             </div>
@@ -558,13 +438,13 @@
                     </div>
                 </div><!-- end project 1-->
               
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-xs-6 col-sm-4 portfolio-item">
                     <div class="ih-item square effect6 from_top_and_bottom">
                         <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                             <div class="img-p">
                                 <img src="/static/img/projects/blog.png" class="img-responsive" alt="programming-blog">
                             </div>
-                            <div class="info" id="project-title">
+                            <div class="info project-title" >
                                 <h3>[UP]CODE...Blog</h3>
                                     <p>Programming Blog</p>
                             </div>
@@ -572,13 +452,13 @@
                     </div>
                 </div><!-- // end project 2-->
               
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-xs-6 col-sm-4 portfolio-item">
                     <div class="ih-item square effect6 from_top_and_bottom">
                         <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                            <div class="img-p">
+                            <div class="img-p center">
                                 <img src="/static/img/projects/about-me.png" class="img-responsive" alt="about-me-page">
                             </div>
-                            <div class="info" id="project-title">
+                            <div class="info">
                                 <h3>About Me</h3>
                                     <p>My Personal Website</p>
                             </div>
@@ -586,9 +466,9 @@
                     </div>
                 </div><!-- // end project 3-->
             </div><!-- // end row-->
-<br>
+            <br>
                 <div class="row">
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-xs-6 col-sm-4 portfolio-item">
                     <div class="ih-item square effect6 from_top_and_bottom">
                         <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                             <div class="img-p">
@@ -602,13 +482,13 @@
                     </div>
                 </div><!-- // end project 4-->
 
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-xs-6 col-sm-4 portfolio-item">
                     <div class="ih-item square effect6 from_top_and_bottom">
                         <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                             <div class="img-p">
                                 <img src="/static/img/projects/sf.png" class="img-responsive" alt="sf-love-story">
                             </div>
-                            <div class="info" id="project-title">
+                            <div class="info">
                                 <h3>My San Francisco Love Story</h3>
                                     <p>San Franisco Blog</p>
                             </div>
@@ -616,107 +496,104 @@
                     </div>
                 </div><!-- end project 5-->
 
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-xs-6 col-sm-4 portfolio-item">
                     <div class="ih-item square effect6 from_top_and_bottom">
                         <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                             <div class="img-p">
                                 <img src="/static/img/projects/ryan.png" class="img-responsive" alt="Ryan-Fanili-Paiting-Inc">
                             </div>
-                            <div class="info" id="project-title">
+                            <div class="info">
                                 <h3>Ryan Fanili Paiting Inc</h3>
                                     <p>Business Website</p>
                             </div>
                         </a>
                     </div>
                 </div><!-- // end project 6 -->
-            </div><!-- end row-->
+            </div><!-- // end row-->      
+
+        </div>
         <!-- /.container -->
+
+   
 
     </div>
     <!-- /.content-section-b -->
-</section>
- 
+    <a  name="contact"></a>
+    <div class="content-section-b">
 
-    
-    <!-- /.content-section-contact -->
-<section id="contact" class="background-grey" data-stellar-background-ratio="0.5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="contact-title">Contact Me</h1>
-      
-                    <ul class="tabs curly_brackets list-inline " data-tabs="tabs" id="about-tabs">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 col-md-8 col-lg-12">
+                    <hr class="section-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="contact-heading text-center">Contact<br></h2>
+                    <ul class="tabs curly_brackets list-inline" data-tabs="tabs" id="contact-links">
                       
-                            <li><a href="mailto:uma.petersen@gmail.com">Email</a></li>
-                            <li><a href="https://www.linkedin.com/in/umapetersen">Linkedin</a></li>
-                            <li><a href="https://twitter.com/Octothorpe12">Twitter</a></li>
-                            <li><a href="https://github.com/upcode">Github</a></li>      
+                    <li><a href="mailto:uma.petersen@gmail.com">Email</a></li>
+                    <li><a href="https://www.linkedin.com/in/umapetersen">Linkedin</a></li>
+                    <li><a href="https://twitter.com/Octothorpe12">Twitter</a></li>
+                    <li><a href="https://github.com/upcode">Github</a></li>    
 
-                 </ul>
-                       <hr class="section-heading-spacer text-center">
-<!-- </div> -->
-
+                    </ul>
+                    <hr class="section-heading-spacer text-center">
                 </div><!-- // col-->
             </div><!-- // row -->
             <div class="row">
-                
-                <div class="col-lg-12">
+                <div class="col-xs-12 col-md-8 col-lg-12">
                     <div class="contact">
-                    <ul class="list-inline banner-social-buttons text-center">
-                        
-                        <li>
-                            <a href="https://twitter.com/Octothorpe12" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/upcode" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/umapetersen" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                        <li>
-                            <a href="mailto:uma.petersen@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope-o fa-fw"></i> <span class="network-name">Email</span></a>
-                        
-                        </li>
-                    </ul>
-                </div>
-                </div><!-- // end col-6 -->
+                        <ul class="list-inline contact-social-buttons text-center">
+                            <li>
+                                <a href="https://twitter.com/Octothorpe12" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/upcode" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/umapetersen" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            </li>
+                            <li>
+                                <a href="mailto:uma.petersen@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope-o fa-fw"></i> <span class="network-name">Email</span></a>
+                            
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--// end col-->
             </div><!-- // end row-->
-        </div>
-     <!-- /.container -->
 
-</section>
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+	
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <ul class="list-inline">
+                <div class="col-xs-6 col-md-4 col-lg-4">
+                    <ul class="list-inline footer-menu">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#">About</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#about">About</a>
+                            <a href="#portfolio">Portfolio</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Projects</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="mailto:uma.petersen@gmail.com">Contact</a>
-                        </li>
+                
                         <li>
                             <a href="http://upcodeblog.herokuapp.com/">Blog</a>
                         </li>
                     </ul>
-                </div>
-                       <div class="col-md-3">
-              <a id="copyright" href="http://umapetersen.com">
-                        Copyright &copy; Uma Petersen 2016</a>
-                </div>
-                 <div class="footer-col col-md-2 social-icons">
+                </div><!-- // end col-->
+                <div class="col-xs-6 col-md-1 col-lg-4">
+                    <a id="copyright" href="http://umapetersen.com">
+                    <p class="copyright text-muted small">Copyright &copy; Uma Petersen 2016. All Rights Reserved</a></p>
+                </div><!-- // end col-->
+                <div class="footer-col col-xs-6 col-md-1 col-lg-4 social-icons">
                         <ul class="list-inline">
                             <li class="social-icons">
                                 <a href="https://twitter.com/Octothorpe12">
@@ -748,19 +625,19 @@
                                 </a>
                             </li>
                         </ul>
-                        
-                    </div>
-            </div>
-        </div>
-    </footer>
+                    </div><!-- // footer-col-->
 
-  
-     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+            </div><!-- // end row-->
+        </div><!-- // end container-->
+    </footer>
+    <!-- Modal Windows Section -->
+         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll visible-xs visible-sm">
         <a class="btn btn-primary" href="#page-top">
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
+
 
     <!--================//MODAL WINDOW //================ -->
     <!-- Project Modals -->
@@ -777,11 +654,11 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <center><h2>Wanderlust</h2></center>
+                            <h2>Wanderlust</h2>
                             <br>
                             <img src="/static/img/projects/wanderlust.png" class="img-responsive img-centered" alt="wanderlust">
                             <h4>Project Summary</h4>
-                            <p>Wanderlust allows world travelers to track their country or state visits using a D3 interactive map. This map enables users to click on a country or state. Once the country or state color has been changed, the visits are stored for future use. A user has the ability to upload a photo, which then becomes a postcard. The front displays a picture, while the back displays the address and description. Wanderlust also provides users with a timeline in which they can add their photos and journal their travels. This app allows users to track all their travels in one convenient place. Discover new and exciting places and track all your world travels with Wanderlust.</p>
+                            <p class="words">Wanderlust allows world travelers to track their country or state visits using a D3 interactive map. This map enables users to click on a country or state. Once the country or state color has been changed, the visits are stored for future use. A user has the ability to upload a photo, which then becomes a postcard. The front displays a picture, while the back displays the address and description. Wanderlust also provides users with a timeline in which they can add their photos and journal their travels. This app allows users to track all their travels in one convenient place. Discover new and exciting places and track all your world travels with Wanderlust.</p>
                             <ul class="list-inline item-details">
                                 <li><h4>Stack:</h4>
                                   Pyton, JavaScript / jQuery, Bootstrap, HTML5, CSS3, D3.js
@@ -804,7 +681,7 @@
                                     <strong>Web Development</strong>
                                 </li>
                             </ul>
-                            <center><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></center>
+                          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div><!-- // end modal body-->
                     </div><!-- col-lg-8 col-lg-offset-2-->
                 </div><!-- // end row-->
@@ -824,12 +701,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <center><h2>[CODE]...BLOG</h2></center>
+                           <h2>[CODE]UP...BLOG</h2>
                             <hr class="star-primary">
                             <img src="/static/img/projects/blog.png" class="img-responsive img-centered" alt="blog">
                             <h4>Project Summary</h4>
 
-                            <p>Created Programming blog, and resources with links that I found intersiting while learning to program.</p>
+                            <p class="words">Created Programming blog, and resources with links that I found intersiting while learning to program.</p>
                             <ul class="list-inline item-details">
                                 <li><h4>Stack:</h4>
                                   Pyton, JavaScript / jQuery, Bootstrap, HTML5, CSS3, D3.js
@@ -852,7 +729,7 @@
                                     </strong>
                                 </li>
                             </ul>
-                            <center><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></center>
+                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div><!-- // end modal body-->
                     </div><!-- // end col-->
                 </div><!-- // end row-->
@@ -873,14 +750,14 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <center><h2>About Me</h2><center>
+                           <h2>About Me</h2>
                             <br>
-                            <center>
+                         
                             <img src="/static/img/projects/about-me.png" class="img-responsive img-centered" alt="">
-                            </center>
+                          
                             <h4>Project Summary</h4>
 
-                            <p>Created Personal website about myself and my experince in software development</p>
+                          <p class="words">Created Personal website about myself and my experince in software development</p>
                             <ul class="list-inline item-details">
                                 <li><h4>Stack:</h4>
                                   Pyton, JavaScript / jQuery, Bootstrap, HTML5, CSS3, D3.js, Flask, Heroku
@@ -902,7 +779,7 @@
                                     <strong>Web Development</strong>
                                 </li>
                             </ul>
-                            <center><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></center>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div><!-- // end modal body-->
                     </div><!-- // end col-->
                 </div><!-- // end row-->
@@ -921,15 +798,15 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <center><h2>Decisons</h2></center>
+                            <h2>Decisons</h2>
                             <hr class="star-primary">
                             <br>
-                            <center>
+                          
                             <img src="/static/img/projects/magic.png" class="img-responsive img-centered" alt="">
-                            </center>
+                            
                             <h4>Project Summary</h4>
 
-                            <p>Created magic 8 ball game called decisions. User can log in and ask a question and returns an answer to their question.</p>
+                            <p class="words">Created magic 8 ball game called decisions. User can log in and ask a question and returns an answer to their question.</p>
                             <ul class="list-inline item-details">
                                 <li><h4>Stack:</h4>
                                   Pyton, FLask, heroku JavaScript / jQuery, Bootstrap, HTML5, CSS3
@@ -952,7 +829,7 @@
                                     </strong>
                                 </li>
                             </ul>
-                            <center><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></center>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div><!-- // end modal body-->
                     </div><!-- // end col-->
                 </div><!-- // end row-->
@@ -971,12 +848,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <center><h2>San Francisco Love Story</h2></center>
+                            <h2>San Francisco Love Story</h2>
                             <hr class="star-primary">
                             <br>
                             <img src="/static/img/projects/sf.png" class="img-responsive img-centered" alt="">
                             <h4>Project Summary</h4>
-                            <p>Created a blog that allows users to login, update and create new content for a blog post. Blog is intented to explore city of San Francisco and write a blog post.</p>
+                            <p class="words">Created a blog that allows users to login, update and create new content for a blog post. Blog is intented to explore city of San Francisco and write a blog post.</p>
 
                             <p></p>
                             <ul class="list-inline item-details">
@@ -1011,9 +888,9 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <center><h2>Ryan Fanelli Painting, Inc</h2></center>
+                            <h2>Ryan Fanelli Painting, Inc</h2>
                             <h4>Project Summary</h4>
-                            <p>Created a business web page for Rayn Fanelli Painting, Inc. Simple one page web application about Ryan's paiting business with all this services he provides.</p>
+                            <p class="words">Created a business web page for Rayn Fanelli Painting, Inc. Simple one page web application about Ryan's paiting business with all this services he provides.</p>
 
                                
                                 <img src="/static/img/projects/ryan.png" class="img-responsive img-centered" alt="">
@@ -1048,20 +925,17 @@
     </div><!-- // end modal 6-->
 <!--================//MODAL WINDOW //================ -->
 
+
 <!-- JAVASCRIPT AND JQUERY SCRIPTS BELOW -->
 <!-- #################################################################################################### -->
 
-
-
-<!-- parallax loading end -->  
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- jQuery -->
     <script src="/static/bootstrap/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="/static/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="/static/js/jquery.easing.1.3.js"></script>
 
 </body>
 
