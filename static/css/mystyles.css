@@ -392,7 +392,7 @@ ul.curly_brackets li:last-child {
     padding-right:50px; 
     margin-right:0; }
 /*=== Hidden Movile Elements ===*/
-
+/*
     @media screen and (max-width: 1024px) {
         .pieChart {
             display: none !important;
@@ -453,4 +453,4 @@ ul.curly_brackets li:last-child {
         width: 100%;
     }
 }
-
+*/
