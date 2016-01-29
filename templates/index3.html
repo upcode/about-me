@@ -29,10 +29,10 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
-<script language="javascript">
+<script>
     $(function() {
-        $(".designer-click").click(function() {
-            animate(".animated", 'fadeInLeftBig');
+        $(".designer-click a").click(function() {
+            animate(".animated", 'fadeInRighBig');
             return false;
         });
     });
@@ -51,7 +51,17 @@
     <!-- Bootstrap Core JS -->
     <!-- Bootstrap Core CSS -->
     <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" type='text/css'>
-
+<!--============= My CSS FILES =================-->
+    <link href="/static/css/ihover.css" rel="stylesheet"/>
+    <link href="/static/css/d3-bubble.css" rel="stylesheet"/>
+    <link href="/static/css/barchart.css" rel="stylesheet"/>
+    <link href="/static/css/animate.css" rel="stylesheet"/>
+    <!-- Custom CSS -->
+     <link href="/static/css/modal-windows.css" rel="stylesheet"/>
+    <link href="/static/css/mystyles.css" rel="stylesheet"/>
+    <link href="/static/css/global.css" rel="stylesheet"/>
+<!--     <link href="/static/css/mobile.css" rel="stylesheet"/>
+ -->
 
     <!-- Custom Fonts -->
     <link href="/static/bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -63,34 +73,22 @@
     <link href="/static/img/logo.ico" rel="shortcut icon"/>
     <!--============= My CSS FILES =================-->
 
-<!--============= My CSS FILES =================-->
-    <link href="/static/css/ihover.css" rel="stylesheet"/>
-    <link href="/static/css/d3-bubble.css" rel="stylesheet"/>
-    <link href="/static/css/barchart.css" rel="stylesheet"/>
-    <link href="/static/css/modal-windows.css" rel="stylesheet"/>
-    <!-- Custom CSS -->
-    <link href="/static/css/page.css" rel="stylesheet">
-    <link href="/static/css/mystyles.css" rel="stylesheet">
-    <link href="/static/css/animate.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
+   <!-- IE -->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
     
 </head>
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
 
 <!-- Nav Bar -->
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <div class="se-pre-con"></div>
-<p><a href="http://smallenvelop.com/display-loading-icon-page-loads-completely/"></a></p>
-
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" id="mobile_nav" role="navigation">
         <div class="container nav-container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -137,21 +135,20 @@
         <div class="container" id="header-title">
             <div class="row">
                 <div class="col-xs-12 col-md-8 col-lg-12">
-                    <div class="intro-message text-center">
+                    <div class="intro-message text-center" href="#about">
                        
                             <h1 class="header-title" id="page-title"><span id="u">U</span>ma
                                 <span id="p">P</span>etersen</h1>
-                        <div class="curly_brackets">
-                            <span>
-                            <p>Imagination . Creativity . Design + Logic =  
-                            <strong href="#about" class="flash">U.P.&#x21e1;</strong>[code]
-                            </p>
-                            </span>
+                    <h3 class="curly_brackets">
+                     
+                        <span>Imagination . Creativity . Design + Logic =  <div href="#about" class="flash">U.P.&#x21e1;[code]</div></span></h3>
+                           
+                  
                         </div>
-                       
                         <hr class="intro-divider">
                         <!-- header network buttons -->
                         <ul class="list-inline intro-social-buttons">
+
                             <li>
                                 <a href="https://twitter.com/Octothorpe12" class="btn btn-default btn-lg">
                                     <i class="fa fa-twitter fa-fw"></i> 
@@ -171,6 +168,7 @@
                                 </a>
                             </li>
                         </ul>
+                          </div>
                     </div><!-- // end intro-message --> 
                 </div><!--// end col-->
             </div><!-- // end row-->
@@ -180,11 +178,12 @@
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
-            <div class="row">
+            <div class="row animated fadeInLeftBig">
                 <div class="col-xs-12 col-md-8 col-lg-12 text-center">
 
                     <h1 class="engineer-titles text-center section-titles">Software Engineering</h1>
-                        <ul class="tabs curly_brackets list-inline " data-tabs="tabs" id="about-tabs">
+                        <ul class="tabs list-inline curly_brackets" data-tabs="tabs" id="about-tabs">
+                           
                             <li class="active">
                                 <a href="#engineer" data-toggle="tab">The Engineer</a>
                             </li>
@@ -195,15 +194,16 @@
                                 <a href="#featured" data-toggle="tab">Featured</a>
                             </li>
                         </ul>
+
                     <hr class="section-heading-spacer text-center">
                 </div>
             </div><!-- // end row-->
             <!-- ===========BEGAIN ENGINEER TAB ==================== -->
-            <div id="my-tab-content" class="tab-content">
+            <div id="my-tab-content" class="tab-content animated fadeInLeftBig">
                 <div class="tab-pane active" id="engineer">
                     <div class="row">
                         <div class="col-xs-6 col-md-4 col-lg-6">
-                            <div class="styled">
+                            <div class="engineer-image">
                             <img src="/static/img/engineer.jpg" width="432" height="427" class="img-responsive" id="engineer-image" alt="bubble-image" />
                             </div>
                                 <div class="jo">
@@ -378,7 +378,7 @@
     </section>
 
     <!-- Designer Section -->
-    <section id="designer" class="designer-section">
+    <section id="designer" class="designer-section animated fadeInRightBig">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-8 col-lg-12">
@@ -390,7 +390,7 @@
                 </div>
             </div><!-- // end row-->
                     <div class="row">
-                        <div class="col-xs-6 col-md-4 col-lg-6 animated fadeInLeftBig">
+                        <div class="col-xs-6 col-md-4 col-lg-6">
                             <h3 class="tab-titles" id="design-code">The Designer</h3>
                                 <p class="words animated fadeInLeftBig">
                                     I think of software engineering as an art; I like to combine creativity and logic into my software.  I feel this gives me a unique perspective. I like to find inspiration in everyday things when it comes to programing and designing web applications. My inspiration comes from reading a book, walking the streets of San Francisco, or  incorporating technology to solve my own problems.  I often feel people forget how creative software development can be.  Each artist has her own medium.  Some use canvas, some paper, some paint on walls.  My medium is my computer, where my creativity, inspiration, and imagination come to life.  My paintbrush is my code.
@@ -398,7 +398,7 @@
                                 
                               
                         </div>
-                        <div class="col-xs-12 col-md-4 col-lg-6 animated fadeInLeftBig">
+                        <div class="col-xs-12 col-md-4 col-lg-6">
                             
                         <!-- <img src="../static/img/designer.jpg" width="432" height="427" class="img-responsive styled"  alt="designer-image" /> -->
                               <h3 class="tab-titles animated fadeInLeftBig" id="design-process">My Design Process</h3>
@@ -406,7 +406,7 @@
 
                         </div>
                     </div><!-- end row-->
-            </div><!-- // end row-->
+            </div><!-- // container-->
          <!--  JS D3 Donut Design Chart-->          
         <script src="static/js/d3-donut.js"></script> 
         <!--  JS D3 Donut Design Chart--> 
@@ -472,7 +472,7 @@
                 <div class="col-xs-6 col-sm-4 portfolio-item">
                     <div class="ih-item square effect6 from_top_and_bottom">
                         <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                            <div class="img-p">
+                            <div class="img-p center">
                                 <img src="/static/img/projects/about-me.png" class="img-responsive" alt="about-me-page">
                             </div>
                             <div class="info">

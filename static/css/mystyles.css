@@ -1,188 +1,32 @@
-	/*---------------------------------------------- HTML / BODY ---------------------------------------------- */
-	/*---------------------------------------------- Background ---------------------------------------------- */
-.intro-section, .designer-section, .contact-section{
-	background-image: url(/static/img/backgrounds/grey.png)!important;
-	background-attachment: scroll;
+/*---------------------------------------------- OTHER ---------------------------------------------- */
+body a { color: #666666; }
 
-}
-.about-section, .portfolio-section {
-	background-image: url(/static/img/backgrounds/diamond.png)!important;
-	background-attachment: scroll;
-}
+ .intro-social-buttons {
+ 	display: inline;
+ }
 
-body {
-    width: 100%;
-    height: 100%;
-}
+/* headings */
+h1, h2, h3, h4, h5, h6, th, label, .curly_brackets:before, .curly_brackets:after,
+ul.curly_brackets li:first-child:before, .curly_brackets li:last-child:after, 
+nav.pages span.current, #social_icons li a, p,
+ strong { color: #222222; }
 
-html {
-    width: 100%;
-    height: 100%;
-}
 
+#social_icons li a {color:#3d3d3d; }
+
+.section-heading-spacer {
+width: 200px;
+border-top: 1px solid #f8f8f8;
+border-bottom: 1px solid rgba(0,0,0,0.5);
 }
-html, body, div, span,
-h1, h2, h3, h4, h5, h6, p,
-a, img, ol, ul, li, 
-{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-family: inherit;
-	font-size:100%;
-	outline:none;
-	vertical-align:baseline;
-	text-decoration:none; }
 	
-ol, ul { list-style: none; }
+li.active a { text-decoration:underline; 
 
+ }
 
-
-section {
-	padding: 100px 0
+li.current>a {
+	text-decoration:underline; 
 }
-/*---------------------------------------------- Footer ---------------------------------------------- */
-
-body > footer { 
-	 height: 100%;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	height:70px;
-	position:relative;
-	border-top:1px dashed #ccc;
-	background-color: white; }
-/*---------------------------------------------- Nav Bar ---------------------------------------------- */
-
-body > nav { 
-	 height: 100%;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	height:100px;
-	position:relative;
-	border-bottom:3px dashed #ddd;
-	background-color: white; }
-
-body>.navbar  { 
-		box-shadow:
-	 	0 0 0 1px #f8f8f8, /* white border */
-        0 5px 0 -3px #f8f8f8, /* The first layer */
-        0 5px 0 -2px #ddd /* The first layer shadow */	} 
-
-body>.navbar {
-	padding:8px;
-	border-bottom:1px dashed #ccc; }
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  
-    background-color: transparent;
-}
-/*------=a-------------------*/
-
-a { cursor:pointer; }		
-a:hover { text-decoration:underline; }
-
-a.button { 
-	display:inline-block;  
-	text-shadow:none;
-	padding-top:0.6em;
-	padding-bottom:0.6em; }
-a.button:hover { color:white; }	
-
-li.active>a, a.active, a.current, a:hover  { color:#000; }
-a.current { text-decoration:underline; }	
-	
-h1>a, h2>a, h3>a, h4>a, h5>a, h6>a { 
-	font-size:inherit;
-	text-decoration:none;
-	color:inherit; }
-	
-.words {
-    font-size: 20px;
-}
-
-   .tab-list {
-    font-size: 20px;
-}
-.tab-titles{
-	font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
-
-ul, li, a {
-    font-size: 20px;
-
-}
- 
-
-.section-titles {
-	font-size: 50px;
-	font-weight: 200;
-	
-text-align: center;
-}
-
-
-.header-title {
-	font-size: 150px;
-	font-weight: 700;
-	letter-spacing: 3px;
-
-	font-family: "Playfair Display";
-
-}
-
-  /*---------------------------------------------- fonts ---------------------------------------------- */
-	
-	/* import google fonts */
-	@import url(//fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic);		 		 		 
-	@import url(//fonts.googleapis.com/css?family=Oranienbaum);		 		 		 
-	@import url(//fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic);	
-	
-	/* font families */
-    h1, h2, h3, h4, h5, h6, th, table caption, h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a  { 
-		font-family: "Oranienbaum";
-		font-style:normal; 
-		font-weight:normal; 
-		text-transform:none;		 }
-    body, hgroup > h2, .curly_brackets span:before, .curly_brackets span:after, .navigation li a  { font-family: "Playfair Display"; }		
-	a, i button, .button, blockquote,  p,  hgroup > h2, .curly_brackets span { 
-		font-family: "Playfair Display";
-	/*	font-style:italic;*/ 
-		font-weight:normal;
-	    text-transform:none; }	 		 		 
-
-	/*---------------------------------------------- colors ---------------------------------------------- */
-	
-	/* headings */
-	h1, h2, h3, h4, h5, h6, th, label, .curly_brackets:before, .curly_brackets:after,
-	ul.curly_brackets li:first-child:before, .curly_brackets li:last-child:after, 
-	nav.pages span.current, #social_icons li a, p,
-	 strong { color: #222222; }
-	
-	/* body */
-	body a { color: #666666; }
-	
-	/* links */
-	/*a, code, nav, li  { color: #a09f9d; }*/
-	
-	/* active/hover */
-	/*li.active>a, a.active, a.current, a:hover, li.page-scroll a, .current-menu-item a, .page-scroll-has-children.current-page-scroll li a:hover,
-	a:hover, ul.tabs li.active, ul.tabs li a:hover { color: #f8f8f8;  }*/
-	
-	/* other stuff */
-	/*body { background-color:#f3f3f3; }*/
-	/*.separator, .page-title:after, h3:after { background:#222222;  }*/
-	#social_icons li a {color:#3d3d3d; }
-
-	.section-heading-spacer {
-	width: 200px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.5);
-	}
-
 a:link
 a:visited {
 	 color: rgb(24, 188, 156);
@@ -194,17 +38,6 @@ a:focus {
 	 color: rgb(24, 188, 156);
 }
 
-li.current>a {
-	text-decoration:underline; 
-
-}
-
-li.active a { text-decoration:underline; 
- /*   color: #a09f9d;*/
- 
- }
-
-
 a:hover {
     color: rgb(24, 188, 156);
 }
@@ -212,15 +45,9 @@ a:hover {
 color: rgb(24, 188, 156); 
 
  }
+body a { color: #666666; }
 
-ul, ol, li  {
-	list-style-type: none;
-}
-	/*---------------------------------------------- nav bar ---------------------------------------------- */
-
-		
-
-
+/*---------------------------------------------- Nav Bar ---------------------------------------------- */
 .navbar { 
 	width:auto;
 	float:right;
@@ -247,7 +74,7 @@ ul, ol, li  {
 	font-style:normal;
 	text-align:center; }
 	.navbar {
-		padding:8px;
+	padding:8px;
 	border-bottom:1px dashed #ccc; }
 	}
 
@@ -256,89 +83,50 @@ ul, ol, li  {
 	font-weight: bold;
 }
 
-@media (min-width: 768px) {
-  .navbar-nav {
-    width: 100%;
-    text-align: right;
-  }
-  .navbar-nav > li {
-    float: none;
-    display: inline-block;
-  }
-  .navbar-nav > li.navbar-right {
-    float: right !important;
-  }
+body > nav { 
+	 height: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	height:100px;
+	position:relative;
+	border-bottom:3px dashed #ddd;
+	background-color: white; }
+
+body>.navbar  { 
+		box-shadow:
+	 	0 0 0 1px #f8f8f8, /* white border */
+        0 5px 0 -3px #f8f8f8, /* The first layer */
+        0 5px 0 -2px #ddd /* The first layer shadow */	} 
+
+body>.navbar {
+	padding:8px;
+	border-bottom:1px dashed #ccc; }
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  
+    background-color: transparent;
 }
-
-
-@media(min-width:767px) {
-    .navbar {
-        padding: 20px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-    .top-nav-collapse {
-        padding: 0;
-    }
-}
-
-	/*---------------------------------------------- contact ---------------------------------------------- */
 	
+/*---------------------------------------------- Intro Section / Header  ---------------------------------------------- */
 
-.intro-message {
-    position: relative;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.intro-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
-}
-.intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-}
-	.intro-divider {
+.intro-divider {
     width: 400px;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
-@media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
-    }
- @media(max-width:767px) {
-    #page-title {
-    	font-size: 80px;
-        padding-bottom: 15%;
-    }
-@media(max-width:767px) {
-    .intro-message {
-      	font-size: 3em;
-        
-    }
 
-    .intro-message > h1 {
-        font-size: 3em;
-     
-       
-    }
-
-    ul.intro-social-buttons > li {
+ul.intro-social-buttons > li {
         display: block;
         margin-bottom: 20px;
         padding: 0;
     }
 
-    ul.intro-social-buttons > li:last-child {
+ul.intro-social-buttons > li:last-child {
         margin-bottom: 0;
     }
 
-    .intro-divider {
-        width: 100%;
+.intro-divider {
+        width: 50%;
     }
 }
 .network-name {
@@ -347,12 +135,57 @@ ul, ol, li  {
     font-weight: 400;
     letter-spacing: 2px;
 }
-	/*---------------------------------------------- sections ---------------------------------------------- */
+/*---------------------------------------------- Intro Title ---------------------------------------------- */
+.intro-message {
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+	letter-spacing: 3px;
+}
+#tag-line {
+	padding-top: 10px;
+	font-size: 20px;
+}
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 10em;
+    font-weight: 700;
+}
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+
+
+
+/*---------------------------------------------- Footer ---------------------------------------------- */
+body > footer { 
+	 height: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	height:70px;
+	position:relative;
+	border-top:1px dashed #ccc;
+	background-color: white; }
+
+
+
+
+/*---------------------------------------------- sections ---------------------------------------------- */
+
+
+.section-titles {
+	font-size: 50px;
+	font-weight: 200;
+	text-align: center;
+	
+}
 
 .intro-section {
     height: 100%;
-    padding-top: 150px;
-    padding-bottom: auto;
+    padding-top: 250px;
+    padding-bottom: 150px;
     text-align: center;
   	
 }
@@ -361,15 +194,22 @@ ul, ol, li  {
 .about-section {
     height: 100%;
     padding-top: 150px;
-    padding-bottom: auto;
+    padding-bottom: 100px;
     /*text-align: center;*/
     
+}
+
+/*------=i frame ---------*/
+iframe {
+    overflow:hidden;
+    border: 1px solid #000000;
+
 }
 
 .portfolio-section {
     height: 100%;
     padding-top: 150px;
-    padding-bottom: auto;
+    padding-bottom: 100px;
    /* text-align: center;*/
     
     
@@ -378,7 +218,7 @@ ul, ol, li  {
 .designer-section {
     height: 100%;
     padding-top: 150px;
-     padding-bottom: auto;
+     padding-bottom: 100px;
    /* text-align: center;*/
     
 }
@@ -386,40 +226,48 @@ ul, ol, li  {
     height: 100%;
     padding-top: 250px;
     padding-bottom: 250px;
-     text-align: center;
+    text-align: center;
     
 }
 
-	
-/*------=i frame ---------*/
-iframe {
-    overflow:hidden;
-    border: 1px solid #000000;
- 
+.img-p img {
+	position: center;
 }
+/*---------------------------------------------- CSS Anmination ---------------------------------------------- */
+
+#p, #u {
+    -webkit-animation: color_change 3s  alternate;
+    -moz-animation: color_change 3s  alternate;
+    -ms-animation: color_change 3s  alternate;
+    -o-animation: color_change 3s  alternate;
+    animation: color_change 3s  alternate;
+    }
+    @-webkit-keyframes color_change {
+        from { color: rgb(24, 188, 156); }
+        to { color: #ddd; }
+    }
+    @-moz-keyframes color_change {
+        from { color: rgb(24, 188, 156); }
+        to { color: #ddd; }
+    }
+    @-ms-keyframes color_change {
+        from { color: rgb(24, 188, 156); }
+        to { color: #ddd; }
+    }
+    @-o-keyframes color_change {
+        from { color: rgb(24, 188, 156); }
+        to { color: #ddd; }
+    }
+    @keyframes color_change {
+        from { color: rgb(24, 188, 156); }
+        to { color: #ddd; }
+    }
+
+    .flash {
+        color: rgb(24, 188, 156);
+        font-size: 28px;
+        display: inline;
+    }
 
 
-/*------=social icons---------*/
 
-#social-icons { 
-	float:right;
-	padding:0; }
-	
-#social-icons li { 
-	display:inline-block;
-	margin:8px 0 0 12px; }
-	
-#social-icons li a { 
-	display:inline-block;
-	text-align:center;
-	color:#3d3d3d;
-	font-size:1.25em; }
-	
-#social-icons li a:hover { text-decoration:none; }
-
-body>footer .container { padding:0; }
-	/*---------------------------------------------- contact ---------------------------------------------- */
-	.contact-social-buttons {
-		position: center;
-	}
-	
