@@ -1,0 +1,165 @@
+@media only screen and (min-width: 768px) {
+    
+    /* always display navigation menu on large resolutions */
+    .navbar { display:block !important; }
+    
+    
+    /*-------=dropdown menu-------------------*/
+    .navbar li ul {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        padding:0;
+        left:0; }
+        
+    .navbar>li>ul {
+        margin-top:-10px; 
+        margin-left:-70px; 
+        left:50%; }
+                
+    .navbar li ul ul {
+        top: 0;
+        left: 100%;
+        margin-left:-10px; }
+        
+    .navbar li:hover > ul { display: block; }
+        
+    .navbar li ul li {
+        width:100%;
+        clear:both;
+        float:left;
+        text-align:center;
+        position:relative; }
+        
+    .navbar li ul li a {
+        border-bottom: 1px dashed #ccc;
+        margin:0; 
+        font-size:1em;
+        display:block;
+        padding:.4em 1em;
+        min-width:140px; }
+    .navbar li ul li:last-child>a { border-bottom:none; }
+    .navbar li ul li a:hover, 
+    .navbar li ul li.current_page_item a, 
+    .navbar li ul li.current-menu-item a  { background: white; }
+
+}
+}
+@media only screen and (max-width: 767px) {
+    /*-------=footer-------------------*/
+    
+    body > footer {
+        height:105px;
+        margin-top:-125px; }
+    
+    #social_icons, #copyright_info { 
+        text-align:center; 
+        float:none; 
+        margin-bottom:0; }
+        
+    #social_icons li:first-child { margin-left:0; }
+
+    .navbar {
+        display:block;
+        position:absolute;
+        right:0;
+        top:17px;
+        line-height:100%;
+        margin-bottom:0;
+        font-size:1.45em; }
+                    
+    .navbar:hover { text-decoration:none; } 
+    
+    ul.navbar {
+        clear: both;
+        z-index: 10000;
+        display: none;
+        width:100%;
+        margin:0 0 10px 0;
+        border:1px dashed #ccc;  }
+    
+    .navbar li {
+        text-align:left;
+        margin:0;
+        display:block;
+        width:100%; }
+        
+    .navbar li ul { padding:0; }    
+    
+    .navbar li a {
+         clear: both;
+         margin:0 15px 0 0;
+         padding:5px 0;
+         width:100%;
+         display:block;
+         border-bottom:1px dashed #ccc;
+         background:#f8f8f8; }
+                 
+    .navbar li a:hover, 
+    .navbar li.active a,
+    .navbar li ul l a
+     {  background:white; }
+         
+    .navbar li:last-child>a { border-bottom:none; } 
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    
+    
+    
+        
+/*-------=curly brackets style (removed on mobile devices) --------*/
+        
+    .curly_brackets span:before, .curly_brackets li:first-child:before  { content:""; }
+    .curly_brackets span:after, .curly_brackets li:last-child:after { content:""; }
+    .curly_brackets span { padding-left:0; padding-right:0; }
+    ul.curly_brackets li:first-child { padding-left:0;  }
+    ul.curly_brackets li:last-child { padding-right:0;  } 
+}
+
+@media only screen and (max-width: 479px) {
+.bubble-chart {
+            display: none !important;}
+        #video-title {
+            display: none !important;}
+        .curly_brackets span:before, .curly_brackets li:first-child:before {
+            display: none !important;}
+        .portfolio-section{
+            display: none !important;}
+
+        .intro-social-buttons {
+            display: none !important;}
+        #design-process {
+            display: none !important;}
+        #pieChart {
+            display: none !important;}
+}
+
+@media only screen and (max-width: 479px) {
+            .intro-message {
+            display: center;
+            font-size: 10px;}
+              #tag-line  {
+             display: center;
+             font-size: 5px;
+              }
+            .designer-section{
+            font-size: 12px;
+            display: block; 
+            padding-left: 70px;}
+            .about-section{
+                display: center;
+                font-size: 12px;}
+
+
+
+
+
+    }
+
+ 
+        
+
+

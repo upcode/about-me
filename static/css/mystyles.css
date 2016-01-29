@@ -1,9 +1,7 @@
 /*---------------------------------------------- OTHER ---------------------------------------------- */
 body a { color: #666666; }
 
- .intro-social-buttons {
- 	display: inline;
- }
+
 
 /* headings */
 h1, h2, h3, h4, h5, h6, th, label, .curly_brackets:before, .curly_brackets:after,
@@ -134,6 +132,9 @@ ul.intro-social-buttons > li:last-child {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
+}
+.intro-social-buttons {
+position: center;
 }
 /*---------------------------------------------- Intro Title ---------------------------------------------- */
 .intro-message {
@@ -269,5 +270,4 @@ iframe {
         display: inline;
     }
 
-
-
+ 

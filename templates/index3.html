@@ -43,6 +43,13 @@
     //         $('#design-code').removeClass(".animated")}, 1300
     //     );
     // }
+
+    function resize() {
+  /* Update graph using new width and height (code below) */
+}
+ 
+d3.select(window).on('pieChart', resize);    
+
 </script>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
@@ -57,11 +64,12 @@
     <link href="/static/css/barchart.css" rel="stylesheet"/>
     <link href="/static/css/animate.css" rel="stylesheet"/>
     <!-- Custom CSS -->
-     <link href="/static/css/modal-windows.css" rel="stylesheet"/>
+    <link href="/static/css/modal-windows.css" rel="stylesheet"/>
+    <link href="/static/css/mobile.css" rel="stylesheet"/>
+
     <link href="/static/css/mystyles.css" rel="stylesheet"/>
     <link href="/static/css/global.css" rel="stylesheet"/>
-<!--     <link href="/static/css/mobile.css" rel="stylesheet"/>
- -->
+
 
     <!-- Custom Fonts -->
     <link href="/static/bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -79,7 +87,8 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 
-    
+
+
 </head>
 
 
@@ -147,7 +156,7 @@
                         </div>
                         <hr class="intro-divider">
                         <!-- header network buttons -->
-                        <ul class="list-inline intro-social-buttons">
+                        <ul class="list-inline">
 
                             <li>
                                 <a href="https://twitter.com/Octothorpe12" class="btn btn-default btn-lg">

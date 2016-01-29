@@ -1,3 +1,4 @@
+
    var pie = new d3pie("pieChart", {
     "header": {
         "title": {
@@ -134,4 +135,5 @@
         "onMouseoverSegment": null,
         "onMouseoutSegment": null
     }
+
     });
