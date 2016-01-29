@@ -104,6 +104,20 @@ body>.navbar {
   
     background-color: transparent;
 }
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
 	
 /*---------------------------------------------- Intro Section / Header  ---------------------------------------------- */
 
@@ -157,7 +171,29 @@ position: center;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
 
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
 
 
 /*---------------------------------------------- Footer ---------------------------------------------- */
@@ -270,4 +306,54 @@ iframe {
         display: inline;
     }
 
- 
+
+/*---------------------------------------------- CSS Anmination ---------------------------------------------- */
+
+/*@media only screen and (max-width: 479px) {
+   #video-title{ visibility: none !important; }
+}
+@media only screen and (max-width: 479px) {
+   .curly_brackets span:before, .curly_brackets li:first-child:before { visibility: none !important; }
+}
+
+@media only screen and (max-width: 479px) {
+   .bubble-chart{ visibility: none !important; }
+}
+@media only screen and (max-width: 479px) {
+ .portfolio-section{ visibility: none !important; }
+}
+@media only screen and (max-width: 479px) {
+    .intro-social-buttons { visibility: none !important; }
+}
+
+@media only screen and (max-width: 479px) {
+  #design-process{ visibility: none !important; }
+}
+@media only screen and (max-width: 479px) {
+  #pieChart{ visibility: none !important; }
+
+} 
+
+*/
+
+/*@media only screen and (max-width: 479px) {
+            .intro-message {
+            display: center;
+            font-size: 10px;}
+              #tag-line  {
+             display: center;
+             font-size: 5px;
+              }
+            .designer-section{
+            font-size: 12px;
+            display: block; 
+            padding-left: 70px;}
+            .about-section{
+                display: center;
+                font-size: 12px;}
+
+
+
+
+
+    } */
