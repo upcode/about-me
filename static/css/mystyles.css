@@ -187,7 +187,7 @@ body>.navbar {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-@media(max-width:767px) {
+/*@media(max-width:767px) {
     .intro-message {
     	position: center;
         padding-bottom: 15%;
@@ -212,7 +212,7 @@ body>.navbar {
         width: 100%;
 
     }
-}
+}*/
 
 .network-name {
     text-transform: uppercase;
@@ -293,7 +293,7 @@ body>.navbar {
     margin-top: 0;
 }
 
-@media(max-width:1199px) {
+/*@media(max-width:1199px) {
     ul.contact-social-buttons {
         position: center;
         margin-top: 15px;
@@ -306,7 +306,7 @@ body>.navbar {
         margin: 0;
         text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
         font-size: 3em;
-    }
+    }*/
 
     ul.contact-social-buttons > li {
     	position: center;
