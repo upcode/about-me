@@ -15,15 +15,18 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "freedom")
 def index():
     """ my about me page"""
     return render_template("index.html")
-
+# @app.route("/upcode")
+# def upcode():
+#     """ my about me page"""
+#     return render_template("upcode.html")
 
 @app.route("/error")
 def error():
     raise Exception("Error!")
-    
+
 ################################################################################
 if __name__ == "__main__":
-    
+
     PORT = int(os.environ.get("PORT", 5000))
     DEBUG = "NO_DEBUG" not in os.environ
 

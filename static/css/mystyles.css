@@ -7,47 +7,47 @@ html {
 }
 /*---------------------------------------------- fonts ---------------------------------------------- */
 /* import google fonts */
-	@import url(//fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic);		 		 		 
-	@import url(//fonts.googleapis.com/css?family=Oranienbaum);		 		 		 
-	@import url(//fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic);	
+	@import url(//fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic);
+	@import url(//fonts.googleapis.com/css?family=Oranienbaum);
+	@import url(//fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic);
 body,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 
+h6
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
     font-family: "Playfair Display",sans-serif;
     font-weight: 700;
-    font-style:normal; 
-	font-weight:normal; 
+    font-style:normal;
+	font-weight:normal;
 	text-transform:none;
 }
-body, hgroup > h2, .curly_brackets span:before, .curly_brackets span:after, .navigation li a  { font-family: "Playfair Display"; }		
+body, hgroup > h2, .curly_brackets span:before, .curly_brackets span:after, .navigation li a  { font-family: "Playfair Display"; }
 
-a, i button, .button,  p,  hgroup > h2, .curly_brackets span { 
+a, i button, .button,  p,  hgroup > h2, .curly_brackets span {
 		font-family: "Playfair Display";
-	/*	font-style:italic;*/ 
+	/*	font-style:italic;*/
 		font-weight:normal;
-	    text-transform:none; }	
+	    text-transform:none; }
 
 /*------=page colors -----------*/
 h1, h2, h3, h4, h5, h6, th, label, .curly_brackets:before, .curly_brackets:after,
-ul.curly_brackets li:first-child:before, .curly_brackets li:last-child:after, 
+ul.curly_brackets li:first-child:before, .curly_brackets li:last-child:after,
 nav.pages span.current, { color:#222222; }
 
 /* text shadow */
-h1, h2, h3, h4, h5, h6, a, 
- nav { text-shadow:1px 1px 1px white; }	
-li.active a { text-decoration:underline; 
+h1, h2, h3, h4, h5, h6, a,
+ nav { text-shadow:1px 1px 1px white; }
+li.active a { text-decoration:underline;
 
  }
 /*------= page h tags-------------------*/
-			
-h1, h2, h3, h4, h5, h6 { width:100%; }	
-	
-h1 { 
+
+h1, h2, h3, h4, h5, h6 { width:100%; }
+
+h1 {
 	text-align:center;
 	line-height:1; }
 p { margin-bottom:1em;
@@ -55,11 +55,11 @@ p { margin-bottom:1em;
  }
 /*------=a-------------------*/
 
-a { cursor:pointer; }		
+a { cursor:pointer; }
 a:hover { text-decoration:underline; }
 
 li.current>a {
-	text-decoration:underline; 
+	text-decoration:underline;
 }
 a:link
 a:visited {
@@ -76,7 +76,7 @@ a:hover {
     color: rgb(24, 188, 156);
 }
  .up:hover {
-color: rgb(24, 188, 156); 
+color: rgb(24, 188, 156);
 
  }
 body a { color: #666666; }
@@ -84,14 +84,14 @@ body a { color: #666666; }
 /*------=page Images-------------------*/
 
 .styled {  /* make img fluid */
-    max-width: 100%;  
-    height: auto;  
+    max-width: 100%;
+    height: auto;
     width: auto\9; /* ie8 */ }
-	
+
 .styled { display:block; }
 
 
-		
+
 .styled{ margin-right:1em; }
 .styled{ margin-left:1em; }
 
@@ -105,14 +105,14 @@ img { box-shadow:none; }
 /*---------------------------------------------- Nav Bar ---------------------------------------------- */
 
 .topnav {
-    font-size: 14px; 
+    font-size: 14px;
 }
 .words {
     font-size: 18px;
     font-weight: 400;
     font-family: "Oranienbaum";
 }
-body > nav { 
+body > nav {
 	 height: 100%;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -121,20 +121,36 @@ body > nav {
 	border-bottom:3px dashed #ddd;
 	background-color: white; }
 
-body>.navbar li ul { 
+body>.navbar li ul {
 		box-shadow:
 	 	0 0 0 1px #f8f8f8, /* white border */
         0 5px 0 -3px #f8f8f8, /* The first layer */
-        0 5px 0 -2px #ddd /* The first layer shadow */	} 
+        0 5px 0 -2px #ddd /* The first layer shadow */	}
 
 body>.navbar {
 	padding:8px;
 	border-bottom:1px dashed #ccc; }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  
+
     background-color: transparent;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*---------------------------------------------- Intro Section / Header  ---------------------------------------------- */
@@ -144,7 +160,7 @@ body>.navbar {
     padding-bottom: 50px;
     text-align: center;
     background-image: url(/static/img/backgrouds/grey.png) no-repeat center center;
-   
+
 }
 
 .intro-message {
@@ -208,19 +224,23 @@ body>.navbar {
 /*------=page Images-------------------*/
 
 .styled {  /* make img fluid */
-    max-width: 100%;  
-    height: auto;  
+    max-width: 100%;
+    height: auto;
     width: auto\9; /* ie8 */ }
-	
+
 .styled { display:block; }
 
 
-		
+
 .styled{ margin-right:1em; }
 .styled{ margin-left:1em; }
 
 
 /*---------------------------------------------- SECTIONS ---------------------------------------------- */
+
+#designer {
+  background-image: url(/static/img/backgrounds/grey.png)!important;
+}
 .intro-header {
     background-image: url(/static/img/backgrounds/grey.png)!important;}
 
@@ -242,11 +262,19 @@ body>.navbar {
     background-image: url(/static/img/backgrounds/grey.png)!important;
 	background-attachment: scroll;
 }
-
-.section-heading {
-    margin-bottom: 30px;
+/*.content-section-c {
+    background-image: url(/static/img/backgrounds/white.png)!important;
+}*/
+.content-section-c {
     position: center;
+    padding: 50px 0;
+    padding-bottom: 150px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    background-image: url(/static/img/keyboard.jpg)!important;
+    background-attachment: scroll;
 }
+
 
 .section-heading-spacer {
     position: center;
@@ -356,8 +384,8 @@ iframe {
 .curly_brackets span:after, .curly_brackets li:last-child:after { content:""; }
 .curly_brackets span { padding-left:0; padding-right:0; }
 ul.curly_brackets li:first-child { padding-left:0;  }
-ul.curly_brackets li:last-child { padding-right:0;  } 
-    
+ul.curly_brackets li:last-child { padding-right:0;  }
+
     /*------=curly brackets style-------*/
 
 .curly_brackets span:before, .curly_brackets span:after,
@@ -369,88 +397,26 @@ ul.curly_brackets li:last-child { padding-right:0;  }
     top:50%;
     position:absolute;
     font-style:normal !important; }
-            
-.curly_brackets span:before, .curly_brackets li:first-child:before  { content:"{"; left:0px; }   
-.curly_brackets span:after, .curly_brackets li:last-child:after { content:"}"; right:0px; }      
-    
-.curly_brackets span { 
+
+.curly_brackets span:before, .curly_brackets li:first-child:before  { content:"{"; left:0px; }
+.curly_brackets span:after, .curly_brackets li:last-child:after { content:"}"; right:0px; }
+
+.curly_brackets span {
     padding:5px 50px 5px 50px;
-    line-height:35px; 
+    line-height:35px;
     text-align:center;
     position:relative;
     display:inline-block; }
-        
-ul.curly_brackets { 
+
+ul.curly_brackets {
     padding:5px 0 10px 0;
     line-height:35px;
-    text-align:center;  }   
+    text-align:center;  }
 ul.curly_brackets li { position:relative; }
-ul.curly_brackets li:first-child { 
-    padding-left:50px; 
+ul.curly_brackets li:first-child {
+    padding-left:50px;
     margin-left:0; }
-ul.curly_brackets li:last-child { 
-    padding-right:50px; 
+ul.curly_brackets li:last-child {
+    padding-right:50px;
     margin-right:0; }
-/*=== Hidden Movile Elements ===*/
-/*
-    @media screen and (max-width: 1024px) {
-        .pieChart {
-            display: none !important;
-        }
-    }
 
-    @media screen and (max-width: 1024px) {
-        .bubble-chart {
-            display: none !important;
-        }
-    }
-    @media screen and (max-width: 1024px) {
-        #design-process {
-            display: none !important;
-        }
-    }
-    @media screen and (max-width: 1024px) {
-        #video-title {
-            display: none !important;
-        }
-    }
-    @media screen and (max-width: 1024px) {
-        iframe {
-            display: none !important;
-        }
-    }
-    @media screen and (max-width: 1024px) {
-        .video {
-            display: none !important;
-        }
-    }
-    @media screen and (max-width: 1024px) {
-        .curly_brackets{
-            display: none !important;
-        }
-    }
-
-    @media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
-    }
-
-    .intro-message > h1 {
-        font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-
-    .intro-divider {
-        width: 100%;
-    }
-}
-*/
