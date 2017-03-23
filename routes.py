@@ -11,19 +11,14 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "freedom")
                              ## ROUTES ##
 ################################################################################
 
-@app.route("/index")
-def index():
+@app.route("/")
+def pages():
     """ my about me page"""
     return render_template("page.html")
 
-@app.route("/")
-def test():
-    """ my about me page"""
-    #return render_template("upcode.html")
-    return render_template("index2.html")
-    # return render_template("aboutme.html")
-
-
+@app.errorhandler(404)
+def error_page(error):
+    return render_template('404.html'), 404
 
 @app.route("/error")
 def error():

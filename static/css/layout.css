@@ -9,7 +9,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
-  font-family: "Playfair Display",'Lato', 'Helvetica Neue', Helvetica,sans-serif;
+  font-family: "Playfair Display",sans-serif;
   overflow-x: hidden;
 
 }
@@ -320,6 +320,8 @@ form .row:first-child .floating-label-form-group {
 }
 footer {
   color: black;
+  background: url(/static/img/backgrounds/white.png)!important;
+
 }
 footer h3 {
   margin-bottom: 30px;
