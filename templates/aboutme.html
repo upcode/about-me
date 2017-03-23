@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Uma Petersen</title>
+    <!--============= D3 JAVASCRIPT =================-->
+  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/static/js/d3-bubble.js"></script>
+  <script type="text/javascript" src="/static/js/d3pie.js"></script>
+  <script type="text/javascript" src="/static/js/d3pie.min.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+  <!-- Bootstrap Core CSS -->
+  <link href="static/bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="static/bootstrap/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css' />
+
+  <!-- Theme CSS -->
+<!--   <link href="static/bootstrap/css/agency.min.css" rel="stylesheet">
+ -->  <link href="static/css/agency.css" rel="stylesheet">
+  <link href="static/css/upcode.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="/static/css/ihover.css" rel="stylesheet" />
+  <link href="/static/css/d3-bubble.css" rel="stylesheet" />
+  <link href="/static/css/barchart.css" rel="stylesheet" />
+  <link href="/static/css/animate.css" rel="stylesheet" />
+  <link href="/static/css/modal-windows.css" rel="stylesheet" />
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top" class="index">
+  <!-- Navigation -->
+  <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">UP&#x21e1;[CODE]</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#about">About</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#design">Design &amp; Code</a>
+          </li>
+          </li>
+          <li>
+            <a class="page-scroll" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="http://upcodeblog.herokuapp.com/">Blog</a>o
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-heading"><span id="u">U</span>ma <span id="p">P</span>etersen
+        </div>
+        <h3 class="curly_brackets"><span>Imagination . Creativity . Design + Logic =  <strong href="#about" class="flash">U.P.&#x21e1;</strong>[code]
+                        </span></h3>
+        <hr class="intro-divider">
+        <ul class="list-inline intro-social-buttons">
+          <li>
+            <a href="https://twitter.com/Octothorpe12" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+          </li>
+          <li>
+            <a href="https://github.com/upcode" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/umapetersen" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- About Section -->
+    <section id="about">
+        <div class="container">
+         <div class="row">
+                <div class="col-lg-12 text-center">
+                      <h2 class="section-heading">Software Engineer</h2>
+                      <ul class="tabs list-inline curly_brackets" data-tabs="tabs" id="about-tabs">
+                        <li class="active">
+                          <a href="#engineer" data-toggle="tab">The Engineer</a>
+                        </li>
+                        <li>
+                          <a href="#about-me" data-toggle="tab">All About Me</a>
+                        </li>
+                        <li>
+                          <a href="#featured" data-toggle="tab">Featured</a>
+                        </li>
+                      </ul>
+                      <hr class="section-heading-spacer text-center">
+                </div>
+            </div><!--// end row-->
+  <div class="row animated fadeInRightBig">
+                <div id="my-tab-content" class="tab-content animated fadeInLeftBig">
+                        <div class="tab-pane active" id="engineer">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <a href="http://www.bentonstreetphotography.com">
+                                    <img src="/static/img/engineer.jpg" width="432" height="427" class="img-responsive engineer-image" id="engineer-image" alt="bubble-image" /><small>Photo by Joahanna</small></a>
+                                </div>
+
+                            <div class="col-lg-4">
+                                <h3 class="tab-titles">Art of the Software Engineer</h3>
+                                <p class="words">
+                                  I'm a Full Stack Software Engineer from San Francisco with an interest in User Interface Design. I enjoy turning complex problems into simple, intuitive, minimalist interface designs. I attended San Jose State with a degree in Business Marketing, and a Software Engineering certificate from <a href="https://www.hackbrightacademy.com/">Hackbright Acadamy</a>. I worked at <a href="http://studiofathom.com/">FATHOM</a> I worked at as Full Stack software Engineer specializing in the development of high-quality user interfaces delivering optimal user experiences across web, application, and other platforms. Collaborative communication among end users, designers, and developers while effectively creating well-received products. Extensive technical skills spanning Languages, frameworks and libraries, and applications and tools. Big picture thinker excelling in solution development for intricate problems. Prior to working at FATHOM I worked at
+                                  <a href="https://www.groupon.com/">Groupon</a> as a product operational specialist, launching multiple core products and taking those products from pilot stage to full mainstream launch. I developed standard operating procedures and testing protocols to ensure high product quality for end users. In 2013, I attended the <a href="http://ghc.anitaborg.org/">Grace Hopper</a> conference, where my interest in programming took root. Now I am a full time software engineer with a passion for programming and design.
+                                </p>
+                                <h3 class="tab-titles">Technologies</h3>
+                                    <ul class="tab-list">
+                                      <li>
+                                        <em></em><i class='icon-ok'></i> Javascript / jQuery
+                                      </li>
+                                      <li><em></em>
+                                        <i class='icon-ok'></i>HTML5
+                                      </li>
+                                      <li><em></em>
+                                        <i class='icon-ok'></i>CSS3
+                                      </li>
+                                      <li><em></em>
+                                        <i class='icon-ok'></i>Responsive Web Designs
+                                      </li>
+                                      <li><em></em>
+                                        <i class='icon-ok'></i>User Experience Design
+                                      </li>
+                                      <li><em></em>
+                                        <i class='icon-ok'></i>Single Page Web App
+                                      </li>
+                                      <li><em></em>
+                                        <i class='icon-ok'></i>User Interactions
+                                      </li>
+                                      <li><em></em>
+                                        <i class='icon-ok'></i>Data Visualization
+                                      </li>
+                                      <li><em></em>
+                                        <i class='icon-ok'></i>Wireframes / Layout
+                                      </li>
+                                    </ul>
+                            </div>
+                        </div><!--// end row-->
+
+  <div class="row">
+                            <div class="col-lg-12">
+                                <div id="mainBubble" style="height: 900px;" class="bubble-chart mobile-hide"><svg class="mainBubbleSVG" width="1089.8020000000001" height="763"></svg></div>
+                                                            <script src="/static/js/d3bubble.js"></script>
+
+                            </div>
+                        </div>
+                        </div>
+                           <!-- ===========BEGAIN ABOUT ME TAB ==================== -->
+                <div class="tab-pane" id="about-me">
+                    <div class="row">
+                      <div class="col-lg-6 tab-titles">
+                        <img src="/static/img/designer.jpg" width="432" height="427" class="img-responsive styled" alt="designer-image" />
+                          <a href="http://www.bentonstreetphotography.com">
+                            <small class="jo">Photo by Joahanna</small></a>
+                      </div>
+                      <div class="col-lg-6" id="all-about">
+                        <h3 class="tab-titles">All About Me</h3>
+                        <p class="words">
+                          When I'm not coding or pushing pixels, you'll find me enjoying the challenge of learning a new language, traveling, listening to music, and enjoying city life. I am creative, I am innovator and problem slover. My experiences, education, and my passion for learning drive me to seek new adventures in all aspects of my life.
+                        </p>
+                        <h3 class="tab-titles">My Skills</h3>
+                        <ul class="tab-list">
+                          <li><em></em><i class='icon-ok'>
+                                            </i>Generating a great quantity of ideas
+                          </li>
+                          <li><em></em><i class='icon-ok'>
+                                            </i>Turning around life's obstacles
+                          </li>
+                          <li><em></em>
+                            <i class='icon-ok'>
+                                            </i>Where most people see a difficulty, I see an opportunity
+                          </li>
+                          <li><em></em>
+                            <i class='icon-ok'></i>Ping-Pong
+                          </li>
+                          <li><em></em>
+                            <i class='icon-ok'></i>Cooking
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row mobile-hide">
+                      <div class="col-lg-12">
+                        <ul class="chart">
+                          <li class="axis">
+                            <div class="label">MVP</div>
+                            <br>
+                            <br>
+                            <div class="label">All Star</div>
+                            <br>
+                            <br>
+                            <div class="label">Slugger</div>
+                            <br>
+                            <br>
+                            <div class="label">Triple A</div>
+                            <br>
+                            <br>
+                            <div class="label">Rookie</div>
+                          </li>
+                          <li class="bar teal animated fadeInUp" style="height: 95%;" title="95">
+                            <div class="percent">95<span>%</span></div>
+                            <div class="skill"> generate a great quantity of ideas
+                            </div>
+                          </li>
+                          <li class="bar salmon animated fadeInUp" style="height: 90%;" title="90">
+                            <div class="percent">90<span>%</span></div>
+                            <div class="skill">Turn around life's obstacles</div>
+                          </li>
+                          <li class="bar peach animated fadeInUp" style="height: 80%;" title="80">
+                            <div class="percent">80<span>%</span></div>
+                            <div class="skill">Where most people see a difficulty, I see an opportunity</div>
+                          </li>
+                          <li class="bar lime animated fadeInUp" style="height: 75%;" title="75">
+                            <div class="percent">50<span>%</span></div>
+                            <div class="skill">Ping-Pong</div>
+                          </li>
+                          <li class="bar grape animated fadeInUp" style="height: 40%;" title="40">
+                            <div class="percent">20<span>%</span></div>
+                            <div class="skill">Cooking</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+              <!-- ===========BEAGIN FEATURED TAB ==================== -->
+                <div class="tab-pane" id="featured">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3 class="tab-titles">Featured</h3>
+                            <br>
+                          <div class="card">
+                            <h4 class="card-header">Today Show</h4>
+                            <div class="card-block">
+                              <h5 class="card-title">Meeting the women of Silicon Valley: Software engineer Tracy Chou</h5>
+                              <p class="card-text">TODAY launches a new series called “Women of Silicon Valley” with a report on the push for more diversity in the tech world and a portrait of software engineer Tracy Chou, who is helping lead that movement. Natalie Morales reports</p>
+                              <a href="http://www.today.com/video/meeting-the-women-of-silicon-valley-software-engineer-tracy-chou-582041667634" class="btn btn-default">Today's Show</a>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <h4 class="card-header">Hackbright Blog</h4>
+                            <div class="card-block">
+                              <h5 class="card-title">34 Web Apps Built By Hackbright’s Women Engineers  </h5>
+                              <p class="card-text">During the last weeks of Hackbright Academy’s software engineering fellowship, each fellow uses their newfound skills to build their own web app. Scroll below to read about each of the fellows and learn about the awesome projects they created.</p>
+                              <a href="https://hackbrightacademy.com/blog/34-web-apps-built-hackbrights-newest-women-engineers/" class="btn btn-default">Hackbright Blog</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <h3 class="tab-titles">Hackbright Academy</h3>
+                          <h4 class="section-subheading text-muted">Software Engineering School for Women</h4>
+                          <br>
+                          <img class="img-responsive styled " src="/static/img/class-photo.jpg" alt="Card image cap">
+                        </div>
+                      </div>
+                    </div>
+
+
+        </div><!--// end container-->
+        </div>
+        </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="banner" class="bg-light-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Creative Design</h2>
+          <h3 class="section-subheading text-muted">Website success hinges on how user perceive it after the prodcution process</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Designer Section -->
+  <section id="designer">
+    <div class="container">
+      <div class="row animated fadeInRightBig">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Design &amp; Code</h2>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="tab-titles" id="design-code">The Designer</h3>
+            <br>
+          <p class="words animated fadeInLeftBig">
+            I think of software engineering as an art; I like to combine creativity and logic into my software. I feel this gives me a unique perspective. I like to find inspiration in everyday things when it comes to programing and designing web applications. My inspiration comes from reading a book, walking the streets of San Francisco, or incorporating technology to solve my own problems. I often feel people forget how creative software development can be. Each artist has her own medium. Some use canvas, some paper, some paint on walls. My medium is my computer, where my creativity, inspiration, and imagination come to life. My paintbrush is my code.
+          </p>
+        </div>
+      <div class="row mobile-hide">
+        <div class="col-lg-6">
+          <h3 class="tab-titles animated fadeInLeftBig text-center" id="design-process">My Design Process</h3>
+          <br>
+          <div class="pieChart animated fadeInLeftBig" id="pieChart"></div>
+        </div>
+      </div>
+      </div>
+      <br><br><br>
+      <!--  JS D3 Donut Design Chart-->
+      <script src="static/js/d3-donut.js"></script>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Define &sdot; Design &sdot; Deliver</h2>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-md-3">
+              <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-black"></i>
+                        <i class="fa fa-pencil-square-o  fa-stack-1x fa-inverse"></i>
+                    </span>
+              <h4 class="service-heading">Requirements</h4>
+              <p class="text-muted">Learn about your customers/ users, know the purpose of the application Application.Define and construct point of view based on customers needs and insights</p>
+            </div>
+            <div class="col-md-3">
+              <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-white"></i>
+                        <i class="fa fa-list-alt fa-stack-1x fa-inverse"></i>
+
+                    </span>
+              <h4 class="service-heading">Sketches</h4>
+              <p class="text-muted">Brainstrom many possible solutions and provide quick design and layout.</p>
+            </div>
+            <div class="col-md-3">
+              <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+              <h4 class="service-heading">Wireframes &amp; Mockups</h4>
+              <p class="text-muted">Build a deailed represenation of design with out stying. Move to Mockups, mockups should corporate brand colors, styles and elelments</p>
+            </div>
+            <div class="col-md-3">
+              <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+                    </span>
+              <h4 class="service-heading">Implemntation</h4>
+              <p class="text-muted">Program design and Adding functionality. Put ptortype in front of users for feedback. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio Grid Section -->
+  <section id="portfolio" class="bg-light-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Portfolio</h2>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <div class="portfilio-list">
+            <ul class="tabs curly_brackets about-tabs list-inline text-center" data-tabs="tabs">
+              <li>
+                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">Wanderlust</a>
+              </li>
+              <li>
+                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">UP[CODE]...Blog</a>
+              </li>
+              <li>
+                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">About Me</a>
+              </li>
+              <li>
+                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">Decisions</a>
+              </li>
+            </ul>
+            <hr class="section-heading-spacer text-center">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img src="/static/img/projects/wanderlust.png" class="img-responsive" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Wanderlust</h4>
+            <p class="text-muted">Track your travels</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img src="/static/img/projects/blog.png" class="img-responsive thumbnails" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>[UP]CODE...Blog</h4>
+            <p class="text-muted">Programming Blog</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img src="/static/img/projects/about-me.png" class="img-responsive thumbnails" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>About Me</h4>
+            <p class="text-muted">My Personal Website</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img src="/static/img/projects/magic.png" class="img-responsive thumbnails" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Decisions</h4>
+            <p class="text-muted">Magic 8 Ball</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img src="/static/img/projects/jo.png" class="img-responsive thumbnails" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Le Mur Des Fleurs</h4>
+            <p class="text-muted">Wallpaper Ecommerce Store</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img src="/static/img/projects/ryan.png" class="img-responsive thumbnails" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Ryan Fanili Paiting Inc</h4>
+            <p class="text-muted">Business Website</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+     <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Contact Me</h2>
+          <ul class="list-inline social-buttons">
+            <li><a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+       <div class="row">
+        <div class="col-md-8 text-center col-md-offset-2">
+          <form role="form">
+            <br style="clear:both">
+            <h3 class="section-subheading text-muted" style="margin-bottom: 25px; text-align: center;">Say hello before you leave</h3>
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+              <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>
+            </div>
+            <button type="button" id="submit" name="submit" class="btn btn-default" pull-right">Submit Form</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright active">&copy; 2017 <a href="#page-top"><i>UP[CODE]Web Designs</i></a> All Rights Reserved.</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li><a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li><a href="#">UP[Code] Blog</a>
+            </li>
+            <li><a href="#">Uma Petersen</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </footer>
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
+                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p>
+                    <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                  <ul class="list-inline">
+                    <li>Date: July 2014</li>
+                    <li>Client: Round Icons</li>
+                    <li>Category: Graphic Design</li>
+                  </ul>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <h2>Project Heading</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
+                  <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
+                  <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
+                  <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
+                  <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
+                  <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
+                  <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
+                  <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
+                  <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Project Name</h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
+                  <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
+                  <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="static/bootstrap/vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="static/bootstrap/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!--============= MY JAVASCRIPT FILES  ============-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/myjs.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <!-- IE -->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="static/bootstrap/js/jqBootstrapValidation.js"></script>
+    <script src="static/bootstrap/js/contact_me.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="static/bootstrap/js/agency.min.js"></script>
+</body>
+
+</html>
