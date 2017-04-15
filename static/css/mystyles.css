@@ -139,7 +139,11 @@ body>.navbar {
 
 
 
+ .aboutMe {
 
+    border: 10px solid white;
+   outline: 1px dashed grey;
+  }
 
 
 

@@ -1,7 +1,8 @@
 import os
 import sys
-from flask import Flask, render_template
-
+from flask import Flask, render_template, Response
+from flask import send_file, current_app as app
+from flask import Flask, make_response
 ################################################################################
 app = Flask(__name__)
 ################################################################################
@@ -14,9 +15,23 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "freedom")
 @app.route("/")
 def pages():
     """ my about me page"""
-    # return render_template("page.html")
-    return render_template('404.html')
+    return render_template("page.html")
+    return '''
+        <html><body>
+         <a href="/resume">resume</a>
+        </body></html>
+        '''
 
+@app.route("/resume")
+def get_resume():
+    # with open("outputs/Adjacency.csv") as fp:
+    #     csv = fp.read()
+    csv = '1,2,3\n4,5,6\n'
+    return Response(
+        csv,
+        mimetype="text/csv",
+        headers={"Content-disposition":
+                 "attachment; filename=resume.pdf"})
 
 
 @app.errorhandler(404)

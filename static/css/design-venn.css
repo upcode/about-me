@@ -1,0 +1,217 @@
+/*
+#ux-diagram {
+    background-image: url(/static/img/backgrounds/grey.png)!important;
+
+  width: 960px;
+  height: 960px;
+  position: relative;
+}
+
+
+.sphere {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  border: 2px rgb(115,166,183) solid;
+  border-radius: 50%;
+  transition: background-color 800ms ease-in-out;
+  background: rgba(125,184,214, .2);
+   transition:width 800ms, height 800ms, border-radius 800ms,left 800ms, top 800ms ;
+  -moz-transition:width 800ms, height 800ms, border-radius 800ms,left 800ms, top 800ms;
+  -ms-transition:width 800ms, height 800ms, border-radius 800ms,left 800ms, top 800ms;
+  -o-transition:width 800ms, height 800ms, border-radius 800ms,left 800ms, top 800ms;
+  -webkit-transition:width 800ms, height 800ms, border-radius 800ms,left 800ms, top 800ms;
+}
+
+.one:hover {
+  transition: background-color 800ms ease-in-out;
+   background: rgb(255, 127, 14);
+    opacity:0.5;
+  color: black;
+  z-index: 999;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 275px;
+  height: 275px;
+  position: absolute;
+  left: 30px;
+  top: -20px;
+}
+.two:hover {
+  transition: background-color 800ms ease-in-out;
+  background: white;
+  color: black;
+  z-index: 999;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 275px;
+  height: 275px;
+  position:relative;
+  left:92px;
+  top:4px;
+}
+
+.two::before{ content: 'UX'; position: absolute; left: 30px; top: -20px;}
+
+.three:hover {
+  transition: background-color 800ms ease-in-out;
+  background: white;
+  color: black;
+  z-index: 999;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 275px;
+  height: 275px;
+   position: relative;
+    top: -70px;
+    left: 40px;
+}
+
+
+
+  .one {
+    background: rgb(255, 127, 14);
+    opacity:0.6;
+    border: 5px rgb(255, 127, 14) solid;
+
+    }
+
+  .two {
+ background-color: rgb(148, 103, 189);
+ opacity:0.6;
+     border: 5px  rgb(148, 103, 189) solid;
+
+    }
+
+  .three {
+    background: rgb(44, 160, 44);
+    opacity:0.6;
+        border: 5px rgb(44, 160, 44) solid;
+
+    }
+/*.one{left:605px; top: 405px;}
+.two{left: 567px; top: 523px;}
+.three{left: 467px; top: 595px;}
+
+*/
+/*.text {
+   -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  top: 65px;
+  left: 45px;
+}
+
+.sphere:hover .text {
+  top: 20px;
+  left: 100px;
+}
+
+.sphere:hover .muscles{
+  top: 20px;
+  left: 82px;
+}
+
+.blurb {
+  margin: 2.5em;
+  color: black;
+  -ms-transform: scale(.9);
+  -webkit-transform: scale(.9);
+  transform: scale(.9);
+  visibility: hidden;
+}
+
+.sphere:hover .blurb {
+   -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  color: black;
+  visibility: visible;
+}
+*/
+
+
+
+.ux-diagram {
+  font-size: 14px;
+  line-height: 18px;
+ /* padding: 40px 0;*/
+}
+
+.circle-group .blue, .circle-group .green, .circle-group .pink {
+  border-radius: 100%;
+  color: #ffffff;
+  display: inline-block;
+  overflow: hidden;
+  padding: 50px;
+  position: absolute;
+  height: 240px;
+  text-align: center;
+  width: 240px;
+}
+
+.circle-group {
+  position: relative;
+  margin: 0 auto;
+  height: 240px;
+  width: 240px;
+}
+.circle-group .logo {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  bottom: -40%;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+
+}
+.circle-group .blue {
+  background: #00a2c9;
+  mix-blend-mode: multiply;
+  top: 0;
+  text-align: center;
+  margin-top:250px;
+}
+.circle-group .green {
+  background:  rgb(44, 160, 44);
+  mix-blend-mode: multiply;
+  right: 30%;
+  top: 45%;
+}
+.circle-group .green span {
+  position: absolute;
+  bottom: 25%;
+  left: 20%;
+}
+.circle-group .pink {
+  background: #fe2389;
+  mix-blend-mode: multiply;
+  top: 45%;
+  left: 30%;
+}
+.circle-group .pink span {
+  position: absolute;
+  bottom: 25%;
+  right: 20%;
+}
+
+
+
+

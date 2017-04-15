@@ -33,15 +33,17 @@
                 "label": "Define the problem",
                 "value": 25,
                 "color": "#3182bd",
+                "opacity": 0.3
 
-                // define the problem 
+
+                // define the problem
             },
             {
                 "label": "Research",
                 "value": 25,
                 "color": "#ff7f0e"
-                // collect the information 
-                // researc the need or problem 
+                // collect the information
+                // researc the need or problem
             },
             {
                 "label": "Brainstorm",
