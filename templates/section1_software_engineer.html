@@ -1,0 +1,90 @@
+ {% block content %}
+<div class="container" id="engineer-container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2 class="content-heading">Software Engineer</h2>
+      <hr class="star-light">
+    </div>
+  </div>
+  <div id="about_1">
+    <div class="col-lg-4 col-lg-offset-2">
+      <div class="image-frame">
+        <img src="/static/img/profile/aboutme_1.jpg" class="img-responsive aboutMe" id="aboutme1-img" alt="bubble-image" />
+        <a href="http://www.bentonstreetphotography.com">
+          <small>Photo by Joahanna</small>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-lg-offset-2">
+      <h3 class="content-heading">Art of the Software Engineer</h3>
+      <p class="text">
+        I'm a Full Stack Software Engineer from San Francisco with an interest in User Interface Design. I enjoy turning complex problems into simple, intuitive, minimalist interface designs. Specializing in the development of high-quality user interfaces delivering optimal user experiences across web, application, and other platforms. Collaborative communication among end users, designers, and developers while effectively creating well-received products. Extensive technical skills spanning Languages, frameworks and libraries, and applications and tools. Big picture thinker excelling in solution development for intricate problems.
+      </p>
+      <ul class="list-inline intro-social-buttons">
+        <li>
+          <a href="/resume" class="btn-outline btn-md"><i class="fa fa-download"></i> <span class="network-name">Resume</span></a>
+        </li>
+        <li>
+          <a href="https://github.com/upcode" class="btn-outline btn-md"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/umapetersen" class="btn-outline btn-md"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+        </li>
+      </ul>
+      <h3 class="content-heading">Technologies</h3>
+      <ul class="list text">
+        <li><em></em><i class='icon-ok'></i> Javascript / jQuery</li>
+        <li><em></em><i class='icon-ok'></i>HTML5</li>
+        <li><em></em><i class='icon-ok'></i>CSS3</li>
+        <li><em></em><i class='icon-ok'></i>Responsive Web Designs</li>
+        <li><em></em><i class='icon-ok'></i>User Experience Design</li>
+        <li><em></em><i class='icon-ok'></i>Single Page Web App</li>
+        <li><em></em><i class='icon-ok'></i>User Interactions</li>
+        <li><em></em><i class='icon-ok'></i>Data Visualization</li>
+        <li><em></em><i class='icon-ok'></i>Wireframes / Layout</li>
+      </ul>
+    </div>
+    <!-- End Row -->
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <div id="mainBubble" style="height: auto;" class="bubble-chart mobile-hide">
+          <svg class="mainBubbleSVG" width="1089.8020000000001" height="763"></svg>
+          <script src="/static/js/d3bubble.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about me div section on hover show else hidden-->
+  <div id="about_2" style="display:none;">
+    <div class="col-lg-4 col-lg-offset-2">
+      <div class="image-frame">
+        <img src="/static/img/profile/class-photo.jpg" class="img-responsive aboutMe" id="aboutme2-img" alt="bubble-image" style="height: 300px; width: 500px;" />
+      </div>
+    </div>
+    <div class="col-lg-4 col-lg-offset-2">
+     <div class="row">
+      <h3 class="content-heading">Featured</h3>
+      </div>
+           <div class="row">
+
+      <div class="card">
+        <h4 class="card-header">Today Show</h4>
+        <div class="card-block">
+          <h5 class="card-title">Meeting the women of Silicon Valley: Software engineer Tracy Chou</h5>
+          <p class="card-text">TODAY launches a new series called “Women of Silicon Valley” with a report on the push for more diversity in the tech world and a portrait of software engineer Tracy Chou, who is helping lead that movement. Natalie Morales reports</p>
+          <a href="http://www.today.com/video/meeting-the-women-of-silicon-valley-software-engineer-tracy-chou-582041667634" class="btn btn-default">Today's Show</a>
+        </div>
+      </div>
+      <div class="card">
+        <h4 class="card-header">Hackbright Blog</h4>
+        <div class="card-block">
+          <h5 class="card-title">34 Web Apps Built By Hackbright’s Women Engineers  </h5>
+          <p class="card-text">During the last weeks of Hackbright Academy’s software engineering fellowship, each fellow uses their newfound skills to build their own web app. Scroll below to read about each of the fellows and learn about the awesome projects they created.</p>
+          <a href="https://hackbrightacademy.com/blog/34-web-apps-built-hackbrights-newest-women-engineers/" class="btn btn-default">Hackbright Blog</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}

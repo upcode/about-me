@@ -6,7 +6,4 @@
         $this.attr('src', newSource);
     }
 
-    $(function () {
-        $('img.aboutMe-image').hover(sourceSwap, sourceSwap);
-    });
   });

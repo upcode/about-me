@@ -1,0 +1,33 @@
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2>Design &amp; Code</h2>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-lg-offset-2">
+      <h3 class="content-heading">The Designer</h3>
+      <p class="words">
+        I think of software engineering as an art; I like to combine creativity and logic into my software. I feel this gives me a unique perspective. I like to find inspiration in everyday things when it comes to programing and designing web applications. My inspiration comes from reading a book, walking the streets of San Francisco, or incorporating technology to solve my own problems. I often feel people forget how creative software development can be. Each artist has her own medium. Some use canvas, some paper, some paint on walls. My medium is my computer, where my creativity, inspiration, and imagination come to life. My paintbrush is my code.
+      </p>
+    </div>
+    <div class="col-lg-4 col-lg-offset-2">
+      <div class="image-frame">
+        <img src="/static/img/profile/aboutme_2.jpg" class="img-responsive aboutMe" alt="bubble-image" />
+      </div>
+      <a href="http://www.bentonstreetphotography.com">
+        <small>Photo by Joahanna</small>
+      </a>
+    </div>
+  </div>
+  <!--// end row-->
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2>Define &sdot; Design &sdot; Deliver</h2>
+      {% include "venn_diagram.html" %}
+    </div>
+  </div>
+</div>
+{% endblock %}

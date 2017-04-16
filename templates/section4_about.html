@@ -1,0 +1,51 @@
+ {% block content %}
+<div class="container" id="engineer-container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2 class="content-heading">My Story</h2>
+      <hr class="star-light">
+    </div>
+  </div>
+    <div class="col-lg-4 col-lg-offset-2">
+      <div class="image-frame" id="img1" >
+        <img src="/static/img/profile/uma5.jpg" class="img-responsive aboutMe" id="aboutme5-img" alt="bubble-image" />
+      </div>
+      <a href="http://www.bentonstreetphotography.com">
+        <small>Photo by Joahanna</small>
+      </a>
+    </div>
+    <div class="col-lg-4 col-lg-offset-2">
+      <h3 class="content-heading">All About Me</h3>
+      <p class="text">
+        When I'm not coding or pushing pixels, you'll find me enjoying the challenge of learning a new language, traveling, listening to music, and enjoying city life. I am creative, I am innovator and problem slover. My experiences, education, and my passion for learning drive me to seek new adventures in all aspects of my life.
+      </p>
+      <h3 class="content-heading">My Skills</h3>
+      <ul class="list text">
+        <li><em></em><i class='icon-ok'>
+            </i>Generating a great quantity of ideas
+        </li>
+        <li><em></em><i class='icon-ok'>
+            </i>Turning around life's obstacles
+        </li>
+        <li><em></em>
+          <i class='icon-ok'>
+            </i>Where most people see a difficulty, I see an opportunity
+        </li>
+        <li><em></em>
+          <i class='icon-ok'></i>Ping-Pong
+        </li>
+        <li><em></em>
+          <i class='icon-ok'></i>Cooking
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <div class="chart-div">
+          {% include "bar_chart_diagram.html" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

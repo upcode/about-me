@@ -1,0 +1,165 @@
+.row.design {
+  margin-top: 100px;
+}
+
+
+/*Venn Diagram */
+
+.venn {
+  position: relative;
+  width: 50%;
+  margin: 30px auto;
+}
+
+.circle {
+  width: 300px!important;
+  height: 300px!important;
+  border-radius: 50%;
+  opacity: .76;
+  /*  z-index: 1;
+*/
+}
+
+.img {
+  width: 300px!important;
+  height: 300px!important;
+}
+
+.one {
+  position: absolute;
+  background: #FA9D00;
+  top: 0;
+  left: 0;
+  /*  z-index: 2;
+*/
+}
+
+.two {
+  position: relative;
+  background: #fe2389;
+  top: -320px;
+  left: 240px;
+  /*  z-index: 3;
+*/
+}
+
+.three {
+  position: relative;
+  background: #8BC832;
+  top: -410px;
+  left: 110px;
+  z-index: 3;
+}
+
+h5.title {
+  padding-top: 150px;
+  color: white;
+}
+
+
+/*ux design process*/
+
+.box1 {
+  width: 200px!important;
+  height: 200px!important;
+  background: #8BC832;
+  opacity: .76;
+}
+
+.box2 {
+  width: 200px!important;
+  height: 200px!important;
+  background: rgb(148, 103, 189);
+  opacity: .76;
+}
+
+.box3 {
+  width: 200px!important;
+  height: 200px!important;
+  background: #FA9D00;
+  opacity: .76;
+}
+
+.box4 {
+  width: 200px!important;
+  height: 200px!important;
+  background: #fe2389;
+  opacity: .76;
+
+}
+.box5 {
+  width: 200px!important;
+  height: 200px!important;
+  background: rgb(23, 190, 207);
+  opacity: .76;
+
+}
+
+.ux {
+  width: 200px!important;
+  height: 200px!important;
+
+
+}
+.fa-stack {
+	margin-top:10px;
+}
+.box1:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 120%;
+  margin-left: -10px;
+  margin-top: -100px;
+
+  width: 0;
+  height: 0;
+  border-top: solid 20px transparent;
+  border-left: solid 20px black;
+  border-right: solid 20px transparent;
+  border-bottom: solid 20px transparent;
+}
+
+.box2:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 120%;
+  margin-left: -10px;
+  margin-top: -100px;
+  width: 0;
+  height: 0;
+  border-top: solid 20px transparent;
+  border-left: solid 20px black;
+  border-right: solid 20px transparent;
+  border-bottom: solid 20px transparent;
+}
+
+.box3:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 120%;
+  margin-left: -10px;
+  margin-top: -100px;
+  width: 0;
+  height: 0;
+  border-top: solid 20px transparent;
+  border-left: solid 20px black;
+  border-right: solid 20px transparent;
+  border-bottom: solid 20px transparent;
+}
+.box4:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 120%;
+  margin-left: -10px;
+  margin-top: -100px;
+  width: 0;
+  height: 0;
+  border-top: solid 20px transparent;
+  border-left: solid 20px black;
+  border-right: solid 20px transparent;
+  border-bottom: solid 20px transparent;
+}
