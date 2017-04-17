@@ -146,11 +146,10 @@ p.text {
 }
 .chart .skill {
   font-weight: 800;
-/*  opacity: .5;
-*/  overflow: hidden;
-  text-transform: uppercase;
+  opacity: .5;
+  overflow: hidden;
   width: 100%;
-  font-size: 14px;
+  font-size: 20px;
   font-size: 0.875rem;
 }
 @media (min-width: 700px) {
@@ -171,6 +170,7 @@ p.text {
   background-image: -moz-linear-gradient(#17becf, #17becf 70%);
   background-image: -webkit-linear-gradient(#17becf, #4ecdc4 70%);
   background-image: linear-gradient(#17becf, #17becf 70%);
+
 }
 .chart .salmon {
   background: #ff9896;

@@ -43,7 +43,7 @@ content: "}";
 
 
 #logo-img {
-  border: 5px solid #ddd;
+  border: 5px solid white !important;
   border-radius: 50%;
 }
 

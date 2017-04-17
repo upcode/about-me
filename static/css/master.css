@@ -34,14 +34,19 @@ h6 {
   font-family: "Playfair Display",'Lato', "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
+
+.intro-divider {
+  max-width: 250px;
+}
 hr
 {
   padding: 0;
   border: none;
   border-top: solid 5px;
   text-align: center;
-  max-width: 250px;
+  max-width: 100px;
   margin: 25px auto 30px;
+  color:black;
 }
 hr:after,
 hr:after {
@@ -58,14 +63,14 @@ hr{
 }
 hr:after {
   background-color: #18BC9C;
-  color: white;
+  color:black;
 }
 hr{
-  border-color: #2C3E50;
+  border-color: black;
 }
 hr:after {
   background-color: white;
-  color: #2C3E50;
+  color: black;
 }
 .img-centered {
   margin: 0 auto;
@@ -83,6 +88,9 @@ header .container {
 header img {
   display: block;
   margin: 0 auto 20px;
+  border: 5px solid #ddd;
+  border-radius: 50%;
+  opacity: .80;
 }
 header .intro-text .name {
   display: block;
@@ -317,14 +325,25 @@ footer .footer-below {
   background-color: white;
 }
 .btn-outline {
-  color: white;
+  color:#18BC9C;
   font-size: 20px;
   border: solid 2px white;
   background: transparent;
   transition: all 0.3s ease-in-out;
   margin-top: 15px;
+  border-radius:5%;
 }
-.btn-outline:hover,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active {
+  color: #18BC9C;
+  background: white;
+  border: solid 2px white;
+}
+
+/*#18BC9C;
+*/.btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
