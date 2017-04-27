@@ -12,15 +12,15 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "freedom")
                              ## ROUTES ##
 ################################################################################
 
-@app.route("/")
-def pages():
-    """ my about me page"""
-    return render_template("base_page.html")
-    return '''
-        <html><body>
-         <a href="/resume">resume</a>
-        </body></html>
-        '''
+# @app.route("/")
+# def pages():
+#     """ my about me page"""
+#     return render_template("base_page.html")
+#     return '''
+#         <html><body>
+#          <a href="/resume">resume</a>
+#         </body></html>
+#         '''
 
 
 
