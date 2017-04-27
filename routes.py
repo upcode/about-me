@@ -24,7 +24,7 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "freedom")
 
 
 
-@app.route("/index")
+@app.route("/")
 def index():
     """ my about me page"""
     return render_template("umapetersen.html")
