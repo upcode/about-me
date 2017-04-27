@@ -45,24 +45,28 @@ p.text {
 #mainBubble {
 
       font: 10px sans-serif;
-      height: 800px;
+      height: 600px;
       position: relative;
-      width: 80%;
+      width: 100%;
       padding:;
     }
     #mainBubble svg {
       left: 0;
       position: absolute;
       top: 0;
-      padding-left: 30px;
+      padding-left: 10px;
     }
     #mainBubble circle.topBubble {
       fill: #aaa;
       stroke: #666;
       stroke-width: 1.5px;
      }
-
-
+/*@media (min-width: 500px) {
+  #mainBubble {
+   visibility: hidden;
+  }
+}
+*/
      /*bar chart*/
 
 .chart {
@@ -70,7 +74,7 @@ p.text {
   padding: 0;
   width: 100%;
 }
-@media (min-width: 700px) {
+@media (min-width: 400px) {
   .chart {
     background: url("http://cl.ly/QSpc/bg-chart.png") right top repeat-x;
     height: 425px;

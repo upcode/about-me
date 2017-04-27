@@ -75,10 +75,12 @@ hr:after {
 .img-centered {
   margin: 0 auto;
 }
-header {
+/*header {
   text-align: center;
   color: black;
-  background-image: url(/static/img/backgrounds/grey.png)!important;
+  background-image: url(/static/img/header-uma.jpg)!important;
+      background-repeat: no-repeat;
+
 
 }
 header .container {
@@ -113,7 +115,49 @@ header .intro-text .skills {
   header .intro-text .skills {
     font-size: 1.75em;
   }
+
+
+
+
+  line-height: 22px;
+  margin-bottom: 25px;
 }
+}*/
+header .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  header .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+  header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+
+  }
+  header .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
+  }
+}
+
+/*header {
+    background-image: url(/static/img/header-uma.jpg)!important;
+ background-repeat: no-repeat;
+}*/
 .navbar-custom {
   background: white;
   font-family: "Playfair Display",'Lato', "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;

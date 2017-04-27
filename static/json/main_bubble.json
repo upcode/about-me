@@ -21,14 +21,7 @@
     {"name":"HTML e-mails"}
 
 ]},
-{"name": "Data", "description": "Databases I used",
-"children":[
-    {"name":"SQLite3"},
-    {"name":"SQLAlchemy"},
-    {"name":"PostgreSQL"},
-    {"name":"MongoDB"}
 
-]},
 {"name":"Libraries", "description":"Programming libaries I have used",
 "children":[
     {"name":"jQuery UI"},
@@ -36,6 +29,7 @@
     {"name":"D3.js"},
     {"name":"Chart.js"}
 ]},
+
 {"name":"Platforms", "description":"Other Applications and Tools I have used",
 "children":[
     {"name":"Sketch3"},
@@ -46,5 +40,13 @@
     {"name":"Zendesk"},
     {"name":"Salesforce"}
 
+]},
+
+{"name": "Data", "description": "Databases I used",
+"children":[
+    {"name":"SQLite3"},
+    {"name":"SQLAlchemy"},
+    {"name":"PostgreSQL"},
+    {"name":"MongoDB"}
 ]}
 ]}

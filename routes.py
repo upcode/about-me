@@ -22,6 +22,21 @@ def pages():
         </body></html>
         '''
 
+
+
+@app.route("/index")
+def index():
+    """ my about me page"""
+    return render_template("umapetersen.html")
+    return '''
+        <html><body>
+         <a href="/resume">resume</a>
+        </body></html>
+        '''
+
+
+
+
 @app.route("/resume")
 def get_resume():
     # with open("outputs/Adjacency.csv") as fp:
@@ -31,7 +46,7 @@ def get_resume():
         csv,
         mimetype="text/csv",
         headers={"Content-disposition":
-                 "attachment; filename=resume.pdf"})
+                 "attachment; filename=Uma_Persen_Resume.pdf"})
 
 
 @app.errorhandler(404)

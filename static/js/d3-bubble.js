@@ -55,7 +55,7 @@
             .attr("x", function(d, i) {return oR*(3*(1+i)-1);})
             .attr("y", (h+oR)/3)
         .style("fill", function(d,i) { return colVals(i); }) // #1f77b4
-            .attr("font-size", 30)
+            .attr("font-size", 20)
             .attr("text-anchor", "middle")
         .attr("dominant-baseline", "middle")
         .attr("alignment-baseline", "middle")
@@ -140,7 +140,7 @@
             .attr("cy", (h+oR)/3);
 
         t.selectAll(".topBubbleText")
-        .attr("font-size", 30)
+        .attr("font-size", 20)
             .attr("x", function(d, i) {return oR*(3*(1+i)-1);})
             .attr("y", (h+oR)/3);
 
