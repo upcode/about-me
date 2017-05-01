@@ -3,41 +3,10 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-body {
+/*body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-aside {
-  background-image: url('static/img/map-image.png');
-   background-repeat: no-repeat;
-}
-
-
-#engineer, #portfolio, #contact{
-  background-image: url(/static/img/backgrounds/grey.png)!important;
-
-}
-
-.contact {
-  background-image: url(/static/img/backgrounds/grey.png)!important;
-}
-
- #design, #about{
-  background-image: url(/static/img/backgrounds/diamond.png)!important;
-
-}
-
-
-.banner-text {
-  padding-top:130px;
-}
-
-
-
-
-
-
+}*/
 
 .text-muted {
   color: #777777;
@@ -190,7 +159,8 @@ fieldset[disabled] .btn-xl.active {
   color: #18BC9C;
 }
 .navbar-custom .navbar-collapse {
-  border-color: rgba(255, 255, 255, 0.02);
+/*  border-color: rgba(255, 255, 255, 0.02);
+*/  border-color: white;
 }
 .navbar-custom .navbar-toggle {
   background-color: #18BC9C;

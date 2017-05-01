@@ -1,16 +1,16 @@
 {% block content %}
-<div class="container">
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container contact">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2>Contact Me</h2>
-          <hr class="star-primary">
+          <h2 class="section-heading">Contact Me</h2>
+          <h3 class="section-subheading text-muted">Say hello before you leave</h3>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
+        <div class="col-lg-12">
           <form role="form" action="https://formspree.io/nerdlife1010@gmail.com" method="POST">
-            <br style="clear:both">
-            <h3 class="section-subheading text-muted" style="margin-bottom: 25px; text-align: center;">Say hello before you leave</h3>
             <div class="form-group">
               <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
             </div>
@@ -22,12 +22,12 @@
             </div>
             <div class="form-group">
               <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="200" rows="7"></textarea>
-              <span class="help-block"><!-- <p id="characterLeft" class="help-block ">You have reached the limit</p> --></span>
+              <span class="help-block"></span>
             </div>
-            <button type="submit" id="submit" role="button" name="submit" class="btn-lg btn btn-default"  value="Send" pull-right>Submit Form</button>
-
+            <button type="submit" id="submit" role="button" name="submit" class="btn-lg btn btn-default" value="Send" pull-right>Send</button>
           </form>
         </div>
       </div>
     </div>
+  </section>
 {% endblock %}

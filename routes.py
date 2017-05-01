@@ -12,22 +12,10 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "freedom")
                              ## ROUTES ##
 ################################################################################
 
-# @app.route("/")
-# def pages():
-#     """ my about me page"""
-#     return render_template("base_page.html")
-#     return '''
-#         <html><body>
-#          <a href="/resume">resume</a>
-#         </body></html>
-#         '''
-
-
-
 @app.route("/")
-def index():
+def pages():
     """ my about me page"""
-    return render_template("umapetersen.html")
+    return render_template("base_page.html")
     return '''
         <html><body>
          <a href="/resume">resume</a>
@@ -35,11 +23,9 @@ def index():
         '''
 
 
-
-
 @app.route("/resume")
 def get_resume():
-    # with open("outputs/Adjacency.csv") as fp:
+    # with open("Uma_Petersen_Resume.pdf") as fp:
     #     csv = fp.read()
     csv = '1,2,3\n4,5,6\n'
     return Response(

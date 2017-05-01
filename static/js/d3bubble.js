@@ -55,7 +55,7 @@ var w = window.innerWidth*0.68*0.95;
             .attr("x", function(d, i) {return oR*(3*(1+i)-1);})
             .attr("y", (h+oR)/3)
         .style("fill", function(d,i) { return colVals(i); }) // #1f77b4
-            .attr("font-size", 25)
+            .attr("font-size", 20)
             .attr("text-anchor", "middle")
         .attr("dominant-baseline", "middle")
         .attr("alignment-baseline", "middle")
@@ -208,7 +208,7 @@ var w = window.innerWidth*0.68*0.95;
                 })
                 .attr("font-size", function(d,ii){
                     if(i == ii)
-                        return 30*1.5;
+                        return 30*1.5
                     else
                         return 30*0.6;
                 });

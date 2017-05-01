@@ -1,43 +1,42 @@
  {% block content %}
-<div class="container" id="engineer-container">
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <h2 class="content-heading">My Story</h2>
-      <hr class="star-light">
-    </div>
-  </div>
-    <div class="col-lg-4 col-lg-offset-2">
-      <div class="image-frame" id="img1" >
-        <img src="/static/img/profile/uma5.jpg" class="img-responsive aboutMe" id="aboutme5-img" alt="bubble-image" />
+<section id="about" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">About</h2>
+        <h3 class="section-subheading text-muted">My Story</h3>
       </div>
-      <a href="http://www.bentonstreetphotography.com">
-        <small>Photo by Joahanna</small>
-      </a>
     </div>
-    <div class="col-lg-4 col-lg-offset-2">
-      <h3 class="content-heading">All About Me</h3>
-      <p class="text">
-        When I'm not coding or pushing pixels, you'll find me enjoying the challenge of learning a new language, traveling, listening to music, and enjoying city life. I am creative, I am innovator and problem slover. My experiences, education, and passion for learning drive me to seek new adventures in all aspects of my life.
-      </p>
-      <h3 class="content-heading">My Skills</h3>
-      <ul class="list text">
-        <li><em></em><i class='fa fa-check'>
+    <div class="row">
+      <div class="col-lg-6 text-center">
+        <div class="team-member">
+          <img src="/static/img/uma-circle.jpg" class="img-responsive
+            " alt="">
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <p class="large text-muted"></p>
+        <p class="text-muted"> When I'm not coding or pushing pixels, you'll find me enjoying the challenge of learning a new language, traveling, listening to music, and enjoying city life. I am creative, I am innovator and problem slover. My experiences, education, and passion for learning drive me to seek new adventures in all aspects of my life.</p>
+        <h3 class="content-heading">My Skills</h3>
+        <ul class="list text">
+          <li><em></em><i class='fa fa-check'>
             </i>Creative
-        </li>
-        <li><em></em><i class='fa fa-check'>
+          </li>
+          <li><em></em><i class='fa fa-check'>
             </i>Generate a great quantity of ideas
-        </li>
-        <li><em></em>
-          <i class='fa fa-check'>
+          </li>
+          <li><em></em>
+            <i class='fa fa-check'>
             </i>Where most people see problmes I see I see opportunities
-        </li>
-        <li><em></em>
-          <i class='fa fa-check'></i>Wheel Throwing &amp; Wood Working
-        </li>
-        <li><em></em>
-          <i class='fa fa-check'></i>Calligraphy
-        </li>
-      </ul>
+          </li>
+          <li><em></em>
+            <i class='fa fa-check'></i>Wheel Throwing &amp; Wood Working
+          </li>
+          <li><em></em>
+            <i class='fa fa-check'></i>Calligraphy
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -47,5 +46,6 @@
       </div>
     </div>
   </div>
+</section>
 
 {% endblock %}
