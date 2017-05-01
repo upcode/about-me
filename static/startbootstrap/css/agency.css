@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Playfair Display", "Oranienbaum", "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -64,7 +64,7 @@ hr {
   color: white;
   background-color: #01A89D;
   border-color: #01A89D;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Playfair Display", "Oranienbaum", "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 .btn-primary:hover,
@@ -226,7 +226,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/header.png');
+  background-image: url('../img/header-uma2.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -647,6 +647,8 @@ ul.social-buttons li a:active {
   min-height: 100%;
   padding: 100px 0;
   text-align: center;
+  background: url(/static/img/backgrounds/grey.png)!important;
+
 }
 .portfolio-modal .modal-content h2 {
   margin-bottom: 15px;

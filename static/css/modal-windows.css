@@ -8,7 +8,7 @@
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: url(/static/img/backgrounds/grey.png);
+    background: url(/static/img/backgrounds/grey.png)!important;
 }
 
 .portfolio-modal .modal-content h2 {
