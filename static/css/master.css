@@ -26,11 +26,81 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 
 #engineer, #portfolio, #contact, .contact{
   background-image: url(/static/img/backgrounds/grey.png)!important;
-
+  padding: 50px 0;
 }
  #design, #about{
   background-image: url(/static/img/backgrounds/diamond.png)!important;
+padding: 50px 0;
 }
+
+
+/*BANNERS*/
+.banner {
+  padding: 100px 0;
+  color: grey;
+  height: 380px;
+}
+
+#banner1 {
+  background: url(../img/banners/banner1.png) no-repeat;
+/*  background-size: cover;
+*/}
+
+#banner2 {
+  background: url(../img/banners/banner2.png) no-repeat;
+/*  background-size: cover;
+*/}
+
+#banner3 {
+  background: url(../img/banners/banner3.png) no-repeat;
+/*  background-size: cover;
+*/}
+
+#banner4 {
+  background: url(../img/banners/banner4.png) no-repeat;
+    background-attachment: scroll;
+
+/*  background-size: cover;
+*/}
+
+
+.banner h2 {
+    margin: 0;
+/*    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+*/    font-size: 3em;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+/*        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+*/        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
 
 /*THE ENGINEER SECTION */
 
@@ -40,6 +110,25 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 }
 
 /*D3 Bubble Chart*/
+
+#topBubble0 {
+  background-color: green!important;
+}
+
+#topBubble1 {
+
+}
+
+#topBubble2 {
+
+}
+#topBubble3{
+
+}
+#topBubble4{
+
+}
+
   #mainBubble {
 
       font: 10px sans-serif;
@@ -61,10 +150,12 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
      }
 @media (max-width: 480px) {
   #mainBubble {
-   visibility: hidden;
+   visibility: hidden!important;
   }
 }
-
+#aboutme1-img {
+  border: 7px solid white;
+}
 
 /*DESIGNER SECTION*/
 #ux-venn {
@@ -142,6 +233,87 @@ padding:auto;
 /*Contact Section*/
 
 
+/*Nav Bar*/
+.topnav {
+    font-size: 14px;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
 
 
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
 

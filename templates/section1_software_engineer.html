@@ -1,6 +1,5 @@
  {% block content %}
   <!-- Engineer Section -->
-<section id="engineer">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -48,11 +47,23 @@
           <div class="row">
       <div class="col-lg-8 col-lg-offset-2 text-center">
         <div id="mainBubble" style="height: auto;" class="bubble-chart">
-          <svg class="mainBubbleSVG" width="1089.8020000000001" height="400"></svg>
+          <svg class="mainBubbleSVG" width="650" height="400"></svg>
           <script src="/static/js/d3bubble.js"></script>
+
+
+          <circle class="topBubble" id="topBubble0" r="52.12412500000001" cx="104.24825000000001" cy="128.70804166666667" style="fill: rgb(31, 119, 180); opacity: 0.3;"></circle>
+
+<circle class="topBubble" id="topBubble1" r="52.12412500000001" cx="260.620625" cy="128.70804166666667" style="fill: rgb(255, 127, 14); opacity: 0.3;"></circle>
+
+<circle class="topBubble" id="topBubble2" r="52.12412500000001" cx="416.99300000000005" cy="128.70804166666667" style="fill: rgb(44, 160, 44); opacity: 0.3;"></circle>
+
+
+<circle class="topBubble" id="topBubble3" r="52.12412500000001" cx="573.3653750000001" cy="128.70804166666667" style="fill: rgb(214, 39, 40); opacity: 0.3;"></circle>
+
+<circle class="topBubble" id="topBubble4" r="52.12412500000001" cx="729.7377500000001" cy="128.70804166666667" style="fill: rgb(148, 103, 189); opacity: 0.3;"></circle>
         </div>
       </div>
     </div>
     </div>
-</section>
+
 {% endblock %}

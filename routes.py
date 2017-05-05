@@ -16,6 +16,7 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "freedom")
 def pages():
     """ my about me page"""
     return render_template("base_page.html")
+    # return render_template("index.html")
     return '''
         <html><body>
          <a href="/resume">resume</a>

@@ -19,8 +19,8 @@
   <!-- Bootstrap Core CSS -->
   <link href="static/startbootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="static/startbootstrap/css/agency.css" rel="stylesheet">
-
-  <!-- Fonts -->
+<!-- <link href="static/css/landing-page.css" rel="stylesheet">
+ -->  <!-- Fonts -->
   <link href="static/startbootstrap/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -39,14 +39,64 @@
 </head>
 
 <body>
-  {% include "navbar.html" %}
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+{% include "navbar.html" %}
+</nav>
+<!--// header-->
+<header>
   {% include "header.html" %}
+</header>
+
+<!--// Section 1-->
+<section id="engineer">
   {% include "section1_software_engineer.html" %}
+</section>
+
+<!--// Banner 1-->
+<div id="banner1" class="banner banner1">
+  {% include "banner1.html" %}
+</div>
+
+<!--// Section 2-->
+<section id="design">
   {% include "section2_ux_design.html" %}
+</section>
+
+<!--// Banner 2 -->
+<div id="banner2" class="banner banner2">
+  {% include "banner2.html" %}
+</div>
+
+<!--// Section 3-->
+<section id="portfolio" class="bg-light-gray">
   {% include "section3_portfolio.html" %}
+</section>
+
+<!--// Banner 1 -->
+<div id="banner3" class="banner banner3">
+  {% include "banner3.html" %}
+</div>
+
+<!--// Section 4-->
+<section id="about" class="bg-light-gray">
   {% include "section4_about.html" %}
+</section>
+
+<!--// Banner 2 -->
+<div id="banner4" class="banner banner4">
+  {% include "banner4.html" %}
+</div>
+
+<!--// Section 5-->
+<section id="contact">
   {% include "section5_contact.html" %}
+</section>
+
+<footer>
   {% include "footer.html" %}
+</footer>
+
+
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
   <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
     <a class="btn btn-primary" href="#page-top">
