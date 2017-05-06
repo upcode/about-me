@@ -3,10 +3,10 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-/*body {
+body {
   overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}*/
+  font-family: "Playfair Display", "Oranienbaum", "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 
 .text-muted {
@@ -219,8 +219,7 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-/*    background-color: #222222;
-*/     background-color: white;
+    background-color: white;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
@@ -228,7 +227,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/header2.png')!important;
+  background-image: url('../img/header.png')!important;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
