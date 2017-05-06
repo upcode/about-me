@@ -41,24 +41,22 @@ padding: 50px 0;
 }
 
 #banner1 {
-  background: url(../img/banners/banner1.png) no-repeat!important;
+  background: url(/static/img/banner1.png) no-repeat!important;
   background-size: cover;
 }
 
 #banner2 {
-  background: url(../img/banners/banner2.png) no-repeat!important;
+  background: url(/static/img/banner2.png) no-repeat!important;
   background-size: cover;
 }
 
 #banner3 {
-  background: url(../img/banners/banner3.png) no-repeat!important;
+  background: url(/static/img/banner3.png) no-repeat!important;
   background-size: cover;
 }
 
 #banner4 {
-  background: url(../img/banners/banner4.png) no-repeat!important;
-    background-attachment: scroll;
-
+  background: url(/static/img/banner4.png) no-repeat!important;
   background-size: cover;
 }
 
