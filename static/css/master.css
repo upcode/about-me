@@ -177,10 +177,17 @@ padding: 50px 0;
   margin-top: 50px;
 }*/
 ul li {
-   list-style-type: none;
-   text-align:justify;
+/*   list-style-type: none;
+*/   text-align:justify;
  }
 
+.modal-text {
+  vertical-align: middle;
+
+  text-align: left;
+
+  margin-bottom: 25%;
+}
 
 .info{
   padding-top:30px;
