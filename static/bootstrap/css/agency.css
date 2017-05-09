@@ -52,6 +52,14 @@ hr {
   border: 1px solid black;
   width: 10%;
 }
+
+
+hr.grey-line {
+  border: 1px solid grey;
+  width: 50%;
+}
+
+
 .img-centered {
   margin: 0 auto;
 }
