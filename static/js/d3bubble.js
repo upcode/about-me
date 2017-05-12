@@ -19,7 +19,7 @@ var w = window.innerWidth*0.68*0.95;
     .attr("font-size", 12)
     .attr("dominant-baseline", "middle")
     .attr("alignment-baseline", "middle")
-    .style("fill", "#888888")
+    // .style("fill", "#888888")
 
 
     d3.json("static/json/main_bubble.json", function(error, root) {
@@ -55,7 +55,7 @@ var w = window.innerWidth*0.68*0.95;
             .attr("x", function(d, i) {return oR*(3*(1+i)-1);})
             .attr("y", (h+oR)/3)
         .style("fill", function(d,i) { return colVals(i); }) // #1f77b4
-            .attr("font-size", 20)
+            .attr("font-size", 17)
             .attr("text-anchor", "middle")
         .attr("dominant-baseline", "middle")
         .attr("alignment-baseline", "middle")
@@ -140,7 +140,7 @@ var w = window.innerWidth*0.68*0.95;
             .attr("cy", (h+oR)/3);
 
         t.selectAll(".topBubbleText")
-        .attr("font-size", 20)
+        .attr("font-size", 17)
             .attr("x", function(d, i) {return oR*(3*(1+i)-1);})
             .attr("y", (h+oR)/3);
 

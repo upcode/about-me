@@ -15,111 +15,110 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
   <script type="text/javascript" src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <script type="text/javascript" src="/static/js/d3/d3-bubble.js"></script>
-
   <!-- Bootstrap Core CSS -->
-  <link href="static/bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="static/bootstrap/css/agency.css" rel="stylesheet">
+  <!--
+    Stylesheets
+    =============================================
 
-  <!-- Fonts -->
-  <link href="static/bootstrap/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    -->
+  <!-- Default stylesheets-->
+  <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template specific stylesheets-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="static/assets/lib/animate.css/animate.css" rel="stylesheet">
+  <link href="static/assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="static/assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+  <link href="static/assets/lib/flexslider/flexslider.css" rel="stylesheet">
+  <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="static/assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+  <link href="static/assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+  <!-- Main stylesheet and color file-->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+  <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+  <link href="static/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- CSS framwork -->
   <link href="/static/css/ihover.css" rel="stylesheet" />
   <link href="/static/css/animate.css" rel="stylesheet" />
   <!-- Custom Page CSS -->
   <link href="/static/css/bar-chart.css" rel="stylesheet">
+  <link href="/static/css/styles.css" rel="stylesheet">
   <link href="/static/css/master.css" rel="stylesheet">
-  {% endblock %}
+
+   {% endblock %}
   <style>
+  #engineer,
+  #design {
+    background-image: url(/static/img/backgrounds/grey.png)
+  }
+/*.banner-text {
+  font-family: "Playfair Display", "Oranienbaum", "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}*/
 
-
+  hr.vertical {
+    width: 0px;
+    height: 100%;
+    /* or height in PX */
+    color: black;
+  }
   </style>
-
 </head>
 
-<body>
-<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-{% include "navbar.html" %}
-</nav>
-<!--// header-->
-<header>
-  {% include "header.html" %}
-</header>
-
-<!--// Section 1-->
-<section id="engineer">
-  {% include "section1_software_engineer.html" %}
-</section>
-
-<!--// Banner 1-->
-<aside id="banner1" class="banner banner1">
-  {% include "banner1.html" %}
-</aside>
-
-<!--// Section 2-->
-<section id="design">
-  {% include "section2_ux_design.html" %}
-</section>
-
-<!--// Banner 2 -->
-<aside id="banner2" class="banner banner2">
-  {% include "banner2.html" %}
-</aside>
-
-<!--// Section 3-->
-<section id="portfolio" class="bg-light-gray">
-  {% include "section3_portfolio.html" %}
-</section>
-
-<!--// Banner 1 -->
-<aside id="banner3" class="banner banner3">
-  {% include "banner3.html" %}
-</aside>
-
-<!--// Section 4-->
-<section id="about" class="bg-light-gray">
-  {% include "section4_about.html" %}
-</section>
-
-<!--// Banner 2 -->
-<aside id="banner4" class="banner banner4">
-  {% include "banner4.html" %}
-</aside>
-
-<!--// Section 5-->
-<section id="contact">
-  {% include "section5_contact.html" %}
-</section>
-
-<footer>
-  {% include "footer.html" %}
-</footer>
-
-
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+    <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">Uma Petersen</a>
+        </div>
+        <div class="collapse navbar-collapse" id="custom-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="page-scroll"><a class="page-scroll" href="#home">Home</a></li>
+            <li class="page-scroll"><a class="page-scroll" href="#engineer" data-toggle="page-scroll"">Software Engineer</a></li>
+            <li class="page-scroll"><a class="page-scroll" href="#design" data-toggle="page-scroll"">Design &amp; Code</a></li>
+            <li class="page-scroll"><a class="page-scroll" href="#portfolio" data-toggle="page-scroll"">Portfolio</a></li>
+            <li class="page-scroll"><a class="page-scroll" href="#about" data-toggle="page-scroll"">About</a></li>
+            <li class="page-scroll"><a class="page-scroll" href="#" data-toggle="page-scroll">Blog</a></li>
+            <li class="dpage-scroll"><a class="page-scroll" href="#contact" data-toggle="page-scroll"">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% include "section1_header.html" %} {% include "section2_banner.html" %} {% include "section2_engineer.html" %} {% include "section3_banner.html" %} {% include "section3_design.html" %} {% include "section4_banner.html" %} {% include "section4_portfolio.html" %} {% include "section5_banner.html" %} {% include "section5_about.html" %} {% include "section6_testimonial.html" %} {% include "section7_banner.html" %} {% include "section7_contact.html" %}
+    <footer>
+      {% include "section8_footer.html" %}
+    </footer>
+  </main>
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-    <a class="btn btn-primary" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
-  {% include "portfolio_modal.html" %}
-  {% include "ux_modal.html" %}
-
-  <!-- jQuery -->
-  <script src="static/bootstrap/vendor/jquery/jquery.min.js"></script>
-  <!-- Bootstrap Core JavaScript -->
-<!--     <script src="static/js/analyticstracking.js"></script>
- -->
-  <script src="static/bootstrap/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--
+    JavaScripts
+    =============================================
+    -->
+  <script src="/static/assets/lib/jquery/dist/jquery.js"></script>
+  <script src="/static/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/static/assets/lib/wow/dist/wow.js"></script>
+  <script src="/static/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+  <script src="/static/assets/lib/isotope/dist/isotope.pkgd.js"></script>
+  <script src="/static/assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+  <script src="/static/assets/lib/flexslider/jquery.flexslider.js"></script>
+  <script src="/static/assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="/static/assets/lib/smoothscroll.js"></script>
+  <script src="/static/assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+  <script src="/static/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+  <script src="/static/assets/js/plugins.js"></script>
+  <script src="/static/assets/js/main.js"></script>
   <!-- Plugin JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
-  <!-- Theme JavaScript -->
-  <script src="static/bootstrap/js/agency.min.js"></script>
+  <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script> -->
+  </main>
 </body>
 
 </html>

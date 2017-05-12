@@ -1,0 +1,167 @@
+p.large {
+  font-size: 17px;
+ font-family: "Oranienbaum";
+ font-weight: 200
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: none;
+}
+a {
+  color: #01A89D;
+}
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #01A89D;
+}
+h1,
+h2,
+
+
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", "Oranienbaum", "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+background-image: url(/static/img/backgrounds/grey.png)!important;
+section#contact {
+  /*background-color: #222222;*/
+background-image: url(/static/img/backgrounds/grey.png)!important;
+ /* background-position: center;
+  background-repeat: no-repeat;*/
+}
+
+
+header {
+  background-image: url('../img/header.png')!important;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+
+
+
+
+
+<!--   <header>
+    {% include "header.html" %}
+  </header> -->
+
+
+
+
+
+ {% block content %}
+<!-- Navigation -->
+<!--   <div class="container topnav">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand topnav" href="#">UP[CODE]</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="page-scroll" href="#engineer">Software Engineer</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#design">Design &amp; Code</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#about">About</a>
+        </li>
+          <li>
+          <a class="page-scroll" href="#">Blog</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div> -->
+{% endblock %}
+
+
+
+
+
+
+
+
+<!--   <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    {% include "navbar.html" %}
+  </nav> -->
+
+
+
+  <!--// header-->
+<!--   <header>
+    {% include "header.html" %}
+  </header> -->
+<!--   <aside id="banner5" class="banner banner5">
+    {% include "banner5.html" %}
+  </aside>
+  <section id="engineer">
+    {% include "section1_software_engineer.html" %}
+  </section>
+  <aside id="banner1" class="banner banner1">
+    {% include "banner1.html" %}
+  </aside>
+  <section id="design">
+    {% include "section2_ux_design.html" %}
+  </section>
+  <aside id="banner2" class="banner banner2">
+    {% include "banner2.html" %}
+  </aside>
+  <section id="portfolio">
+    {% include "section3_portfolio.html" %}
+  </section>
+  <aside id="banner3" class="banner banner3">
+    {% include "banner3.html" %}
+  </aside>
+  <section id="about">
+    {% include "section4_about.html" %}
+  </section>
+  <aside id="banner4" class="banner banner4">
+    {% include "banner4.html" %}
+  </aside>
+  <section id="contact">
+    {% include "section5_contact.html" %}
+  </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+

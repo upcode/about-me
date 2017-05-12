@@ -3,7 +3,8 @@
 {"name":"Languages","description":"Languages I worked with",
 "children":[
     {"name":"Python"},
-    {"name":"JavaScript / jQuery"},
+    {"name":"JavaScript"},
+    {"name" :"jQuery"},
     {"name":"HTML5"},
     {"name":"CSS3"},
     {"name":"SQL"},
@@ -15,9 +16,8 @@
     {"name":"Flask"},
     {"name":"Meteor"},
     {"name":"Bootstrap"},
-     {"name":"Materialize"},
+    {"name":"Materialize"},
     {"name":"Semantic UI"},
-    {"name":"960 Grid System"},
     {"name":"HTML e-mails"}
 
 ]},
@@ -27,12 +27,17 @@
     {"name":"jQuery UI"},
     {"name":"Canvas.js"},
     {"name":"D3.js"},
-    {"name":"Chart.js"}
+    {"name":"Chart.js"},
+    {"name":"Firebase.js"},
+    {"name":"Node.JS"},
+    {"name":"AWS"},
+    {"name":"NPM"}
 ]},
 
 {"name":"Platforms", "description":"Other Applications and Tools I have used",
 "children":[
     {"name":"Sketch3"},
+    {"name":"Invision"},
     {"name":"Basecamp"},
     {"name":"Jira"},
     {"name":"GitHub & Git"},
