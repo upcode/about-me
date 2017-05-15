@@ -226,11 +226,26 @@ background: url(/static/img/banner6.png) no-repeat center center!important;
 
 /*design Process*/
 .info{
-  padding-top:30px;
-  text-align:center;
+  padding-top:20px;
+  text-align:left;
   color:white;
-  font-size: 15px;
+  font-size: 12px;
+  margin-top:20px;
+
 }
+
+.info li{
+ list-style-type: none;
+
+}
+.ux-title{
+  padding-top:40px;
+  color:white;
+  text-align:center;
+}
+
+
+
 .fa-stack i{
 
   padding-top:50px;
@@ -240,7 +255,7 @@ background: url(/static/img/banner6.png) no-repeat center center!important;
 .circle1 {
   width: 200px!important;
   height: 200px!important;
-  background: #007779;
+  background: #042939;
   opacity: .76;
   position: center
 
@@ -249,7 +264,7 @@ background: url(/static/img/banner6.png) no-repeat center center!important;
 .circle2 {
   width: 200px!important;
   height: 200px!important;
-  background: #042939;
+  background: #007779;
   opacity: .76;
   position: center;
 
@@ -258,13 +273,19 @@ background: url(/static/img/banner6.png) no-repeat center center!important;
 .circle3 {
   width: 200px!important;
   height: 200px!important;
-  background: #042939;
   background: #01A89D;
-  opacity: .6;
-   position: center;
+  opacity: .76;
+  position: center;
 
 }
+.circle4 {
+  width: 200px!important;
+  height: 200px!important;
+  background: #01A79F;
+  opacity: .5;
+  position: center;
 
+}
 .ux {
   width: 200px!important;
   height: 200px!important;

@@ -18,8 +18,7 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "freedom")
 @app.route("/")
 def index():
     """ Personal Web Site"""
-    return render_template("base_page.html")
-    # return render_template("index.html")
+    return render_template("index.html")
 
     return '''
         <html><body>
@@ -27,37 +26,31 @@ def index():
         </body></html>
         '''
 
-# @app.route("/ux-design")
-# def index():
-#     """ Personal Web Site"""
-#     return render_template("ux_design.html")
-
-#     return '''
-#         <html><body>
-#          <a href="/resume">resume</a>
-#         </body></html>
-#         '''
+@app.route("/wanderlust")
+def portfolio():
+    """ Portfolio"""
+    return render_template("wanderlust.html")
 
 
-# @app.route("/resume")
-# def get_resume():
-#     # with open("Uma_Petersen_Resume.pdf") as fp:
-#     #     csv = fp.read()
-#     csv = '1,2,3\n4,5,6\n'
-#     return Response(
-#         csv,
-#         mimetype="text/csv",
-#         headers={"Content-disposition":
-#                  "attachment; filename=Uma_Persen_Resume.pdf"})
+@app.route("/resume")
+def get_resume():
+    # with open("Uma_Petersen_Resume.pdf") as fp:
+    #     csv = fp.read()
+    csv = '1,2,3\n4,5,6\n'
+    return Response(
+        csv,
+        mimetype="text/csv",
+        headers={"Content-disposition":
+                 "attachment; filename=Uma_Persen_Resume.pdf"})
 
 
-# @app.errorhandler(404)
-# def error_page(error):
-#     return render_template('404.html'), 404
+@app.errorhandler(404)
+def error_page(error):
+    return render_template('pages/404.html'), 404
 
-# @app.route("/error")
-# def error():
-#     raise Exception("Error!")
+@app.route("/error")
+def error():
+    raise Exception("Error!")
 
 ################################################################################
 if __name__ == "__main__":

@@ -55,7 +55,7 @@
   <style>
   #engineer,
   #portfolio,
-  .portfolio-modal {
+  .portfolio-modal{
     background-image: url(/static/img/backgrounds/grey.png)
   }
 /*.banner-text {
@@ -76,11 +76,24 @@
     <div class="page-loader">
       <div class="loader">Loading...</div>
     </div>
-
+    {% include "section0_navbar.html" %}
+    {% include "section1_header.html" %}
+    {% include "section2_banner.html" %}
+    {% include "section2_engineer.html" %}
+    {% include "section3_banner.html" %}
+    {% include "section3_design.html" %}
+    {% include "section4_banner.html" %}
+    {% include "section4_portfolio.html" %}
+    {% include "section5_banner.html" %}
+     {% include "section5_about.html" %}
+     {% include "section6_testimonial.html" %}
+     {% include "section7_banner.html" %}
+     {% include "section7_contact.html" %}
     <footer>
       {% include "section8_footer.html" %}
     </footer>
-      {% include "pages/modals.html" %}
+          {% include "modals/modal.html" %}
+
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
   <!--
