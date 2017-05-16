@@ -61,115 +61,6 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 }*/
 
 
-/* .grey-line {
-   border: 1px solid grey;
-   width: 80%
-
- }
-.thunderbolt {
-margin:auto;
-padding:auto;
-}
-section{
-  background-image: url(/static/img/backgrounds/grey.png)!important;
-  padding: 100px 0;
-}*/
-/*
-.main-row{
-  padding:50px 0;
-}*/
-/* #design, #about{
-  background-image: url(/static/img/backgrounds/diamond.png)!important;
-padding: 50px 0;
-}*/
-/*.text-box {
-    background: url(/static/img/text-box.jpg) no-repeat center center!important;
-
-  height: 400px;
-  width:320px;
-
-}*/
-/*BANNERS*/
-/*.banner {
- color: grey;
-padding: 50px 0;
-}*/
-
-/*#banner1 {
-  background: url(/static/img/banner4.png) no-repeat center center!important;
-  background-size: cover;
-height:580px;
-}*/
-
-/*#banner2 {
-background: url(/static/img/banner5.png) no-repeat center center!important;
-  background-size: cover;
-  height:580px;
-}
-
-#banner3 {
-background: url(/static/img/banner6.png) no-repeat center center!important;
-  background-size: cover;
-  height:580px;
-
-
-}*/
-
-/*#banner4 {
-  background: url(/static/img/banner2.png) no-repeat!important;
-
-  background-size: cover;
-}*/
-
-
-/*.banner {
-    padding: 100px 0;
-    color: #f8f8f8;
-    background: url(/static/img/banner1.png) no-repeat center center!important;
-    background-size: cover;
-
-}*/
-
-/*.banner h2 {
-    margin: 0;
-    font-size: 3em;
-}
-
-.banner ul {
-    margin-bottom: 0;
-}
-
-.banner-social-buttons {
-    float: right;
-    margin-top: 0;
-}
-
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        float: left;
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
-    .banner h2 {
-        margin: 0;
-        font-size: 3em;
-    }
-
-    ul.banner-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.banner-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-}
-
-*/
-
 /*THE ENGINEER SECTION */
 
 #ux-diagram {
@@ -201,10 +92,7 @@ background: url(/static/img/banner6.png) no-repeat center center!important;
    visibility: hidden!important;
   }
 }
-/*#aboutme1-img {
-  border: 7px solid white;
-}
-*/
+
 /*DESIGNER SECTION*/
 #ux-venn {
     margin-left: 50px;
@@ -215,37 +103,7 @@ background: url(/static/img/banner6.png) no-repeat center center!important;
  list-style-type: none;
 }
 
-/*Modal */
-/*.modal-text {
-  vertical-align: middle;
 
-  text-align: left;
-
-  margin-bottom: 25%;
-}*/
-
-/*.section-heading-spacer {
-    width: 200px;
-    border-top: 3px solid #333;
-}
-*/
-
-
-/*design Process*/
-/*.info{
-  padding-top:20px;
-  text-align:left;
-  color:white;
-  font-size: 12px;
-  margin-top:20px;
-
-}*/
-
-/*.info li{
- list-style-type: none;
- text-align:center;
-
-}*/
 .ux-title{
   padding-top:40px;
   color:white;
@@ -303,5 +161,5 @@ hr.design {
 
 
 section.ux-process {
-  margin-bottom:50px;
+  margin-bottom:80px;
 }
