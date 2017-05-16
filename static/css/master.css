@@ -172,9 +172,9 @@ background: url(/static/img/banner6.png) no-repeat center center!important;
 
 /*THE ENGINEER SECTION */
 
-/*#ux-diagram {
+#ux-diagram {
   padding-left:50px;
-}*/
+}
 /*D3 Bubble Chart*/
 
   #mainBubble {
@@ -250,8 +250,6 @@ background: url(/static/img/banner6.png) no-repeat center center!important;
   color:white;
   text-align:center;
 }
-
-
 
 .fa-stack i{
 
