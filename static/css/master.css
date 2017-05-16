@@ -22,11 +22,18 @@ padding-top:50px;
   padding-top:50px;
 
 }
+.portfolio-title {
+display:inline-block;
+text-align: center;
+background-position: center center;
+}
 
 
+/*.filter {
+  margin-top:100px;
 
-
-
+}
+*/
 
 
 /*color*/
@@ -165,9 +172,9 @@ background: url(/static/img/banner6.png) no-repeat center center!important;
 
 /*THE ENGINEER SECTION */
 
-#ux-diagram {
+/*#ux-diagram {
   padding-left:50px;
-}
+}*/
 /*D3 Bubble Chart*/
 
   #mainBubble {

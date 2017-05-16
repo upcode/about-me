@@ -1859,12 +1859,11 @@ Google map
 }
 
 .filter > li {
-/*  display: inline-block;
-*/  padding: 0 0 10px;
+  display: inline-block;
+  padding: 0 0 10px;
   margin: 0 25px;
-  display: block;
-  text-align:right;
-}
+/*  text-align:right;
+*/}
 
 /* Portfolio grid */
 .works-grid {
