@@ -232,19 +232,20 @@ background: url(/static/img/banner6.png) no-repeat center center!important;
 
 
 /*design Process*/
-.info{
+/*.info{
   padding-top:20px;
   text-align:left;
   color:white;
   font-size: 12px;
   margin-top:20px;
 
-}
+}*/
 
-.info li{
+/*.info li{
  list-style-type: none;
+ text-align:center;
 
-}
+}*/
 .ux-title{
   padding-top:40px;
   color:white;
@@ -256,46 +257,40 @@ background: url(/static/img/banner6.png) no-repeat center center!important;
   padding-top:50px;
 
 }
+.circle {
+  background: #042939;
+}
+.circle1{
 
-.circle1 {
-  width: 200px!important;
-  height: 200px!important;
   background: #042939;
   opacity: .76;
-  position: center
 
 }
 
 .circle2 {
-  width: 200px!important;
-  height: 200px!important;
+
   background: #007779;
   opacity: .76;
-  position: center;
 
 }
 
 .circle3 {
-  width: 200px!important;
-  height: 200px!important;
+
   background: #01A89D;
   opacity: .76;
-  position: center;
 
 }
 .circle4 {
-  width: 200px!important;
-  height: 200px!important;
+
   background: #01A79F;
   opacity: .5;
-  position: center;
 
 }
-.ux {
-  width: 200px!important;
-  height: 200px!important;
-
-
+.circle-info {
+  text-align:left;
+}
+.info {
+  padding-top:15px;
 }
 
 hr.design {
@@ -307,4 +302,6 @@ hr.design {
 }
 
 
-
+section.ux-process {
+  margin-bottom:50px;
+}
