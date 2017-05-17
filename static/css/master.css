@@ -148,7 +148,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
   text-align:left;
 }
 .info {
-  padding-top:15px;
+  /*padding-top:12px;*/
 }
 
 hr.design {
