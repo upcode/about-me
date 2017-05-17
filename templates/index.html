@@ -41,7 +41,7 @@
   <link href="static/assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
   <!-- Main stylesheet and color file-->
   <link href="static/assets/css/style.css" rel="stylesheet">
-  <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+  <link id="color-scheme" href="static/assets/css/colors/default.css" rel="stylesheet">
   <link href="static/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- CSS framwork -->
   <link href="/static/css/ihover.css" rel="stylesheet" />
@@ -53,13 +53,13 @@
 
    {% endblock %}
   <style>
-/*  #engineer,
-  #portfolio,
-  .portfolio-modal,
-  .portfolio,
-  #contact{
+
+
+
+
+{
     background-image: url(/static/images/background/grey_bg.png)
-  }*/
+  }
 /*.banner-text {
   font-family: "Playfair Display", "Oranienbaum", "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }*/
@@ -77,8 +77,11 @@
     {% include "section1_header.html" %}
     {% include "section2_banner.html" %}
     {% include "section2_engineer.html" %}
-    {% include "section4_portfolio.html" %}
-         {% include "section7_banner.html" %}
+
+        {% include "section3_banner.html" %}
+
+{% include "section4_portfolio.html" %}
+    {% include "section7_banner.html" %}
 
      {% include "section5_about.html" %}
      {% include "section6_testimonial.html" %}
