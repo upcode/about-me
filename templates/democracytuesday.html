@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% block head %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="personal web site">
+  <meta name="author" content="Uma Petersen">
+  <title>{% block title %}Uma Petersen{% endblock %}</title>
+  <link rel="shortcut icon" type="image/png" href="static/img/favicon.ico" />
+  <!--============= JAVASCRIPT =================-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/static/js/d3/d3-bubble.js"></script>
+  <!-- Bootstrap Core CSS -->
+  <!--
+    Stylesheets
+    =============================================
+
+    -->
+  <!-- Default stylesheets-->
+  <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template specific stylesheets-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="static/assets/lib/animate.css/animate.css" rel="stylesheet">
+  <link href="static/assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="static/assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+  <link href="static/assets/lib/flexslider/flexslider.css" rel="stylesheet">
+  <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="static/assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+  <link href="static/assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+  <!-- Main stylesheet and color file-->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+  <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+  <link href="static/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS framwork -->
+  <link href="/static/css/ihover.css" rel="stylesheet" />
+  <link href="/static/css/animate.css" rel="stylesheet" />
+  <!-- Custom Page CSS -->
+  <link href="/static/css/bar-chart.css" rel="stylesheet">
+  <link href="/static/css/styles.css" rel="stylesheet">
+  <link href="/static/css/master.css" rel="stylesheet">
+
+   {% endblock %}
+  <style>
+  #engineer,
+  #portfolio,
+  .portfolio-modal
+  #contact {
+    background-image: url(/static/img/backgrounds/grey.png)
+  }
+/*.banner-text {
+  font-family: "Playfair Display", "Oranienbaum", "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}*/
+
+  hr.vertical {
+    width: 0px;
+    height: 100%;
+    /* or height in PX */
+    color: black;
+  }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+
+      <div class="main">
+        <section class="module bg-dark-60 portfolio-page-header" data-background="static/images/dt/dt-header.png">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Portfolio Single</h2>
+                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12"><img src="static/images/portfolio/ux/dt-devices.png" alt="Title of Image"/></div>
+            </div>
+            <div class="row multi-columns-row">
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-tools-2"></span></div>
+                  <h3 class="alt-features-title font-alt">Development</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-tools"></span></div>
+                  <h3 class="alt-features-title font-alt">Design</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-camera"></span></div>
+                  <h3 class="alt-features-title font-alt">Photography</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                </div>
+              </div>
+            </div>
+            <hr class="divider-w mt-60 mb-60">
+            <div class="row multi-columns-row">
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="work-details">
+                  <h5 class="work-details-title font-alt">Project Details</h5>
+                  <p></p>
+                  <ul>
+                    <li><strong>Client: </strong><span class="font-serif"><a href="#" target="_blank">SomeCompany</a></span>
+                    </li>
+                    <li><strong>Date: </strong><span class="font-serif"><a href="#" target="_blank">23 November, 2015</a></span>
+                    </li>
+                    <li><strong>Online: </strong><span class="font-serif"><a href="#" target="_blank">www.example.com</a></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <p>The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.</p>
+                <p>Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</p>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <p>The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="divider-w">
+        <section class="module">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Related Projects</h2>
+              </div>
+            </div>
+            <ul class="works-grid works-grid-gut works-grid-3 works-hover-w" id="works-grid">
+              <li class="work-item illustration webdesign"><a href="portfolio_single_featured_slider1.html">
+                  <div class="work-image"><img src="assets/images/portfolio/grid-portfolio1.jpg" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Corporate Identity</h3>
+                    <div class="work-descr">Illustration</div>
+                  </div></a></li>
+              <li class="work-item marketing webdesign"><a href="portfolio_single_featured_video2.html">
+                  <div class="work-image"><img src="assets/images/portfolio/grid-portfolio6.jpg" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Paper clip</h3>
+                    <div class="work-descr">Marketing</div>
+                  </div></a></li>
+              <li class="work-item illustration webdesign"><a href="portfolio_single_featured_image2.html">
+                  <div class="work-image"><img src="assets/images/portfolio/grid-portfolio8.jpg" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Branding</h3>
+                    <div class="work-descr">Illustration</div>
+                  </div></a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="module-small bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">About Titan</h5>
+                  <p>The languages only differ in their grammar, their pronunciation and their most common words.</p>
+                  <p>Phone: +1 234 567 89 10</p>Fax: +1 234 567 89 10
+                  <p>Email:<a href="#">somecompany@example.com</a></p>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">Recent Comments</h5>
+                  <ul class="icon-list">
+                    <li>Maria on <a href="#">Designer Desk Essentials</a></li>
+                    <li>John on <a href="#">Realistic Business Card Mockup</a></li>
+                    <li>Andy on <a href="#">Eco bag Mockup</a></li>
+                    <li>Jack on <a href="#">Bottle Mockup</a></li>
+                    <li>Mark on <a href="#">Our trip to the Alps</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">Blog Categories</h5>
+                  <ul class="icon-list">
+                    <li><a href="#">Photography - 7</a></li>
+                    <li><a href="#">Web Design - 3</a></li>
+                    <li><a href="#">Illustration - 12</a></li>
+                    <li><a href="#">Marketing - 1</a></li>
+                    <li><a href="#">Wordpress - 16</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">Popular Posts</h5>
+                  <ul class="widget-posts">
+                    <li class="clearfix">
+                      <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-1.jpg" alt="Post Thumbnail"/></a></div>
+                      <div class="widget-posts-body">
+                        <div class="widget-posts-title"><a href="#">Designer Desk Essentials</a></div>
+                        <div class="widget-posts-meta">23 january</div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-2.jpg" alt="Post Thumbnail"/></a></div>
+                      <div class="widget-posts-body">
+                        <div class="widget-posts-title"><a href="#">Realistic Business Card Mockup</a></div>
+                        <div class="widget-posts-meta">15 February</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="divider-d">
+        <footer class="footer bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <p class="copyright font-alt">&copy; 2017&nbsp;<a href="index.html">TitaN</a>, All Rights Reserved</p>
+              </div>
+              <div class="col-sm-6">
+                <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="main">
+        <section class="module bg-dark-60 portfolio-page-header" data-background="static/images/dt/dt_header.png">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Portfolio Single</h2>
+                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12"><img src="assets/images/section-1.jpg" alt="Title of Image"/></div>
+            </div>
+            <div class="row multi-columns-row">
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-tools-2"></span></div>
+                  <h3 class="alt-features-title font-alt">Development</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-tools"></span></div>
+                  <h3 class="alt-features-title font-alt">Design</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-camera"></span></div>
+                  <h3 class="alt-features-title font-alt">Photography</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                </div>
+              </div>
+            </div>
+            <hr class="divider-w mt-60 mb-60">
+            <div class="row multi-columns-row">
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="work-details">
+                  <h5 class="work-details-title font-alt">Project Details</h5>
+                  <p></p>
+                  <ul>
+                    <li><strong>Client: </strong><span class="font-serif"><a href="#" target="_blank">SomeCompany</a></span>
+                    </li>
+                    <li><strong>Date: </strong><span class="font-serif"><a href="#" target="_blank">23 November, 2015</a></span>
+                    </li>
+                    <li><strong>Online: </strong><span class="font-serif"><a href="#" target="_blank">www.example.com</a></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <p>The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.</p>
+                <p>Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</p>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <p>The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="divider-w">
+        <section class="module">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Related Projects</h2>
+              </div>
+            </div>
+            <ul class="works-grid works-grid-gut works-grid-3 works-hover-w" id="works-grid">
+              <li class="work-item illustration webdesign"><a href="portfolio_single_featured_slider1.html">
+                  <div class="work-image"><img src="assets/images/portfolio/grid-portfolio1.jpg" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Corporate Identity</h3>
+                    <div class="work-descr">Illustration</div>
+                  </div></a></li>
+              <li class="work-item marketing webdesign"><a href="portfolio_single_featured_video2.html">
+                  <div class="work-image"><img src="assets/images/portfolio/grid-portfolio6.jpg" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Paper clip</h3>
+                    <div class="work-descr">Marketing</div>
+                  </div></a></li>
+              <li class="work-item illustration webdesign"><a href="portfolio_single_featured_image2.html">
+                  <div class="work-image"><img src="assets/images/portfolio/grid-portfolio8.jpg" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Branding</h3>
+                    <div class="work-descr">Illustration</div>
+                  </div></a></li>
+            </ul>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="module" id="alt-features">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Our features</h2>
+                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-strategy"></span></div>
+                  <h3 class="alt-features-title font-alt">Branding</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                </div>
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-tools-2"></span></div>
+                  <h3 class="alt-features-title font-alt">Development</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                </div>
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-target"></span></div>
+                  <h3 class="alt-features-title font-alt">Marketing</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                </div>
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-tools"></span></div>
+                  <h3 class="alt-features-title font-alt">Design</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6 hidden-xs hidden-sm">
+                <div class="alt-services-image align-center"><img src="assets/images/promo.png" alt="Feature Image"></div>
+              </div>
+              <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-camera"></span></div>
+                  <h3 class="alt-features-title font-alt">Photography</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                </div>
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-mobile"></span></div>
+                  <h3 class="alt-features-title font-alt">Mobile</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                </div>
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-linegraph"></span></div>
+                  <h3 class="alt-features-title font-alt">Music</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                </div>
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-basket"></span></div>
+                  <h3 class="alt-features-title font-alt">Shop</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <footer>
+      {% include "section8_footer.html" %}
+    </footer>
+
+          <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <!--
+    JavaScripts
+    =============================================
+    -->
+  <script src="/static/assets/lib/jquery/dist/jquery.js"></script>
+  <script src="/static/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/static/assets/lib/wow/dist/wow.js"></script>
+  <script src="/static/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+  <script src="/static/assets/lib/isotope/dist/isotope.pkgd.js"></script>
+  <script src="/static/assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+  <script src="/static/assets/lib/flexslider/jquery.flexslider.js"></script>
+  <script src="/static/assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="/static/assets/lib/smoothscroll.js"></script>
+  <script src="/static/assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+  <script src="/static/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+  <script src="/static/assets/js/plugins.js"></script>
+  <script src="/static/assets/js/main.js"></script>
+  <!-- Plugin JavaScript -->
+  <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script> -->
+  </main>
+</body>
+
+</html>
+
