@@ -27,6 +27,10 @@ def index():
          <a href="/resume">resume</a>
         </body></html>
         '''
+@app.route("/index")
+def index2():
+    """ Personal Web Site"""
+    return render_template("index2.html")
 
 
 @app.route("/ux")
