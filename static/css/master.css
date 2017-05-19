@@ -9,9 +9,7 @@
 
 }
 
-.banner3{
-  margin-left: 100px;
-}
+
 
 /*Design Section*/
 .design-img-text {
@@ -26,6 +24,12 @@ padding-top:50px;
 display:inline-block;
 text-align: center;
 background-position: center center;
+}
+
+
+
+.about-text {
+  margin-top:100px;
 }
 
 
