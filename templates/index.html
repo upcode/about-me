@@ -1,90 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+{% include "base.html"%}
 
-<head>
-  {% block head %}
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="personal web site">
-  <meta name="author" content="Uma Petersen">
-  <title>{% block title %}Uma Petersen{% endblock %}</title>
-  <link rel="shortcut icon" type="image/png" href="static/img/favicon.ico" />
-  <!--============= JAVASCRIPT =================-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
-  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-  <script type="text/javascript" src="/static/js/d3/d3-bubble.js"></script>
-  <!-- Bootstrap Core CSS -->
-  <!--
-    Stylesheets
-    =============================================
-
-    -->
-  <!-- Default stylesheets-->
-  <link href="static/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Template specific stylesheets-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="static/assets/lib/animate.css/animate.css" rel="stylesheet">
-  <link href="static/assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="static/assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
-  <link href="static/assets/lib/flexslider/flexslider.css" rel="stylesheet">
-  <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="static/assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
-  <link href="static/assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
-  <link href="static/assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
-  <!-- Main stylesheet and color file-->
-  <link href="static/assets/css/style.css" rel="stylesheet">
-  <link id="color-scheme" href="static/assets/css/colors/default.css" rel="stylesheet">
-  <link href="static/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- CSS framwork -->
-  <link href="/static/css/ihover.css" rel="stylesheet" />
-  <link href="/static/css/animate.css" rel="stylesheet" />
-  <!-- Custom Page CSS -->
-  <link href="/static/css/bar-chart.css" rel="stylesheet">
-  <link href="static/css/style.css" rel="stylesheet">
-  <link href="/static/css/master.css" rel="stylesheet">
-
-  <style>
-    #home, #about {
-    background-image: url(/static/images/background/grey_bg.png)
-  }
-  </style>
-
-   {% endblock %}
-
-  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
-    <main>
-      <div class="page-loader">
-        <div class="loader">Loading...</div>
-      </div>
-      <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">Uma Petersen</a>
-          </div>
-          <div class="collapse navbar-collapse" id="custom-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="page-scroll"><a class="page-scroll" href="#header">Home</a></li>
-                 <li class="page-scroll "><a class="page-scroll " href="#designandcode " data-toggle="page-scroll "">Design &amp; Code</a>
-              </li>
-              <li class="page-scroll"><a class="page-scroll" href="#portfolio" data-toggle="page-scroll" ">UX Projects</a></li>
-                  <li class="page-scroll "><a class="page-scroll " href="#about " data-toggle="page-scroll "">About</a>
-              </li>
-              <li class="page-scroll"><a class="page-scroll" href="#portfolio" data-toggle="page-scroll" ">Portfolio</a></li>
-
-            <li class="dpage-scroll">
-                <a class="page-scroll" href="#contact" data-toggle="page-scroll" ">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-        </nav>
+{% block content %}
 
       <section class="home-section home-parallax home-fade home-full-height bg-dark-60 agency-page-header" id="header" data-background="static/assets/images/agency/header_bg.png">
         <div class="titan-caption">
@@ -128,7 +44,7 @@
           </div>
         </section>
         <hr class="divider-w">
-        <section class="module" id="home" data-background="/static/images/background/grey_bg.png>
+        <section class="module" id="design-code" data-background="/static/images/background/grey_bg.png">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3">
@@ -150,7 +66,7 @@
                             <p class="align-right">I'm a Full Stack Software Engineer from San Francisco with an interest in User Interface Design. I enjoy turning complex problems into simple, intuitive, minimalist interface designs. Specializing in the development of high-quality user interfaces delivering optimal user experiences across web, application, and other platforms. </p>
                             <p class="align-right">Collaborative communication among end users, designers, and developers while effectively creating well-received products. Extensive technical skills spanning languages, frameworks and libraries, and applications and tools. Big picture thinker excelling in solution development for intricate problems.
                             </p>
-                            <a href="#portfolio" class="btn btn-default btn-md">
+                            <a href="/portfolio.html" class="btn btn-default btn-md">
                                 <span class="network-name">View Web Projects</span></a>
                             <h3 class="font-serif align-right">Technologies</h3>
                             <ul class="list texts align-right">
@@ -389,36 +305,7 @@
         <section class="module" id="contact">
         {% include "section7_contact.html" %}
         </section>
+        {% include "section8_footer.html" %}
 
+{% endblock %}
 
-        <hr class="divider-d">
-        <footer class="footer bg-dark">
-                {% include "section8_footer.html" %}
-
-
-        </footer>
-      </div>
-      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
-    </main>
-    <!--
-    JavaScripts
-    =============================================
-    -->
-<script src="/static/assets/lib/jquery/dist/jquery.js"></script>
-  <script src="/static/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="/static/assets/lib/wow/dist/wow.js"></script>
-  <script src="/static/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
-  <script src="/static/assets/lib/isotope/dist/isotope.pkgd.js"></script>
-  <script src="/static/assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
-  <script src="/static/assets/lib/flexslider/jquery.flexslider.js"></script>
-  <script src="/static/assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
-  <script src="/static/assets/lib/smoothscroll.js"></script>
-  <script src="/static/assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
-  <script src="/static/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
-  <script src="/static/assets/js/plugins.js"></script>
-  <script src="/static/assets/js/main.js"></script>
-  <!-- Plugin JavaScript -->
-  <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script> -->
-</body>
-
-</html>

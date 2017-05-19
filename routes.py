@@ -27,22 +27,23 @@ def index():
          <a href="/resume">resume</a>
         </body></html>
         '''
-@app.route("/index")
-def index2():
+
+@app.route("/portfolio")
+def portfolio():
     """ Personal Web Site"""
-    return render_template("index2.html")
+    return render_template("pages/portfolio.html")
 
 
-@app.route("/ux")
+@app.route("/democracy-tuesday.html")
 def ux_project1():
     """ Personal Web Site"""
-    return render_template("ux_project1.html")
+    return render_template("pages/democracy-tuesday.html")
 
 
-@app.route("/ux2")
+@app.route("/hair-by-al.html")
 def ux_project2():
     """ Portfolio"""
-    return render_template("ux_project2.html")
+    return render_template("/pages/hair-by-al.html")
 
 
 @app.route("/resume")
