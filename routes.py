@@ -45,6 +45,17 @@ def ux_project2():
     """ Portfolio"""
     return render_template("/pages/hair-by-al.html")
 
+@app.route("/world-traveler.html")
+def ux_project3():
+    """ Portfolio"""
+    return render_template("/pages/world-traveler.html")
+
+
+@app.route("/infographics.html")
+def ux_project4():
+    """ Portfolio"""
+    return render_template("/pages/infographics.html")
+
 
 @app.route("/resume")
 def get_resume():
