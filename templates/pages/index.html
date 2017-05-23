@@ -9,12 +9,11 @@
         {% include "section3_intro.html" %}
       </section>
       <hr class="divider-w">
-      <section class="module" id="design-code" style="background: url(/static/images/background/grey_bg.png) 0px -735px repeat;">
-        {% include "section4_design_code.html" %}
+      <section class="module" id="design-code">
+        {% include "section4_design.html" %}
       </section>
-      <hr class="divider-w">
-
-      <section class="module-small bg-dark banner">
+            <hr class="divider-w">
+                 <section class="module-small bg-dark banner">
         <div class="container">
           <div class="row">
             <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
@@ -30,8 +29,15 @@
         </div>
       </section>
 
+        <section class="module" id="design-code" style="background: url(/static/images/backgrounds/grey_bg.png) 0px -735px repeat;">
+        {% include "section5_engineer.html" %}
+      </section>
+      <hr class="divider-w">
+
+
+
       <section class="module pb-0" id="portfolio">
-        {% include "section5_portfolio.html" %}
+        {% include "section6_portfolio.html" %}
       </section>
 
       <section class="module-small bg-dark banner">
@@ -59,17 +65,16 @@
           </div>
       </section>
 
-      <section class="module" id="about" style="background: url(/static/images/background/grey_bg.png) 0px -735px repeat;">
-        {% include "section6_about.html" %}
-      </section>
+      <!-- <section class="module" id="about" style="background: url(/static/images/background/grey_bg.png) 0px -735px repeat;">
+      </section> -->
       <hr class="divider-w">
 
       <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="static/images/backgrounds/testimonial_bg.png" 0px -735px repeat;>
-        {% include "section7_testimonial.html" %}
+        {% include "section8_testimonial.html" %}
       </section>
 
-      <section class="module" id="contact">
-        {% include "section8_contact.html" %}
+      <section  class="module" id="contact" style="background: url(/static/images/backgrounds/grey_bg.png) 0px -735px repeat;">
+        {% include "section9_contact.html" %}
       </section>
 
 {% endblock %}

@@ -1,0 +1,45 @@
+ {% block content %}
+<div class="container">
+    <div class="row">
+      <div class="mb-sm-20 wow fadeIn col-sm-6 col-md-4">
+
+            <div class="team-item">
+                <img src="static/images/engineer/engineer.png" id="engineer-image" alt="Portfolio Item" />
+
+            </div>
+        </div>
+      <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-6">
+      <div class="module-title font-alt align-left">
+              <img src="static/images/engineer/engineer-text-box.png" alt="text-box"/>
+        </div>
+        <div class="team-item">
+
+                <h3 class="font-serif align-left">Art of the Software Engineer</h3>
+                <p class="align-left">I'm a Full Stack Software Engineer from San Francisco with an interest in User Interface Design. I enjoy turning complex problems into simple, intuitive, minimalist interface designs. Specializing in the development of high-quality user interfaces delivering optimal user experiences across web, application, and other platforms. </p>
+                <p class="align-left">Collaborative communication among end users, designers, and developers while effectively creating well-received products. Extensive technical skills spanning languages, frameworks and libraries, and applications and tools. Big picture thinker excelling in solution development for intricate problems.
+                </p>
+                <a href="/portfolio.html" class="btn btn-default btn-md">
+                    <span class="network-name">View Web Projects</span></a>
+                <h3 class="font-serif align-left">Technologies</h3>
+                <ul class="list texts align-left">
+                    <li><em></em><i class='fa fa-check'></i> Javascript / jQuery</li>
+                    <li><em></em><i class='fa fa-check'></i>HTML5</li>
+                    <li><em></em><i class='fa fa-check'></i>CSS3</li>
+                    <li><em></em><i class='fa fa-check'></i>Responsive Web Designs</li>
+                    <li><em></em><i class='fa fa-check'></i>User Experience Design</li>
+                    <li><em></em><i class='fa fa-check'></i>Data Visualization</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <div id="mainBubble" class="bubble-chart">
+                <svg class="mainBubbleSVG"></svg>
+                <script src="/static/js/d3bubble.js"></script>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

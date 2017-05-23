@@ -38,6 +38,9 @@ var w = window.innerWidth*0.68*0.95;
     svgContainer.style("height",h+"px");
 
         var colVals = d3.scale.category10();
+        console.log("COLORS", colVals);
+       // var colVals= d3.scale.category.range(["#007779","#007779" ]).range();
+        // var  colVals = '#007779';
 
         bubbleObj.append("circle")
             .attr("class", "topBubble")
