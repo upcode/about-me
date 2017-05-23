@@ -45,6 +45,15 @@ background-position: center center;
   margin-top:100px;
 
 }
+
+
+.font-serif {
+font-family: "Playfair Display", "Oranienbaum", "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+
 /*.filter {
   margin-top:100px;
 
