@@ -1,33 +1,17 @@
-<!-- {% include "base.html"%}
- -->  <nav class="navbar navbar-custom navbar-fixed-top navbar-dark" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">Uma Petersen</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="custom-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                          <li class="page-scroll"><a class="page-scroll" href="/#portfol">Home</a></li>
-                          <li class="page-scroll"><a class="page-scroll" href="/#design-code" data-toggle="page-scroll">Design &amp; Code</a></li>
-                          <li class="page-scroll "><a class="page-scroll" href="/#portfolio" data-toggle="page-scroll">UX Portfolio</a></li>
-                          <li class="page-scroll "><a class="page-scroll" href="/#about" data-toggle="page-scroll">About</a></li>
-                          <li class="dpage-scroll">
-                          <a class="page-scroll" href="#contact" data-toggle="page-scroll" ">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+{% extends "base.html"%} {% block content %}
 
-<div class="main">
-    <section class="module bg-dark-60 portfolio-page-header" data-background="static/images/dt/dt-header.png">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-3">
-                    <h2 class="module-title font-alt">Democracy Tuesday</h2>
-                    <div class="module-subtitle font-alt">Reading about current reilable news about politics is one click away</div>
-                </div>
+<section class="module bg-dark-60 portfolio-page-header" data-background="static/images/dt/dt-header.png">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Democracy Tuesday</h2>
+                <div class="module-subtitle font-serif">Reading about current reilable news about politics is one click away</div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
     <section class="module">
         <div class="container">
             <div class="row">
@@ -99,7 +83,7 @@
             </div>
         </div>
     </section>
-        <hr class="divider-w">
+<hr class="divider-c">
 
     <section>
         <div class="row multi-columns-row">
@@ -126,7 +110,7 @@
         </div>
     </section>
     <section>
-        <hr class="divider-w">
+<hr class="divider-c">
 
         <div class="row multi-columns-row">
             <div class="col-sm-12 col-md-12 col-lg-12">
@@ -137,6 +121,9 @@
             </div>
         </div>
     </section>
+    <br>
+<hr class="divider-c">
+
     <section class="module">
         <div class="container">
             <div class="row">
@@ -175,4 +162,4 @@
             </ul>
         </div>
     </section>
-    <hr class="divider-w"> {% include "section8_footer.html"%}
+    {% endblock %}

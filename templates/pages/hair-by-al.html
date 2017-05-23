@@ -1,186 +1,146 @@
-<!-- {% include "base.html"%}
- -->  <nav class="navbar navbar-custom navbar-fixed-top navbar-dark" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">Uma Petersen</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="custom-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                          <li class="page-scroll"><a class="page-scroll" href="/#portfol">Home</a></li>
-                          <li class="page-scroll"><a class="page-scroll" href="/#design-code" data-toggle="page-scroll">Design &amp; Code</a></li>
-                          <li class="page-scroll "><a class="page-scroll" href="/#portfolio" data-toggle="page-scroll">UX Portfolio</a></li>
-                          <li class="page-scroll "><a class="page-scroll" href="/#about" data-toggle="page-scroll">About</a></li>
-                          <li class="dpage-scroll">
-                          <a class="page-scroll" href="#contact" data-toggle="page-scroll" ">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+{% extends "base.html"%} {% block content %}
 
-<div class="main">
-     <section class="module bg-dark-60 portfolio-page-header" data-background="static/images/al/al-portfolio.png">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-3">
-                    <h2 class="module-title font-alt">Hair by Al</h2>
-                    <div class="module-subtitle font-alt">Creating Web Presence</div>
+<section class="module bg-dark-60 portfolio-page-header" data-background="/static/images/al/al-portfolio.png">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Hair by Al</h2>
+                <div class="module-subtitle font-serif">Creating Web Presence</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="module">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"><img src="static/images/al/al-device.png" alt="Title of Image" /></div>
+        </div>
+        <div class="row multi-columns-row">
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="alt-features-item">
+                    <div class="alt-features-icon"><span class="icon-tools-2"></span></div>
+                    <h3 class="alt-features-title font-alt">Service</h3> UX Design Interface Design Development
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="alt-features-item">
+                    <div class="alt-features-icon"><span class="icon-tools"></span></div>
+                    <h3 class="alt-features-title font-alt">Sector</h3> Working Profesionals
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="alt-features-item">
+                    <div class="alt-features-icon"><span class="icon-phone"></span></div>
+                    <h3 class="alt-features-title font-alt">Type</h3> Web site
                 </div>
             </div>
         </div>
-    </section>
-    <section class="module">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12"><img src="static/images/al/al-device.png" alt="Title of Image" /></div>
-            </div>
-            <div class="row multi-columns-row">
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="alt-features-item">
-                        <div class="alt-features-icon"><span class="icon-tools-2"></span></div>
-                        <h3 class="alt-features-title font-alt">Service</h3> UX Design Interface Design Development
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="alt-features-item">
-                        <div class="alt-features-icon"><span class="icon-tools"></span></div>
-                        <h3 class="alt-features-title font-alt">Sector</h3> Working Profesionals
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="alt-features-item">
-                        <div class="alt-features-icon"><span class="icon-phone"></span></div>
-                        <h3 class="alt-features-title font-alt">Type</h3> Web site
-                    </div>
+        <hr class="divider-w mt-60 mb-60">
+        <div class="row multi-columns-row">
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="work-details">
+                    <h5 class="work-details-title font-alt">Project Details</h5>
+                    <p></p>
+                    <ul>
+                        <li><strong>Client: </strong><span class="font-serif"><a href="#" target="_blank">Hair by Al</a></span>
+                        </li>
+                        <li><strong>Date: </strong><span class="font-serif"><a href="#" target="_blank">15 January, 2017</a></span>
+                        </li>
+                        <li><strong>Online: </strong><span class="font-serif"><a href="#" target="_blank">www.hairbyalmillian.com</a></span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <hr class="divider-w mt-60 mb-60">
-            <div class="row multi-columns-row">
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="work-details">
-                        <h5 class="work-details-title font-alt">Project Details</h5>
-                        <p></p>
-                        <ul>
-                            <li><strong>Client: </strong><span class="font-serif"><a href="#" target="_blank">Hair by Al</a></span>
-                            </li>
-                            <li><strong>Date: </strong><span class="font-serif"><a href="#" target="_blank">15 January, 2017</a></span>
-                            </li>
-                            <li><strong>Online: </strong><span class="font-serif"><a href="#" target="_blank">www.hairbyalmillian.com</a></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <p>Al came to me wanting to create more web presence for his business. He wanted easier way for new customers to be able to learn more about what his products and services he provides. I worked with Al coming up with content, style aesthetic.
-                   </p>
-
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <p> I worked with Al coming up with content, style aesthetic. I then created wireframes, high-fedility mockups and prototypes and created the detailed designs for Al website.</p>
-                </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <p>Al came to me wanting to create more web presence for his business. He wanted easier way for new customers to be able to learn more about what his products and services he provides. I worked with Al coming up with content, style aesthetic.
+                </p>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <p> I worked with Al coming up with content, style aesthetic. I then created wireframes, high-fedility mockups and prototypes and created the detailed designs for Al website.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<hr class="divider-w">
+<section>
+    <div class="row multi-columns-row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <img src="static/images/al/define.png" alt="Title of Image" />
+        </div>
+    </div>
+</section>
+
+<hr class="divider-w">
+<section>
+    <div class="row multi-columns-row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <img src="static/images/al/senario.png" alt="Title of Image" />
+        </div>
+    </div>
+</section>
+<hr class="divider-w">
+<section>
+    <div class="row multi-columns-row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <img src="static/images/al/research.png" alt="Title of Image" />
+        </div>
+    </div>
+</section>
+<section>
+    <div class="row multi-columns-row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <img src="static/images/al/wireframes.png" alt="Title of Image" />
+            <img src="static/images/al/wireframes2.png" alt="Title of Image" />
+        </div>
+    </div>
+</section>
+<section>
     <hr class="divider-w">
-    <section>
-        <div class="row multi-columns-row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <img src="static/images/al/define.png" alt="Title of Image" />
+    <div class="row multi-columns-row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <img src="static/images/al/mockup-final.png" alt="Title of Image" />
+        </div>
+    </div>
+</section>
+
+<hr class="divider-w">
+<section class="module">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Related Projects</h2>
             </div>
         </div>
-    </section>
- <!--    <section>
-        <div class="row multi-columns-row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <img src="static/images/al/persona1.png" alt="Title of Image" />
+        <ul class="works-grid works-grid-gut works-grid-3 works-hover-w" id="works-grid">
+            <li class="work-item illustration webdesign">
+                <a href="hair-by-al.html">
+                    <div class="work-image"><img src="static/images/dt/dt-portfolio.png" alt="Portfolio Item" /></div>
+                    <div class="work-caption font-alt">
+                        <h3 class="work-title">Democracy Tuesday</h3>
+                        <div class="work-descr">Newsletter</div>
+                    </div>
+                </a>
+            </li>
+            <li class="work-item marketing webdesign">
+                <a href="world-traveler.html">
+                    <div class="work-image"><img src="static/images/portfolio/portfolio5.png" alt="Portfolio Item" /></div>
+                    <div class="work-caption font-alt">
+                        <h3 class="work-title">World Traveler</h3>
+                        <div class="work-descr">Blogging</div>
+                    </div>
+                </a>
+            </li>
+            <li class="work-item illustration webdesign">
+                <a href="infographics.html">
+                    <div class="work-image"><img src="static/images/portfolio/portfolio13.png" alt="Portfolio Item" /></div>
+                    <div class="work-caption font-alt">
+                        <h3 class="work-title">Infographics</h3>
+                        <div class="work-descr">Illustration</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
 
-                <img src="static/images/al/persona2.png" alt="Title of Image" />
-
-                <img src="static/images/al/persona3.png" alt="Title of Image" />
-
-            </div>
-        </div>
-    </section> -->
-        <hr class="divider-w">
-
-    <section>
-        <div class="row multi-columns-row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <img src="static/images/al/senario.png" alt="Title of Image" />
-            </div>
-        </div>
-    </section>
-        <hr class="divider-w">
-
-    <section>
-        <div class="row multi-columns-row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <img src="static/images/al/research.png" alt="Title of Image" />
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="row multi-columns-row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <img src="static/images/al/wireframes.png" alt="Title of Image" />
-                <img src="static/images/al/wireframes2.png" alt="Title of Image" />
-            </div>
-        </div>
-    </section>
-    <section>
-        <hr class="divider-w">
-
-        <div class="row multi-columns-row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <img src="static/images/al/mockup-final.png" alt="Title of Image" />
-
-
-            </div>
-        </div>
-    </section>
-    <section class="module">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-3">
-                    <h2 class="module-title font-alt">Related Projects</h2>
-                </div>
-            </div>
-            <ul class="works-grid works-grid-gut works-grid-3 works-hover-w" id="works-grid">
-                <li class="work-item illustration webdesign">
-                    <a href="hair-by-al.html">
-                        <div class="work-image"><img src="static/images/dt/dt-portfolio.png" alt="Portfolio Item" /></div>
-                        <div class="work-caption font-alt">
-                            <h3 class="work-title">Democracy Tuesday</h3>
-                            <div class="work-descr">Newsletter</div>
-                        </div>
-                    </a>
-                </li>
-                <li class="work-item marketing webdesign">
-                    <a href="world-traveler.html">
-                        <div class="work-image"><img src="static/images/portfolio/portfolio5.png" alt="Portfolio Item" /></div>
-                        <div class="work-caption font-alt">
-                            <h3 class="work-title">World Traveler</h3>
-                            <div class="work-descr">Blogging</div>
-                        </div>
-                    </a>
-                </li>
-                <li class="work-item illustration webdesign">
-                    <a href="infographics.html">
-                        <div class="work-image"><img src="static/images/portfolio/portfolio13.png" alt="Portfolio Item" /></div>
-                        <div class="work-caption font-alt">
-                            <h3 class="work-title">Infographics</h3>
-                            <div class="work-descr">Illustration</div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <hr class="divider-w"> {% include "section8_footer.html"%}
-
-
-
-
-
-
-
-
+{% endblock %}

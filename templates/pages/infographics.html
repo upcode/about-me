@@ -1,79 +1,76 @@
-{% include "base.html"%}
-<div class="main">
-    <section class="module bg-dark-60 portfolio-page-header" data-background="static/images/info/info-header.png">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-3">
-                    <h2 class="module-title font-alt">Infographics</h2>
-                    <div class="module-subtitle font-alt">Sketch Illstrations and Infographics</div>
-                </div>
+{% extends "base.html"%} {% block content %}
+<section class="module bg-dark-60 portfolio-page-header" data-background="static/images/wt/wt-header.png">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Infographics</h2>
+                <div class="module-subtitle font-serif">Sketch Illstrations and Infographics</div>
             </div>
         </div>
-    </section>
-
-    <hr class="divider-w">
-    <section>
-        <div class="row multi-columns-row">
-            <div class="col-sm-6 col-md-6 col-lg-6 col-sm-offset-3">
-                <img src="static/images/info/planets.png" alt="Title of Image" />
+    </div>
+</section>
+<div class="divider-e"></div>
+<section>
+    <div class="row multi-columns-row">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-sm-offset-3">
+            <img src="static/images/info/planets.png" alt="Title of Image" />
+        </div>
+    </div>
+</section>
+<hr class="divider-c">
+<div class="divider-e"></div>
+<section>
+    <div class="row multi-columns-row">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-sm-offset-3">
+            <img src="static/images/info/lemonade.png" alt="Title of Image" />
+        </div>
+    </div>
+</section>
+<hr class="divider-c">
+<section>
+    <div class="row multi-columns-row">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-sm-offset-3">
+            <img src="static/images/info/color.png" alt="Title of Image" />
+        </div>
+    </div>
+</section>
+<hr class="divider-c">
+<section class="module">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Related Projects</h2>
             </div>
         </div>
-    </section>
-    <br>
-        <hr class="divider-w">
- <br>
-    <section>
-        <div class="row multi-columns-row">
-            <div class="col-sm-6 col-md-6 col-lg-6 col-sm-offset-3">
-                <img src="static/images/info/lemonade.png" alt="Title of Image" />
-            </div>
-        </div>
-    </section>
-             <hr class="divider-w">
-
-    <section>
-        <div class="row multi-columns-row">
-            <div class="col-sm-6 col-md-6 col-lg-6 col-sm-offset-3">
-                <img src="static/images/info/color.png" alt="Title of Image" />
-            </div>
-        </div>
-    </section>
-    <section class="module">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-3">
-                    <h2 class="module-title font-alt">Related Projects</h2>
-                </div>
-            </div>
-            <ul class="works-grid works-grid-gut works-grid-3 works-hover-w" id="works-grid">
-                <li class="work-item illustration webdesign">
-                    <a href="hair-by-al.html">
-                        <div class="work-image"><img src="static/images/ux-project/al-portfolio.png" alt="Portfolio Item" /></div>
-                        <div class="work-caption font-alt">
-                            <h3 class="work-title">Hair by Al</h3>
-                            <div class="work-descr">Business</div>
-                        </div>
-                    </a>
-                </li>
-                <li class="work-item marketing webdesign">
-                    <a href="world-traveler.html">
-                        <div class="work-image"><img src="static/images/portfolio/portfolio5.png" alt="Portfolio Item" /></div>
-                        <div class="work-caption font-alt">
-                            <h3 class="work-title">World Traveler</h3>
-                            <div class="work-descr">Blogging</div>
-                        </div>
-                    </a>
-                </li>
-                <li class="work-item illustration webdesign">
-                    <a href="infographics.html">
-                        <div class="work-image"><img src="static/images/dt/dt-portfolio.png" alt="Portfolio Item" /></div>
-                        <div class="work-caption font-alt">
-                            <h3 class="work-title">Democracy Tuesday</h3>
-                            <div class="work-descr">Illustration</div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <hr class="divider-w"> {% include "section8_footer.html"%}
+        <ul class="works-grid works-grid-gut works-grid-3 works-hover-w" id="works-grid">
+            <li class="work-item illustration webdesign">
+                <a href="hair-by-al.html">
+                    <div class="work-image"><img src="static/images/ux-project/al-portfolio.png" alt="Portfolio Item" /></div>
+                    <div class="work-caption font-alt">
+                        <h3 class="work-title">Hair by Al</h3>
+                        <div class="work-descr">Business</div>
+                    </div>
+                </a>
+            </li>
+            <li class="work-item marketing webdesign">
+                <a href="world-traveler.html">
+                    <div class="work-image"><img src="static/images/portfolio/portfolio5.png" alt="Portfolio Item" /></div>
+                    <div class="work-caption font-alt">
+                        <h3 class="work-title">World Traveler</h3>
+                        <div class="work-descr">Blogging</div>
+                    </div>
+                </a>
+            </li>
+            <li class="work-item illustration webdesign">
+                <a href="democracy-tuesday.html">
+                    <div class="work-image"><img src="static/images/dt/dt-portfolio.png" alt="Portfolio Item" /></div>
+                    <div class="work-caption font-alt">
+                        <h3 class="work-title">Democracy Tuesday</h3>
+                        <div class="work-descr">Illustration</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+{% endblock %}

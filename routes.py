@@ -18,7 +18,7 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "freedom")
 @app.route("/")
 def index():
     """ Personal Web Site"""
-    return render_template("index.html")
+    return render_template("pages/index.html")
     # return render_template('pages/404.html'), 404
 
 

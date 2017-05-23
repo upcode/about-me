@@ -8,9 +8,15 @@
   line-height: 1px;
 
 }
+.divider-c {
+  margin-top:50px;
+  margin-bottom:50px;
+}
 
+.divider-e {
 
-
+  margin-top:50px;
+}
 /*Design Section*/
 .design-img-text {
 padding-top:50px;
