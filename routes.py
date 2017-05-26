@@ -56,6 +56,11 @@ def ux_project4():
     """ Portfolio"""
     return render_template("/pages/infographics.html")
 
+@app.route("/weather.html")
+def ux_project5():
+    """ Portfolio"""
+    return render_template("/pages/weather.html")
+
 
 @app.route("/resume")
 def get_resume():
