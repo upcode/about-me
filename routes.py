@@ -22,11 +22,6 @@ def index():
     # return render_template('pages/404.html'), 404
 
 
-    return '''
-        <html><body>
-         <a href="/resume">resume</a>
-        </body></html>
-        '''
 
 @app.route("/portfolio")
 def portfolio():
@@ -61,17 +56,20 @@ def ux_project5():
     """ Portfolio"""
     return render_template("/pages/weather.html")
 
+@app.route("/visualdesign.html")
+def visual_designs():
+    """ Portfolio"""
+    return render_template("/pages/visualdesign.html")
+
+
 
 @app.route("/resume")
 def get_resume():
     # with open("Uma_Petersen_Resume.pdf") as fp:
     #     csv = fp.read()
     csv = '1,2,3\n4,5,6\n'
-    return Response(
-        csv,
-        mimetype="text/csv",
-        headers={"Content-disposition":
-                 "attachment; filename=Uma_Persen_Resume.pdf"})
+    return send_file('umapetersenResume.pdf', as_attachment=True)
+
 
 
 @app.errorhandler(404)
