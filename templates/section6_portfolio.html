@@ -1,87 +1,29 @@
 {% block content %}
-<div class="container">
-  <!-- <section class="module pb-0" id="portfolio">
     <div class="container">
+      <div class="module-subtitle font-serif">
+          <img src="static/images/portfolio/portfolio-text-box.png" class="center" />
+       </div>
       <div class="row">
         <div class="col-sm-12">
-          <div class="module-subtitle font-serif">
-          <img src="static/images/portfolio/portfolio-text-box.png" class="center" />
-
-          </div>
-        </div>
-      </div>
-    </div>
-    </section> -->
-    <section class="module portfolio" id="portfolio">
-    <div class="container">
-     <div class="module-subtitle font-serif">
-          <img src="static/images/portfolio/portfolio-text-box.png" class="center" />
-
-          </div>
-      <div class="row">
-        <div class="col-sm-12">
-
-       <ul class="filter font-alt" id="filters">
-<!--             <li><a class="current wow fadeInUp" href="#" data-filter="*">All</a></li>
- -->
+          <ul class="filter font-alt" id="filters">
             <li><a class="wow fadeInUp" href="#" data-filter=".design" data-wow-delay="0.6s">UX Design</a></li>
             <li><a class="wow fadeInUp" href="#" data-filter=".design" data-wow-delay="0.6s">UI Design</a></li>
              <li><a class="wow fadeInUp" href="#" data-filter=".webdesign" data-wow-delay="0.6s">Web Development</a></li>
-<!--             <li><a class="wow fadeInUp" href="#" data-filter=".illustration" data-wow-delay="0.2s">Illustration</a></li>
- -->
-
-<!--  <li><a class="wow fadeInUp" href="#" data-filter=".marketing" data-wow-delay="0.4s">Marketing</a></li>
- -->          </ul>
-  <div class="module-subtitle font-serif">
-  Some of my recent work
-  </div>
+          </ul>
+          <div class="module-subtitle font-serif">
+          Some of my recent work
+          </div>
         </div>
         </div>
-      <ul class="works-grid works-grid-gut works-grid-2 works-hover-d" id="works-grid">
-    <!--     <li class="work-item webdesign">
-          <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-            <div class="work-image"><img src="static/images/portfolio/portfolio1.png" alt="Portfolio Item" /></div>
-            <div class="work-caption font-alt">
-              <h3 class="work-title">Wanderlust</h3>
-              <div class="work-descr">Webdesign</div>
-            </div>
-          </a>
-        </li> -->
-      <!--   <li class="work-item webdesign">
-          <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-            <div class="work-image"><img src="static/images/portfolio/portfolio2.png" alt="Portfolio Item" /></div>
-            <div class="work-caption font-alt">
-              <h3 class="work-title">Johanna</h3>
-              <div class="work-descr">Webdesign</div>
-            </div>
-          </a>
-        </li> -->
-   <!--      <li class="work-item webdesign">
-          <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-            <div class="work-image"><img src="static/images/portfolio/portfolio3.png" alt="Portfolio Item" /></div>
-            <div class="work-caption font-alt">
-              <h3 class="work-title">Ryan</h3>
-              <div class="work-descr">Webdesign</div>
-            </div>
-          </a>
-        </li>
-        <li class="work-item webdesign">
-          <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-            <div class="work-image"><img src="static/images/portfolio/portfolio4.png" alt="Portfolio Item" /></div>
-            <div class="work-caption font-alt">
-              <h3 class="work-title">Timeline</h3>
-              <div class="work-descr">Webdesign</div>
-            </div>
-          </a>
-        </li> -->
-          <li class="work-item webdesign design">
-          <a href="/democracy-tuesday.html" class="portfolio-link" data-toggle="modal">
-            <div class="work-image"><img src="static/images/dt/dt-portfolio.png" alt="Portfolio Item" /></div>
-            <div class="work-caption font-alt">
-              <h3 class="work-title">Democracy Tuesday</h3>
-              <div class="work-descr">UX/UI Design</div>
-            </div>
-          </a>
+        <ul class="works-grid works-grid-gut works-grid-2 works-hover-d" id="works-grid">
+            <li class="work-item webdesign design">
+            <a href="/democracy-tuesday.html" class="portfolio-link" data-toggle="modal">
+              <div class="work-image"><img src="static/images/dt/dt-portfolio.png" alt="Portfolio Item" /></div>
+              <div class="work-caption font-alt">
+                <h3 class="work-title">Democracy Tuesday</h3>
+                <div class="work-descr">UX/UI Design</div>
+              </div>
+            </a>
         </li>
         <li class="work-item design">
           <a href="/hair-by-al.html" class="portfolio-link" data-toggle="modal">
@@ -111,6 +53,8 @@
             </div>
           </a>
         </li>
+        </ul>
+      </div>
       <!--      <li class="work-item design">
           <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
             <div class="work-image"><img src="static/images/portfolio/portfolio6.png" alt="Portfolio Item" /></div>
@@ -192,9 +136,7 @@
             </div>
           </a>
         </li> -->
-      </ul>
-    </div>
-  </section>
+
 
 
 {% endblock %}
