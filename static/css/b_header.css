@@ -1,0 +1,122 @@
+/*background: url('http://placehold.it/1920x1080') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+*/
+
+
+
+/*#mainNav {
+  min-height: 56px;
+  background-color: #fff;
+  color:black!important;
+}
+
+*/
+
+/*.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: url("static/img/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: ;
+}
+*/
+
+/*section {
+	padding-top: 50px;
+}*/
+/*.masthead h1 {
+  font-family: 'publico-medium';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.masthead h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+  font-family: Source Sans Pro;
+}
+
+
+*/
+
+
+
+
+
+
+/*.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead h1 {
+  font-family: 'Source Sans Pro';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+
+  -webkit-background-clip: text;
+  text-align:left;
+}
+
+.masthead h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+  text-align:left;
+}
+
+.masthead header h2 {
+    max-width: 500px;
+}
+.masthead h1 {
+    margin-bottom: 4px;
+    font-family: publico-medium;
+    font-size: 68px;
+    line-height: 74px;
+    letter-spacing: -2.5px;
+    color: #383838;
+    color: #fff!important;
+}
+
+ .masthead header, section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    }
+
+ .masthead header {
+    background-color: #fff;
+    background-image: url(static/img/uma/bg-masthead.jpg);
+    background-size: auto 100%;
+    background-position: right 0 bottom 0;
+    transition: background-position .4s ease;
+}
+
+.masthead header {
+    max-width: 1600px;
+    margin: 0 auto;
+}*/
+
+
+
+/*.text-black {
+	color: #161616;
+}*/

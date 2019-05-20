@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="design,Prototyping,Product Design,Designer,San Francisco,UX Design">
+    <meta name="author" content="Uma Petersen">
+    <title>{% block title %}Uma Petersen{% endblock %}</title>
+    <!-- Bootstrap core CSS -->
+    <link href="static/bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="static/bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <!--    <link href="static/bootstrap/css/grayscale.min.css" rel="stylesheet">
+ -->
+    <link href="static/bootstrap/css/grayscale.css" rel="stylesheet">
+    <link href="static/css/workflow.css" rel="stylesheet">
+    <style>
+    section {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    h1 {
+        font-family: publico-medium;
+
+    }
+
+    h3 {
+        font-family: publico-medium;
+        font-size: 48px;
+        line-height: 58px;
+        letter-spacing: -2.5px;
+        margin-top: 20px;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-top: 20px;
+
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-family: publico-medium;
+        font-size: 68px;
+        line-height: 74px;
+        letter-spacing: -2.5px;
+        margin-top: 20px;
+        padding-top: 50px;
+    }
+    </style>
+</head>
+{% endblock %}
+{% block body %}
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+        <!-- <div class="page-loader">
+                <div class="loader">Loading...</div>
+              </div> -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            {% include "b_navbar.html" %}
+        </nav>
+        {% block content %}{% endblock %}
+        <footer class="bg-gray small text-center text-white-50">
+            <div class="container bg-gray">
+                <p class="copyright text-muted small">Copyright &copy; Uma Petersen 2019</p>
+            </div>
+        </footer>
+    </main>
+    {% endblock %}
+    <!-- Bootstrap core JavaScript -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="static/bootstrap/vendor/jquery/jquery.min.js"></script>
+    <script src="static/bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="static/bootstrap/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="static/bootstrap/js/grayscale.min.js"></script>
+</body>
+
+</html>
